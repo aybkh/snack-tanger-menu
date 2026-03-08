@@ -144,7 +144,7 @@
           "name": "Plato de Marisco",
           "price": 10,
           "description": null,
-          "isAvailable": false,
+          "isAvailable": true,
           "image": ""
         }
       ]
