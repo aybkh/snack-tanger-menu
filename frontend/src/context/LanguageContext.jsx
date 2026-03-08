@@ -25,26 +25,13 @@ export const LanguageProvider = ({ children }) => {
     // Helper to get translated category name
     const getCategoryName = (category) => {
         if (!category) return "";
-        const mapping = resources[language]?.categories;
-        if (mapping && mapping[category.name]) return mapping[category.name];
-        return category.name;
+        return category.name; // REFLEJO 100% DINÁMICO DEL TPV (IGNORA LOCALES)
     };
 
     // Helper to translate product properties overlaying them on top of original
     const getTranslatedProduct = (product) => {
         if (!product) return null;
-        const overrides = resources[language]?.products?.[product.name];
-
-        // Start with a shallow copy of original product
-        const translated = { ...product };
-
-        // Overlay name and description if available
-        if (overrides) {
-            if (overrides.name) translated.name = overrides.name;
-            if (overrides.description) translated.description = overrides.description;
-        }
-
-        return translated;
+        return { ...product }; // REFLEJO 100% DINÁMICO DEL TPV (IGNORA LOCALES)
     };
 
     // Direction (rtl/ltr)
