@@ -89,7 +89,7 @@
           "name": "Pizza Tanger 303",
           "price": 11,
           "description": null,
-          "isAvailable": false,
+          "isAvailable": true,
           "image": ""
         }
       ]
@@ -144,7 +144,7 @@
           "name": "Plato de Marisco",
           "price": 10,
           "description": null,
-          "isAvailable": true,
+          "isAvailable": false,
           "image": ""
         }
       ]
