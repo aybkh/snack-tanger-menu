@@ -25,6 +25,13 @@
           "price": 7,
           "isAvailable": true,
           "image": ""
+        },
+        {
+          "id": 4,
+          "name": "Taco XL",
+          "price": 8,
+          "isAvailable": false,
+          "image": ""
         }
       ]
     },
@@ -108,6 +115,13 @@
           "name": "Emince de Pollo",
           "price": 9,
           "isAvailable": true,
+          "image": ""
+        },
+        {
+          "id": 15,
+          "name": "Emince de Carne",
+          "price": 11,
+          "isAvailable": false,
           "image": ""
         },
         {
@@ -209,6 +223,13 @@
       "image": "",
       "products": [
         {
+          "id": 26,
+          "name": "Naranja",
+          "price": 3,
+          "isAvailable": false,
+          "image": ""
+        },
+        {
           "id": 27,
           "name": "Pl\u00E1tano",
           "price": 3.5,
@@ -250,6 +271,13 @@
       "name": "Postres",
       "image": "",
       "products": [
+        {
+          "id": 32,
+          "name": "Copa de Tiramis\u00FA",
+          "price": 2.5,
+          "isAvailable": false,
+          "image": ""
+        },
         {
           "id": 33,
           "name": "Flan Casero",
@@ -328,6 +356,13 @@
           "image": ""
         },
         {
+          "id": 43,
+          "name": "Vichy Catalan",
+          "price": 1.5,
+          "isAvailable": false,
+          "image": ""
+        },
+        {
           "id": 44,
           "name": "Don Simon",
           "price": 1.5,
@@ -388,6 +423,13 @@
           "name": "Lonchas de Queso",
           "price": 0.5,
           "isAvailable": true,
+          "image": ""
+        },
+        {
+          "id": 52,
+          "name": "Mortadela",
+          "price": 0.5,
+          "isAvailable": false,
           "image": ""
         }
       ]
