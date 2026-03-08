@@ -58,6 +58,7 @@ const ProductCard = ({ originalProd, category, onClick }) => {
             className="product-card"
             onClick={() => { if (prod.isAvailable !== false) onClick(); }}
             style={{
+                display: 'flex', flexDirection: 'column', height: '100%',
                 filter: prod.isAvailable === false ? 'grayscale(100%) opacity(60%)' : 'none',
                 cursor: prod.isAvailable === false ? 'not-allowed' : 'pointer',
                 pointerEvents: prod.isAvailable === false ? 'none' : 'auto',
@@ -71,9 +72,12 @@ const ProductCard = ({ originalProd, category, onClick }) => {
 
             {renderProductImage()}
 
-            <div className="product-info">
-                <h3 className="product-name">{prod.name}</h3>
-                <div className="product-price">
+            <div className="product-info" style={{ display: 'flex', flexDirection: 'column', flexGrow: 1 }}>
+                <h3 className="product-name" style={{
+                    display: '-webkit-box', WebkitLineClamp: 2, WebkitBoxOrient: 'vertical',
+                    overflow: 'hidden', textOverflow: 'ellipsis', minHeight: '2.8rem'
+                }}>{prod.name}</h3>
+                <div className="product-price" style={{ marginTop: 'auto' }}>
                     {(prod.variants || []).length > 0
                         ? `${Math.min(...prod.variants.map(v => v.price))}€`
                         : `${(prod.price || prod.base_price || 0).toFixed(2)}€`}
