@@ -65,15 +65,24 @@ const ProductModal = ({ isOpen, onClose, originalProduct, category, onScrollToSa
                     <X size={28} style={{ cursor: 'pointer' }} onClick={onClose} />
                 </div>
 
-                {currentProduct.description && (
-                    <div style={{
-                        marginBottom: '20px', color: '#555', fontSize: '0.95rem',
-                        lineHeight: '1.5', fontFamily: 'Montserrat, sans-serif',
-                        padding: '10px', background: 'rgba(0,0,0,0.02)', borderRadius: '8px', borderLeft: '3px solid var(--secondary)'
-                    }}>
-                        <i>{currentProduct.description}</i>
-                    </div>
-                )}
+                {(() => {
+                    const descKey = currentProduct.description || `desc_${currentProduct.id}`;
+                    let translatedDesc = t(descKey);
+                    if (translatedDesc === descKey && !currentProduct.description) return null;
+                    if (translatedDesc === descKey) translatedDesc = currentProduct.description;
+
+                    if (!translatedDesc) return null;
+
+                    return (
+                        <div style={{
+                            marginBottom: '20px', color: '#555', fontSize: '0.95rem',
+                            lineHeight: '1.5', fontFamily: 'Montserrat, sans-serif',
+                            padding: '10px', background: 'rgba(0,0,0,0.02)', borderRadius: '8px', borderLeft: '3px solid var(--secondary)'
+                        }}>
+                            <i>{translatedDesc}</i>
+                        </div>
+                    );
+                })()}
 
                 {/* Variants (Sizes) */}
                 {currentProduct.variants?.length > 0 && (
@@ -91,7 +100,7 @@ const ProductModal = ({ isOpen, onClose, originalProduct, category, onScrollToSa
                 )}
 
                 {/* Meats Logic */}
-                {((category?.name === "Tacos 303") || (category?.name === "Bocadillos Tanger" && originalProduct.name?.includes("Mixto"))) && (currentProduct.variants || []).length > 0 && (
+                {(((category?.name || "").includes("Tacos")) || ((category?.name || "").includes("Bocadillos") && originalProduct.name?.includes("Mixto")) || (originalProduct?.name || "").toLowerCase().includes("taco")) && (
                     <div style={{ marginBottom: '25px' }}>
                         <span className="section-title">{t('meats_label')}</span>
                         <div className="selection-grid" style={{ display: 'flex', flexWrap: 'wrap', gap: '8px' }}>
@@ -143,7 +152,7 @@ const ProductModal = ({ isOpen, onClose, originalProduct, category, onScrollToSa
                 )}
 
                 {/* Redirect to Sauces Logic */}
-                {(category?.name === "Tacos 303" || category?.name === "Bocadillos Tanger" || category?.name === "Hamburguesas") && (currentProduct.variants || []).length > 0 && (
+                {(((category?.name || "").includes("Tacos")) || ((category?.name || "").includes("Bocadillos")) || ((category?.name || "").includes("Hamburguesas")) || (originalProduct?.name || "").toLowerCase().includes("taco") || (originalProduct?.name || "").toLowerCase().includes("burger")) && (
                     <div style={{ marginBottom: '25px' }}>
                         <span className="section-title">{t('sauces_label')}</span>
                         <div style={{ marginTop: '10px' }}>
