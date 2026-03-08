@@ -38,10 +38,24 @@ const CategorySidebar = ({ categories, selectedCategory, onSelectCategory, isMob
 
                     return (
                         <div key={cat.id} className={`cat-btn ${selectedCategory?.id === cat.id ? 'active' : ''}`}
-                            onClick={() => onSelectCategory(cat)}>
-                            <img src={getCategoryIcon(cat.name)} alt={cat.name} className="cat-img"
-                                onError={(e) => { e.target.style.display = 'none'; e.target.nextSibling.style.display = 'block'; }} />
-                            <span className="cat-text-fallback" style={{ display: 'none' }}>{getCategoryName(cat)}</span>
+                            onClick={() => onSelectCategory(cat)}
+                            style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', padding: '10px 5px', gap: '5px' }}>
+
+                            <img src={getCategoryIcon(cat.name)} alt={cat.name} className="cat-img-svg"
+                                style={{ width: '40px', height: '40px', objectFit: 'contain' }}
+                                onError={(e) => { e.target.src = '/categories/default.svg'; }} />
+
+                            <span className="cat-text-dynamic" style={{
+                                fontSize: '0.65rem',
+                                fontWeight: 'bold',
+                                textAlign: 'center',
+                                textTransform: 'uppercase',
+                                lineHeight: '1.1',
+                                wordBreak: 'break-word',
+                                hyphens: 'auto'
+                            }}>
+                                {getCategoryName(cat)}
+                            </span>
                         </div>
                     );
                 })}
