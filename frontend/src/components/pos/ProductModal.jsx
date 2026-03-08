@@ -91,7 +91,7 @@ const ProductModal = ({ isOpen, onClose, originalProduct, category, onScrollToSa
                 )}
 
                 {/* Meats Logic */}
-                {((category?.name === "Tacos 303") || (category?.name === "Bocadillos Tanger" && originalProduct.name?.includes("Mixto"))) && (
+                {((category?.name === "Tacos 303") || (category?.name === "Bocadillos Tanger" && originalProduct.name?.includes("Mixto"))) && (currentProduct.variants || []).length > 0 && (
                     <div style={{ marginBottom: '25px' }}>
                         <span className="section-title">{t('meats_label')}</span>
                         <div className="selection-grid" style={{ display: 'flex', flexWrap: 'wrap', gap: '8px' }}>
@@ -143,7 +143,7 @@ const ProductModal = ({ isOpen, onClose, originalProduct, category, onScrollToSa
                 )}
 
                 {/* Redirect to Sauces Logic */}
-                {(category?.name === "Tacos 303" || category?.name === "Bocadillos Tanger" || category?.name === "Hamburguesas") && (
+                {(category?.name === "Tacos 303" || category?.name === "Bocadillos Tanger" || category?.name === "Hamburguesas") && (currentProduct.variants || []).length > 0 && (
                     <div style={{ marginBottom: '25px' }}>
                         <span className="section-title">{t('sauces_label')}</span>
                         <div style={{ marginTop: '10px' }}>
@@ -168,7 +168,7 @@ const ProductModal = ({ isOpen, onClose, originalProduct, category, onScrollToSa
                 )}
 
                 {/* Menu Upgrade */}
-                {currentProduct.is_menu_compatible && (
+                {(currentProduct.is_menu_compatible || currentProduct.isMenuCompatible) && (
                     <div style={{ marginBottom: '20px', padding: '15px', background: 'rgba(0,0,0,0.03)', borderRadius: '8px', border: '1px dashed #ccc' }}>
                         <label style={{ display: 'flex', alignItems: 'center', gap: '15px', cursor: 'pointer' }}>
                             <input type="checkbox" checked={isMenuUpgrade} onChange={(e) => setIsMenuUpgrade(e.target.checked)} style={{ width: '20px', height: '20px', accentColor: 'var(--primary)' }} />
