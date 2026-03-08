@@ -39,7 +39,7 @@ export const resources = {
             "Café": "Café",
             "Batidos": "Batidos",
             "Postres": "Postres",
-            "Suplementos": "Extras",
+            "Suplementos": "Suplementos",
             "Salsas": "Salsas"
         },
         "products": {

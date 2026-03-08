@@ -51,7 +51,7 @@ const CategorySidebar = ({ categories, selectedCategory, onSelectCategory, isMob
                                 left: '50%',
                                 transform: 'translate(-50%, -50%)',
                                 width: '95%',
-                                fontSize: '0.75rem',
+                                fontSize: '1rem',
                                 fontWeight: '900',
                                 color: '#ffffff',
                                 textAlign: 'center',
