@@ -473,7 +473,7 @@
           "name": "Lonchas de Queso",
           "price": 0.5,
           "description": null,
-          "isAvailable": true,
+          "isAvailable": false,
           "image": ""
         },
         {
