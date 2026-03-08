@@ -75,7 +75,9 @@ const ProductCard = ({ originalProd, category, onClick }) => {
             <div className="product-info" style={{ display: 'flex', flexDirection: 'column', flexGrow: 1 }}>
                 <h3 className="product-name" style={{
                     display: '-webkit-box', WebkitLineClamp: 2, WebkitBoxOrient: 'vertical',
-                    overflow: 'hidden', textOverflow: 'ellipsis', minHeight: '2.8rem'
+                    overflow: 'hidden', textOverflow: 'ellipsis', minHeight: '2.8rem',
+                    wordBreak: 'break-word', overflowWrap: 'break-word', hyphens: 'auto',
+                    fontSize: '0.85rem', lineHeight: '1.2'
                 }}>{prod.name}</h3>
                 <div className="product-price" style={{ marginTop: 'auto' }}>
                     {(prod.variants || []).length > 0
