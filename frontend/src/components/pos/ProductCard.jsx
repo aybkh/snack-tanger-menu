@@ -56,13 +56,14 @@ const ProductCard = ({ originalProd, category, onClick }) => {
     return (
         <div
             className="product-card"
-            onClick={() => { if (prod.is_available !== false) onClick(); }}
+            onClick={() => { if (prod.isAvailable !== false) onClick(); }}
             style={{
-                filter: prod.is_available === false ? 'grayscale(100%)' : 'none',
-                cursor: prod.is_available === false ? 'not-allowed' : 'pointer',
+                filter: prod.isAvailable === false ? 'grayscale(100%) opacity(60%)' : 'none',
+                cursor: prod.isAvailable === false ? 'not-allowed' : 'pointer',
+                pointerEvents: prod.isAvailable === false ? 'none' : 'auto',
                 position: 'relative'
             }}>
-            {prod.is_available === false && (
+            {prod.isAvailable === false && (
                 <div style={{ position: 'absolute', top: '10px', right: '10px', background: '#e74c3c', color: 'white', padding: '5px 10px', borderRadius: '4px', fontWeight: 'bold', fontSize: '0.8rem', zIndex: 10 }}>
                     {t('sold_out')}
                 </div>
