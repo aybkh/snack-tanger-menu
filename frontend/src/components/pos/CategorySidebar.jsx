@@ -14,14 +14,17 @@ const CategorySidebar = ({ categories, selectedCategory, onSelectCategory, isMob
                         onError={(e) => { e.target.style.display = 'none'; e.target.nextSibling.style.display = 'block'; }} />
                 </div>
 
-                {categories.map(cat => (
-                    <div key={cat.id} className={`cat-btn ${selectedCategory?.id === cat.id ? 'active' : ''}`}
-                        onClick={() => onSelectCategory(cat)}>
-                        <img src={`/categories/${(cat.image || 'default.webp').replace('.jpg', '.webp').replace('.png', '.webp')}`} alt={cat.name} className="cat-img"
-                            onError={(e) => { e.target.style.display = 'none'; e.target.nextSibling.style.display = 'block'; }} />
-                        <span className="cat-text-fallback" style={{ display: 'none' }}>{getCategoryName(cat)}</span>
-                    </div>
-                ))}
+                {categories.map(cat => {
+                    const cleanCatName = (cat.name || "").toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "").replace(/ /g, '-').replace(/[^a-z0-9-]/g, '');
+                    return (
+                        <div key={cat.id} className={`cat-btn ${selectedCategory?.id === cat.id ? 'active' : ''}`}
+                            onClick={() => onSelectCategory(cat)}>
+                            <img src={`/categories/${cleanCatName}.webp`} alt={cat.name} className="cat-img"
+                                onError={(e) => { e.target.style.display = 'none'; e.target.nextSibling.style.display = 'block'; }} />
+                            <span className="cat-text-fallback" style={{ display: 'none' }}>{getCategoryName(cat)}</span>
+                        </div>
+                    );
+                })}
 
                 <div style={{ padding: '20px 10px', textAlign: 'center', fontSize: '0.7rem', color: 'rgba(255,255,255,0.4)', marginTop: 'auto' }}>
                     Dev by <a href="https://ayoubjerari.com" target="_blank" rel="noopener noreferrer" style={{ color: 'inherit', textDecoration: 'underline' }}>AyoubDev</a>

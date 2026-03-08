@@ -3,483 +3,483 @@
     {
       "id": 1,
       "name": "Tacos 303",
-      "image": "/images/categories/tacos-303.webp",
+      "image": "",
       "products": [
         {
           "id": 1,
           "name": "Taco S",
           "price": 4.5,
           "isAvailable": true,
-          "image": "/images/products/taco-s.webp"
+          "image": ""
         },
         {
           "id": 2,
           "name": "Taco M",
           "price": 6,
           "isAvailable": true,
-          "image": "/images/products/taco-m.webp"
+          "image": ""
         },
         {
           "id": 3,
           "name": "Taco L",
           "price": 7,
           "isAvailable": true,
-          "image": "/images/products/taco-l.webp"
+          "image": ""
         }
       ]
     },
     {
       "id": 2,
       "name": "Pizzas",
-      "image": "/images/categories/pizzas.webp",
+      "image": "",
       "products": [
         {
           "id": 5,
           "name": "Pizza Margarita",
           "price": 7,
           "isAvailable": true,
-          "image": "/images/products/pizza-margarita.webp"
+          "image": ""
         },
         {
           "id": 6,
           "name": "Pizza At\u00FAn",
           "price": 8,
           "isAvailable": true,
-          "image": "/images/products/pizza-at\u00FAn.webp"
+          "image": ""
         },
         {
           "id": 7,
           "name": "Pizza Pollo",
           "price": 8,
           "isAvailable": true,
-          "image": "/images/products/pizza-pollo.webp"
+          "image": ""
         },
         {
           "id": 8,
           "name": "Pizza Carne Picada",
           "price": 8,
           "isAvailable": true,
-          "image": "/images/products/pizza-carne-picada.webp"
+          "image": ""
         },
         {
           "id": 9,
           "name": "Pizza Marisco",
           "price": 9.5,
           "isAvailable": true,
-          "image": "/images/products/pizza-marisco.webp"
+          "image": ""
         },
         {
           "id": 10,
           "name": "Pizza Tanger 303",
           "price": 11,
           "isAvailable": true,
-          "image": "/images/products/pizza-tanger-303.webp"
+          "image": ""
         }
       ]
     },
     {
       "id": 3,
       "name": "Platos Combinados",
-      "image": "/images/categories/platos-combinados.webp",
+      "image": "",
       "products": [
         {
           "id": 11,
           "name": "Plato de Pollo",
           "price": 7,
           "isAvailable": true,
-          "image": "/images/products/plato-de-pollo.webp"
+          "image": ""
         },
         {
           "id": 12,
           "name": "Plato Carne Picada",
           "price": 7,
           "isAvailable": true,
-          "image": "/images/products/plato-carne-picada.webp"
+          "image": ""
         },
         {
           "id": 13,
           "name": "Plato Maxi Tenders",
           "price": 9,
           "isAvailable": true,
-          "image": "/images/products/plato-maxi-tenders.webp"
+          "image": ""
         },
         {
           "id": 14,
           "name": "Emince de Pollo",
           "price": 9,
           "isAvailable": true,
-          "image": "/images/products/emince-de-pollo.webp"
+          "image": ""
         },
         {
           "id": 16,
           "name": "Plato de Marisco",
           "price": 10,
           "isAvailable": true,
-          "image": "/images/products/plato-de-marisco.webp"
+          "image": ""
         }
       ]
     },
     {
       "id": 4,
       "name": "Hamburguesas",
-      "image": "/images/categories/hamburguesas.webp",
+      "image": "",
       "products": [
         {
           "id": 17,
           "name": "Hamburguesa Ternera",
           "price": 6,
           "isAvailable": true,
-          "image": "/images/products/hamburguesa-ternera.webp"
+          "image": ""
         },
         {
           "id": 18,
           "name": "Hamburguesa Tenders",
           "price": 7,
           "isAvailable": true,
-          "image": "/images/products/hamburguesa-tenders.webp"
+          "image": ""
         }
       ]
     },
     {
       "id": 5,
       "name": "Tajins",
-      "image": "/images/categories/tajins.webp",
+      "image": "",
       "products": [
         {
           "id": 19,
           "name": "Tajin de Kefta",
           "price": 6,
           "isAvailable": true,
-          "image": "/images/products/tajin-de-kefta.webp"
+          "image": ""
         },
         {
           "id": 20,
           "name": "Tajin de Gambas \u0027Pil Pil\u0027",
           "price": 8,
           "isAvailable": true,
-          "image": "/images/products/tajin-de-gambas-\u0027pil-pil\u0027.webp"
+          "image": ""
         },
         {
           "id": 21,
           "name": "Kapsalon",
           "price": 7,
           "isAvailable": true,
-          "image": "/images/products/kapsalon.webp"
+          "image": ""
         },
         {
           "id": 22,
           "name": "Tajin Marisco",
           "price": 9,
           "isAvailable": true,
-          "image": "/images/products/tajin-marisco.webp"
+          "image": ""
         },
         {
           "id": 23,
           "name": "Sopa de pescado",
           "price": 4.5,
           "isAvailable": true,
-          "image": "/images/products/sopa-de-pescado.webp"
+          "image": ""
         }
       ]
     },
     {
       "id": 6,
       "name": "Ensaladas",
-      "image": "/images/categories/ensaladas.webp",
+      "image": "",
       "products": [
         {
           "id": 24,
           "name": "Ensalada Peque\u00F1a",
           "price": 5,
           "isAvailable": true,
-          "image": "/images/products/ensalada-peque\u00F1a.webp"
+          "image": ""
         },
         {
           "id": 25,
           "name": "Ensalada Familiar",
           "price": 9,
           "isAvailable": true,
-          "image": "/images/products/ensalada-familiar.webp"
+          "image": ""
         }
       ]
     },
     {
       "id": 7,
       "name": "Batidos",
-      "image": "/images/categories/batidos.webp",
+      "image": "",
       "products": [
         {
           "id": 27,
           "name": "Pl\u00E1tano",
           "price": 3.5,
           "isAvailable": true,
-          "image": "/images/products/pl\u00E1tano.webp"
+          "image": ""
         },
         {
           "id": 28,
           "name": "Aguacate",
           "price": 3.5,
           "isAvailable": true,
-          "image": "/images/products/aguacate.webp"
+          "image": ""
         },
         {
           "id": 29,
           "name": "Fresa",
           "price": 4,
           "isAvailable": true,
-          "image": "/images/products/fresa.webp"
+          "image": ""
         },
         {
           "id": 30,
           "name": "Mango",
           "price": 4,
           "isAvailable": true,
-          "image": "/images/products/mango.webp"
+          "image": ""
         },
         {
           "id": 31,
           "name": "Tropical",
           "price": 4.5,
           "isAvailable": true,
-          "image": "/images/products/tropical.webp"
+          "image": ""
         }
       ]
     },
     {
       "id": 8,
       "name": "Postres",
-      "image": "/images/categories/postres.webp",
+      "image": "",
       "products": [
         {
           "id": 33,
           "name": "Flan Casero",
           "price": 3,
           "isAvailable": true,
-          "image": "/images/products/flan-casero.webp"
+          "image": ""
         }
       ]
     },
     {
       "id": 9,
       "name": "Refrescos",
-      "image": "/images/categories/refrescos.webp",
+      "image": "",
       "products": [
         {
           "id": 34,
           "name": "Coca-Cola",
           "price": 1.5,
           "isAvailable": true,
-          "image": "/images/products/coca-cola.webp"
+          "image": ""
         },
         {
           "id": 35,
           "name": "Fanta",
           "price": 1.5,
           "isAvailable": true,
-          "image": "/images/products/fanta.webp"
+          "image": ""
         },
         {
           "id": 36,
           "name": "Sprite",
           "price": 1.5,
           "isAvailable": true,
-          "image": "/images/products/sprite.webp"
+          "image": ""
         },
         {
           "id": 37,
           "name": "Nestea",
           "price": 1.5,
           "isAvailable": true,
-          "image": "/images/products/nestea.webp"
+          "image": ""
         },
         {
           "id": 38,
           "name": "Aquarius",
           "price": 1.5,
           "isAvailable": true,
-          "image": "/images/products/aquarius.webp"
+          "image": ""
         },
         {
           "id": 39,
           "name": "Poms",
           "price": 1.5,
           "isAvailable": true,
-          "image": "/images/products/poms.webp"
+          "image": ""
         },
         {
           "id": 40,
           "name": "Hawaii",
           "price": 1.5,
           "isAvailable": true,
-          "image": "/images/products/hawaii.webp"
+          "image": ""
         },
         {
           "id": 41,
           "name": "Schweppes",
           "price": 1.5,
           "isAvailable": true,
-          "image": "/images/products/schweppes.webp"
+          "image": ""
         },
         {
           "id": 42,
           "name": "Oasis Tropical",
           "price": 1.5,
           "isAvailable": true,
-          "image": "/images/products/oasis-tropical.webp"
+          "image": ""
         },
         {
           "id": 44,
           "name": "Don Simon",
           "price": 1.5,
           "isAvailable": true,
-          "image": "/images/products/don-simon.webp"
+          "image": ""
         },
         {
           "id": 45,
           "name": "Redbull",
           "price": 2,
           "isAvailable": true,
-          "image": "/images/products/redbull.webp"
+          "image": ""
         },
         {
           "id": 46,
           "name": "Bezoya",
           "price": 1.5,
           "isAvailable": true,
-          "image": "/images/products/bezoya.webp"
+          "image": ""
         },
         {
           "id": 47,
           "name": "Font Vella",
           "price": 1.5,
           "isAvailable": true,
-          "image": "/images/products/font-vella.webp"
+          "image": ""
         },
         {
           "id": 48,
           "name": "Aqua Deus",
           "price": 1.5,
           "isAvailable": true,
-          "image": "/images/products/aqua-deus.webp"
+          "image": ""
         }
       ]
     },
     {
       "id": 10,
       "name": "Suplementos",
-      "image": "/images/categories/suplementos.webp",
+      "image": "",
       "products": [
         {
           "id": 49,
           "name": "Huevo Duro",
           "price": 0.5,
           "isAvailable": true,
-          "image": "/images/products/huevo-duro.webp"
+          "image": ""
         },
         {
           "id": 50,
           "name": "Huevo Frito",
           "price": 0.5,
           "isAvailable": true,
-          "image": "/images/products/huevo-frito.webp"
+          "image": ""
         },
         {
           "id": 51,
           "name": "Lonchas de Queso",
           "price": 0.5,
           "isAvailable": true,
-          "image": "/images/products/lonchas-de-queso.webp"
+          "image": ""
         }
       ]
     },
     {
       "id": 11,
       "name": "Salsas",
-      "image": "/images/categories/salsas.webp",
+      "image": "",
       "products": [
         {
           "id": 53,
           "name": "Salsa Algerian",
           "price": 0.5,
           "isAvailable": true,
-          "image": "/images/products/salsa-algerian.webp"
+          "image": ""
         },
         {
           "id": 54,
           "name": "Salsa Andaluza",
           "price": 0.5,
           "isAvailable": true,
-          "image": "/images/products/salsa-andaluza.webp"
+          "image": ""
         },
         {
           "id": 55,
           "name": "Salsa Barbacoa",
           "price": 0.5,
           "isAvailable": true,
-          "image": "/images/products/salsa-barbacoa.webp"
+          "image": ""
         },
         {
           "id": 56,
           "name": "Salsa Biggie",
           "price": 0.5,
           "isAvailable": true,
-          "image": "/images/products/salsa-biggie.webp"
+          "image": ""
         },
         {
           "id": 57,
           "name": "Salsa Brazil",
           "price": 0.5,
           "isAvailable": true,
-          "image": "/images/products/salsa-brazil.webp"
+          "image": ""
         },
         {
           "id": 58,
           "name": "Salsa Chilli Thai",
           "price": 0.5,
           "isAvailable": true,
-          "image": "/images/products/salsa-chilli-thai.webp"
+          "image": ""
         },
         {
           "id": 59,
           "name": "Salsa Curry",
           "price": 0.5,
           "isAvailable": true,
-          "image": "/images/products/salsa-curry.webp"
+          "image": ""
         },
         {
           "id": 60,
           "name": "Salsa Ketchup",
           "price": 0.5,
           "isAvailable": true,
-          "image": "/images/products/salsa-ketchup.webp"
+          "image": ""
         },
         {
           "id": 61,
           "name": "Salsa Marocaine",
           "price": 0.5,
           "isAvailable": true,
-          "image": "/images/products/salsa-marocaine.webp"
+          "image": ""
         },
         {
           "id": 62,
           "name": "Salsa Mayonesa",
           "price": 0.5,
           "isAvailable": true,
-          "image": "/images/products/salsa-mayonesa.webp"
+          "image": ""
         },
         {
           "id": 63,
           "name": "Salsa Pita Kebab",
           "price": 0.5,
           "isAvailable": true,
-          "image": "/images/products/salsa-pita-kebab.webp"
+          "image": ""
         },
         {
           "id": 64,
           "name": "Salsa Samurai",
           "price": 0.5,
           "isAvailable": true,
-          "image": "/images/products/salsa-samurai.webp"
+          "image": ""
         }
       ]
     }
