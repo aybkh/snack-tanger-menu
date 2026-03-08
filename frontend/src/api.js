@@ -5,7 +5,14 @@ export const getMenu = async () => {
         // Fetch from the static JSON file and append timestamp to avoid cache
         const response = await fetch('./menu.json?t=' + new Date().getTime());
         if (!response.ok) throw new Error('Failed to fetch menu');
-        return await response.json();
+        const data = await response.json();
+
+        // Manejar ambos casos: root array "[]" o esquema objeto "{ categories: [] }"
+        if (Array.isArray(data)) return data;
+        if (data && Array.isArray(data.categories)) return data.categories;
+
+        console.warn("Invalid data format received from menu.json");
+        return [];
     } catch (error) {
         console.error("Error loading menu:", error);
         return [];

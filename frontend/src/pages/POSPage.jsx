@@ -133,34 +133,42 @@ const POSPage = () => {
             />
 
             <main className="product-area" ref={mainContainerRef}>
-                {categories.map((category) => (
-                    <section key={category.id} id={`category-${category.id}`} className="mb-8 p-4">
-                        {/* Sticky Header */}
-                        <div className="sticky top-0 bg-[var(--bg-base)]/95 backdrop-blur-md z-20 py-4 mb-8 text-center border-y-4 border-[#F1C40F] shadow-lg">
-                            <h2 className="font-black font-black-ops tracking-widest m-0 uppercase" style={{ fontSize: '1.8rem', color: '#F1C40F', textShadow: '4px 4px 0px #000' }}>
-                                | {getCategoryName(category)}
-                            </h2>
-                        </div>
+                {categories.length === 0 ? (
+                    <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', minHeight: '50vh', padding: '20px', textAlign: 'center' }}>
+                        <div style={{ fontSize: '60px', marginBottom: '20px' }}>🚧</div>
+                        <h2 className="font-black-ops" style={{ color: '#F1C40F', fontSize: '2rem', marginBottom: '10px' }}>ESTAMOS ACTUALIZANDO NUESTRO MENÚ</h2>
+                        <p style={{ color: '#ecf0f1', fontSize: '1.2rem', maxWidth: '500px' }}>El catálogo se está sincronizando en estos momentos. Por favor, vuelve a intentarlo en unos minutos.</p>
+                    </div>
+                ) : (
+                    categories.map((category) => (
+                        <section key={category.id} id={`category-${category.id}`} className="mb-8 p-4">
+                            {/* Sticky Header */}
+                            <div className="sticky top-0 bg-[var(--bg-base)]/95 backdrop-blur-md z-20 py-4 mb-8 text-center border-y-4 border-[#F1C40F] shadow-lg">
+                                <h2 className="font-black font-black-ops tracking-widest m-0 uppercase" style={{ fontSize: '1.8rem', color: '#F1C40F', textShadow: '4px 4px 0px #000' }}>
+                                    | {getCategoryName(category)}
+                                </h2>
+                            </div>
 
-                        {/* Products Grid */}
-                        <div className="product-grid">
-                            {category.products.length === 0 ? (
-                                <div className="col-span-full text-center text-white/50 italic py-10">
-                                    {t('empty_category')}
-                                </div>
-                            ) : (
-                                category.products.map((originalProd, index) => (
-                                    <ProductCard
-                                        key={originalProd.id || `${category.id}-${index}`}
-                                        originalProd={originalProd}
-                                        category={category}
-                                        onClick={() => handleProductClick(originalProd, category)}
-                                    />
-                                ))
-                            )}
-                        </div>
-                    </section>
-                ))}
+                            {/* Products Grid */}
+                            <div className="product-grid">
+                                {category.products.length === 0 ? (
+                                    <div className="col-span-full text-center text-white/50 italic py-10">
+                                        {t('empty_category')}
+                                    </div>
+                                ) : (
+                                    category.products.map((originalProd, index) => (
+                                        <div key={originalProd.id || `${category.id}-${index}`}>
+                                            <ProductCard
+                                                originalProd={originalProd}
+                                                category={category}
+                                                onClick={() => handleProductClick(originalProd, category)}
+                                            />
+                                        </div>
+                                    ))
+                                )}
+                            </div>
+                        </section>
+                    )))}
 
                 {/* Footer Spacer */}
                 <div style={{
@@ -178,7 +186,7 @@ const POSPage = () => {
                 category={modalData.category}
                 onScrollToSauces={handleScrollToSauces}
             />
-        </div>
+        </div >
     );
 };
 
