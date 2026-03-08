@@ -76,7 +76,7 @@ const ProductModal = ({ isOpen, onClose, originalProduct, category, onScrollToSa
                 )}
 
                 {/* Variants (Sizes) */}
-                {currentProduct.variants.length > 0 && (
+                {currentProduct.variants?.length > 0 && (
                     <div style={{ marginBottom: '25px' }}>
                         <span className="section-title">{t('available_sizes')}</span>
                         <div className="selection-grid" style={{ display: 'flex', gap: '10px', flexWrap: 'wrap' }}>
@@ -91,7 +91,7 @@ const ProductModal = ({ isOpen, onClose, originalProduct, category, onScrollToSa
                 )}
 
                 {/* Meats Logic */}
-                {((category?.name === "Tacos 303") || (category?.name === "Bocadillos Tanger" && originalProduct.name.includes("Mixto"))) && (
+                {((category?.name === "Tacos 303") || (category?.name === "Bocadillos Tanger" && originalProduct.name?.includes("Mixto"))) && (
                     <div style={{ marginBottom: '25px' }}>
                         <span className="section-title">{t('meats_label')}</span>
                         <div className="selection-grid" style={{ display: 'flex', flexWrap: 'wrap', gap: '8px' }}>
