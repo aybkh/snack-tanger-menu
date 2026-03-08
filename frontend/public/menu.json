@@ -25,6 +25,13 @@
           "price": 7,
           "isAvailable": true,
           "image": "/images/products/taco-l.webp"
+        },
+        {
+          "id": 4,
+          "name": "Taco XL",
+          "price": 8,
+          "isAvailable": true,
+          "image": "/images/products/taco-xl.webp"
         }
       ]
     },
