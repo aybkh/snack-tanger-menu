@@ -33,16 +33,7 @@ export const LanguageProvider = ({ children }) => {
     // Helper to translate product properties overlaying them on top of original
     const getTranslatedProduct = (product) => {
         if (!product) return null;
-        let overrides = resources[language]?.products?.[product.name];
-
-        if (!overrides && resources[language]?.products) {
-            // Sort keys by length descending so we match the most specific key first
-            const possibleKeys = Object.keys(resources[language].products).sort((a, b) => b.length - a.length);
-            const matchedKey = possibleKeys.find(k => k.length >= 4 && product.name.includes(k));
-            if (matchedKey) {
-                overrides = resources[language].products[matchedKey];
-            }
-        }
+        const overrides = resources[language]?.products?.[product.name];
 
         const translated = { ...product };
 
