@@ -68,10 +68,10 @@ const ProductModal = ({ isOpen, onClose, originalProduct, category, onScrollToSa
                 {currentProduct.description && (
                     <div style={{
                         marginBottom: '20px', color: '#555', fontSize: '0.95rem',
-                        lineHeight: '1.5', fontFamily: 'Montserrat, sans-serif', fontStyle: 'italic',
+                        lineHeight: '1.5', fontFamily: 'Montserrat, sans-serif',
                         padding: '10px', background: 'rgba(0,0,0,0.02)', borderRadius: '8px', borderLeft: '3px solid var(--secondary)'
                     }}>
-                        {currentProduct.description}
+                        <i>{currentProduct.description}</i>
                     </div>
                 )}
 
