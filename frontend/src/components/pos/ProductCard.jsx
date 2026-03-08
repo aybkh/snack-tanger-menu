@@ -74,7 +74,7 @@ const ProductCard = ({ originalProd, category, onClick }) => {
             <div className="product-info">
                 <h3 className="product-name">{prod.name}</h3>
                 <div className="product-price">
-                    {prod.variants && prod.variants.length > 0
+                    {(prod.variants || []).length > 0
                         ? `${Math.min(...prod.variants.map(v => v.price))}€`
                         : `${(prod.price || prod.base_price || 0).toFixed(2)}€`}
                 </div>
