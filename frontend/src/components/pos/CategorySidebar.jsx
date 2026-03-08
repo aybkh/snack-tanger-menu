@@ -39,20 +39,28 @@ const CategorySidebar = ({ categories, selectedCategory, onSelectCategory, isMob
                     return (
                         <div key={cat.id} className={`cat-btn ${selectedCategory?.id === cat.id ? 'active' : ''}`}
                             onClick={() => onSelectCategory(cat)}
-                            style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', padding: '10px 5px', gap: '5px' }}>
+                            style={{ position: 'relative', display: 'flex', alignItems: 'center', justifyContent: 'center', padding: '5px', height: '90px' }}>
 
-                            <img src={getCategoryIcon(cat.name)} alt={cat.name} className="cat-img-svg"
-                                style={{ width: '40px', height: '40px', objectFit: 'contain' }}
+                            <img src={getCategoryIcon(cat.name)} alt="" className="cat-img-svg"
+                                style={{ width: '100%', height: '100%', objectFit: 'contain', opacity: '0.9' }}
                                 onError={(e) => { e.target.src = '/categories/default.svg'; }} />
 
                             <span className="cat-text-dynamic" style={{
-                                fontSize: '0.65rem',
-                                fontWeight: 'bold',
+                                position: 'absolute',
+                                top: '50%',
+                                left: '50%',
+                                transform: 'translate(-50%, -50%)',
+                                width: '95%',
+                                fontSize: '0.75rem',
+                                fontWeight: '900',
+                                color: '#ffffff',
                                 textAlign: 'center',
                                 textTransform: 'uppercase',
-                                lineHeight: '1.1',
+                                lineHeight: '1.2',
                                 wordBreak: 'break-word',
-                                hyphens: 'auto'
+                                hyphens: 'auto',
+                                textShadow: '2px 2px 4px rgba(0,0,0,0.9), 0px 0px 4px rgba(0,0,0,0.9), -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000',
+                                zIndex: 10
                             }}>
                                 {getCategoryName(cat)}
                             </span>
