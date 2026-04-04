@@ -1,14 +1,16 @@
 
 import React, { useState, useRef, useEffect } from 'react';
 import { ChevronDown } from 'lucide-react';
+import '../index.css';
 
 const LANGUAGES = [
-    { code: 'es', label: 'Español', flag: '🇪🇸' },
-    { code: 'fr', label: 'Français', flag: '🇫🇷' },
-    { code: 'en', label: 'English', flag: '🇬🇧' },
-    { code: 'ar', label: 'العربية', flag: '🇲🇦' },
-    { code: 'de', label: 'Deutsch', flag: '🇩🇪' },
-    { code: 'nl', label: 'Nederlands', flag: '🇳🇱' },
+    { code: 'es', label: 'Castellano', flag: '/icons/es.svg' },
+    { code: 'ca', label: 'Català', flag: '/icons/ca.svg' },
+    { code: 'fr', label: 'Français', flag: '/icons/fr.svg' },
+    { code: 'en', label: 'English', flag: '/icons/en.svg' },
+    { code: 'ar', label: 'العربية', flag: '/icons/ar.svg' },
+    { code: 'de', label: 'Deutsch', flag: '/icons/de.svg' },
+    { code: 'nl', label: 'Nederlands', flag: '/icons/nl.svg' },
 ];
 
 const LanguageSelector = ({ currentLang, onLanguageChange, isWelcomeScreen = false }) => {
@@ -38,7 +40,7 @@ const LanguageSelector = ({ currentLang, onLanguageChange, isWelcomeScreen = fal
                 onClick={() => setIsOpen(!isOpen)}
                 aria-label="Select Language"
             >
-                <span className="current-flag">{current.flag}</span>
+                <img src={current.flag} alt={current.label} className="current-flag-img" />
                 <span className="current-code user-select-none">{current.code.toUpperCase()}</span>
                 <ChevronDown size={16} className={`chevron-icon ${isOpen ? 'rotate' : ''}`} />
             </button>
@@ -54,7 +56,7 @@ const LanguageSelector = ({ currentLang, onLanguageChange, isWelcomeScreen = fal
                                 setIsOpen(false);
                             }}
                         >
-                            <span className="option-flag">{lang.flag}</span>
+                            <img src={lang.flag} alt={lang.label} className="option-flag-img" />
                             <span className="option-label">{lang.label}</span>
                             {currentLang === lang.code && <div className="active-dot"></div>}
                         </button>
