@@ -8,8 +8,8 @@ const CategorySidebar = ({ categories, selectedCategory, onSelectCategory, isMob
 
     return (
         <aside className={`category-sidebar ${isMobileVisible ? 'mobile-visible' : ''}`} style={{ display: 'flex', flexDirection: 'column' }}>
-            <div style={{ flex: 1, overflowY: 'auto' }}>
-                <div className="brand-title desktop-only">
+            <div style={{ flex: 1, overflowY: 'auto', display: 'flex', flexDirection: 'column', gap: '15px', paddingBottom: '30px' }}>
+                <div className="brand-title">
                     <img src={theme.brand.logoFallback} alt={theme.restaurantName} className="brand-logo"
                         onError={(e) => { e.target.style.display = 'none'; e.target.nextSibling.style.display = 'block'; }} />
                 </div>
@@ -19,51 +19,27 @@ const CategorySidebar = ({ categories, selectedCategory, onSelectCategory, isMob
 
                     const getCategoryIcon = (name) => {
                         const lowerName = (name || "").toLowerCase();
-                        if (lowerName.includes('taco')) return '/categories/taco.svg';
-                        if (lowerName.includes('burger') || lowerName.includes('hamburguesa')) return '/categories/burger.svg';
-                        if (lowerName.includes('pizza')) return '/categories/pizza.svg';
-                        if (lowerName.includes('bocadillo') || lowerName.includes('sandwich')) return '/categories/sandwitch.svg';
-                        if (lowerName.includes('café') || lowerName.includes('cafe')) return '/categories/coffee.svg';
-                        if (lowerName.includes('postre') || lowerName.includes('tarta') || lowerName.includes('helado')) return '/categories/dessert.svg';
-                        if (lowerName.includes('refresco') || lowerName.includes('agua') || lowerName.includes('bebida')) return '/categories/drink.svg';
-                        if (lowerName.includes('plato')) return '/categories/plato.svg';
-                        if (lowerName.includes('ensalada')) return '/categories/salad.svg';
-                        if (lowerName.includes('salsa')) return '/categories/salsas.svg';
-                        if (lowerName.includes('batido')) return '/categories/shake.svg';
-                        if (lowerName.includes('tajin')) return '/categories/tajin.svg';
-                        if (lowerName.includes('wrap')) return '/categories/wraps.svg';
-                        if (lowerName.includes('suplemento') || lowerName.includes('extra')) return '/categories/suplementos.svg';
-                        return '/categories/default.svg';
+                        if (lowerName.includes('taco')) return '/categories/taco.webp';
+                        if (lowerName.includes('burger') || lowerName.includes('hamburguesa')) return '/categories/burger.webp';
+                        if (lowerName.includes('pizza')) return '/categories/pizza.webp';
+                        if (lowerName.includes('postre') || lowerName.includes('batido')) return '/categories/postres-y-batidos.webp';
+                        if (lowerName.includes('refresco') || lowerName.includes('agua') || lowerName.includes('bebida')) return '/categories/bebidas.webp';
+                        if (lowerName.includes('plato')) return '/categories/platos.webp';
+                        if (lowerName.includes('ensalada')) return '/categories/ensaladas.webp';
+                        if (lowerName.includes('salsa')) return '/categories/salsas.webp';
+                        if (lowerName.includes('tajin')) return '/categories/tajin.webp';
+                        if (lowerName.includes('suplemento') || lowerName.includes('extra')) return '/categories/suplementos.webp';
+                        return '/categories/platos.webp';
                     };
 
                     return (
                         <div key={cat.id} className={`cat-btn ${selectedCategory?.id === cat.id ? 'active' : ''}`}
                             onClick={() => onSelectCategory(cat)}
-                            style={{ position: 'relative', display: 'flex', alignItems: 'center', justifyContent: 'center', padding: '5px', height: '90px' }}>
+                            style={{ position: 'relative', display: 'flex', alignItems: 'center', justifyContent: 'center', padding: '0', height: '80px', borderRadius: '8px', overflow: 'hidden' }}>
 
-                            <img src={getCategoryIcon(cat.name)} alt="" className="cat-img-svg"
-                                style={{ width: '100%', height: '100%', objectFit: 'contain', opacity: '0.9' }}
-                                onError={(e) => { e.target.src = '/categories/default.svg'; }} />
-
-                            <span className="cat-text-dynamic" style={{
-                                position: 'absolute',
-                                top: '50%',
-                                left: '50%',
-                                transform: 'translate(-50%, -50%)',
-                                width: '95%',
-                                fontSize: '1rem',
-                                fontWeight: '900',
-                                color: '#ffffff',
-                                textAlign: 'center',
-                                textTransform: 'uppercase',
-                                lineHeight: '1.2',
-                                wordBreak: 'break-word',
-                                hyphens: 'auto',
-                                textShadow: '2px 2px 4px rgba(0,0,0,0.9), 0px 0px 4px rgba(0,0,0,0.9), -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000',
-                                zIndex: 10
-                            }}>
-                                {getCategoryName(cat)}
-                            </span>
+                            <img src={cat.image || getCategoryIcon(cat.name)} alt={getCategoryName(cat)} className="cat-img-webp"
+                                style={{ width: '100%', height: '100%', objectFit: 'contain', transform: 'scale(1.15)' }}
+                                onError={(e) => { e.target.src = '/categories/platos.webp'; }} />
                         </div>
                     );
                 })}
