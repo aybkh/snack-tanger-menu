@@ -19,6 +19,17 @@ export const getMenu = async () => {
     }
 };
 
+export const getSiteConfig = async () => {
+    try {
+        const response = await fetch('./site_config.json?t=' + new Date().getTime());
+        if (!response.ok) throw new Error('Failed to fetch site_config');
+        return await response.json();
+    } catch (error) {
+        console.error("Error loading site config:", error);
+        return null;
+    }
+};
+
 // --- MOCKED FUNCTIONS (Read-Only Mode) ---
 
 export const createOrder = async (orderData) => {
