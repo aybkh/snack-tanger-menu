@@ -1,0 +1,101 @@
+{
+  "hero": [
+    {
+      "url": "/hero/banner1.webp"
+    },
+    {
+      "url": "/hero/banner2.webp"
+    },
+    {
+      "url": "/hero/banner3.webp"
+    },
+    {
+      "url": "/hero/banner4.webp"
+    },
+    {
+      "url": "/hero/banner.webp"
+    }
+  ],
+  "social_videos": [
+    {
+      "url": "/videos/video_plato_calamares_tajin_gambas.mp4",
+      "title": "DELICIAS DEL MAR 🍤"
+    },
+    {
+      "url": "/videos/video_reydelacomida.mp4",
+      "title": "EL REY DE LA COMIDA 🍔"
+    },
+    {
+      "url": "/videos/snack_tour.mp4",
+      "title": "TOUR SNACK TANGER 🍴"
+    }
+  ],
+  "reviews": [
+    {
+      "name": "Ahmed Belhaj",
+      "text": "El mejor sitio de comida marroquí de la zona. Los tajines están espectaculares y el trato es inmejorable.",
+      "stars": 5
+    },
+    {
+      "name": "Lucía García",
+      "text": "Comida casera, raciones generosas y muy buen precio. Sin duda volveremos.",
+      "stars": 5
+    },
+    {
+      "name": "Omar K.",
+      "text": "Sabor auténtico. Las gambas al pil-pil son mis favoritas. Muy recomendado.",
+      "stars": 5
+    }
+  ],
+  "schedule": [
+    {
+      "name": "Lunes",
+      "open": 12,
+      "close": 24,
+      "label": "12:00 - 00:00",
+      "closed": false
+    },
+    {
+      "name": "Martes",
+      "open": 12,
+      "close": 24,
+      "label": "12:00 - 00:00",
+      "closed": true
+    },
+    {
+      "name": "Miércoles",
+      "open": 12,
+      "close": 24,
+      "label": "12:00 - 00:00",
+      "closed": false
+    },
+    {
+      "name": "Jueves",
+      "open": 12,
+      "close": 24,
+      "label": "12:00 - 00:00",
+      "closed": false
+    },
+    {
+      "name": "Viernes",
+      "open": 12,
+      "close": 24,
+      "label": "12:00 - 00:00",
+      "closed": false
+    },
+    {
+      "name": "Sábado",
+      "open": 12,
+      "close": 24,
+      "label": "12:00 - 00:00",
+      "closed": false
+    },
+    {
+      "name": "Domingo",
+      "open": 12,
+      "close": 24,
+      "label": "12:00 - 00:00",
+      "closed": false
+    }
+  ]
+}
