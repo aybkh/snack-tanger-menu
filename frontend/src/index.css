@@ -3,10 +3,10 @@
 
 :root {
   /* Palette */
-  --bg-base: #265b36;
-  /* Chalkboard Green */
-  --primary: #D65A65;
-  /* Coral Red - Action/Prices */
+  --bg-base: #142818;
+  /* Deep Forest Green */
+  --primary: #06C167;
+  /* Vibrant Moroccan Green - Action/Prices */
   --secondary: #F1C40F;
   /* Golden Yellow - Branding */
   --surface: #FDFBF7;
@@ -38,14 +38,12 @@ body {
   -webkit-font-smoothing: antialiased;
 
   /* Background Pattern & Texture Overlay */
-  /* Using a very dark overlay to ensure the texture is subtle and not distracting */
-  background-image: linear-gradient(rgba(30, 63, 40, 0.9), rgba(30, 63, 40, 0.9)), url('/images/zellige-bg.webp');
+  background-image: linear-gradient(rgba(20, 40, 24, 0.93), rgba(20, 40, 24, 0.93)), url('/images/zellige-bg.webp');
   background-repeat: repeat;
-  background-size: 500px;
+  background-size: 300px;
   background-attachment: fixed;
   background-position: center;
-  /* Blend mode helps integrate the texture into the green color */
-  background-blend-mode: overlay;
+  background-blend-mode: multiply;
 }
 
 /* Stencil Headers */
@@ -73,7 +71,7 @@ h4,
 /* --- Sidebar Categories (Tabs Style) --- */
 /* --- Sidebar Categories (Desktop Cards Style) --- */
 .category-sidebar {
-  width: 270px;
+  width: 250px;
   /* Narrower sidebar for tighter fit */
   background: rgba(20, 40, 24, 0.95);
   backdrop-filter: blur(10px);
@@ -99,8 +97,8 @@ h4,
 }
 
 .cat-btn {
-  background: rgba(0, 0, 0, 0.5);
-  border: 2px solid rgba(255, 255, 255, 0.2);
+  background: transparent;
+  border: 1.5px dashed var(--secondary);
   color: #fff;
   padding: 0;
   /* Zero padding for max size */
@@ -136,8 +134,8 @@ h4,
 .cat-btn.active {
   background: var(--secondary);
   color: var(--text-main);
-  border-color: var(--secondary);
-  box-shadow: 0 0 15px rgba(241, 196, 15, 0.6);
+  border: 1px solid var(--secondary);
+  box-shadow: none;
   transform: scale(1.02);
 }
 
@@ -164,6 +162,11 @@ h4,
 
 /* --- Main Product Grid --- */
 .product-area {
+  background-image: linear-gradient(rgba(20, 40, 24, 0.85), rgba(20, 40, 24, 0.85)), url(/images/zellige-bg.webp);
+  background-size: 150px;
+  background-repeat: repeat;
+  background-position: center;
+  background-attachment: fixed;
   flex: 1;
   padding: 30px;
   overflow-y: auto;
@@ -179,75 +182,7 @@ h4,
   padding-bottom: 40px;
 }
 
-/* --- Product Cards (Cream Surface) --- */
-.product-card {
-  background: var(--surface);
-  border-radius: 12px;
-  overflow: hidden;
-  box-shadow: var(--shadow-card);
-  transition: all 0.2s ease;
-  cursor: pointer;
-  position: relative;
-  border: 1px solid rgba(214, 90, 101, 0.2);
-  display: flex;
-  flex-direction: column;
-}
 
-.product-card:hover {
-  transform: translateY(-5px);
-  box-shadow: var(--shadow-float);
-  border-color: var(--primary);
-}
-
-.product-image-container {
-  height: 140px;
-  background: #fff;
-  /* White background for cleaner look with contain */
-  overflow: hidden;
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.product-image {
-  width: 100%;
-  height: 100%;
-  object-fit: contain;
-  /* Ensures the whole image fits in the box */
-  transition: transform 0.5s ease;
-  padding: 5px;
-  /* Slight padding */
-}
-
-.product-card:hover .product-image {
-  transform: scale(1.1);
-}
-
-.product-info {
-  padding: 15px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  flex: 1;
-  gap: 8px;
-}
-
-.product-name {
-  color: var(--text-main);
-  font-family: 'Black Ops One', cursive;
-  /* Stencil */
-  font-size: 1.1rem;
-  line-height: 1.2;
-}
-
-.product-price {
-  color: var(--primary);
-  font-weight: bold;
-  font-size: 1.3rem;
-  align-self: flex-end;
-  font-family: 'Black Ops One', cursive;
-}
 
 /* --- Order Panel (Ticket Style) --- */
 .order-panel {
@@ -357,14 +292,14 @@ h4,
   font-family: 'Black Ops One', cursive;
   letter-spacing: 1px;
   transition: all 0.2s;
-  box-shadow: 0 4px 6px rgba(192, 57, 43, 0.4);
+  box-shadow: 0 4px 6px rgba(6, 193, 103, 0.3);
   border-radius: 4px;
 }
 
 .btn-primary:hover {
-  background: #b94a53;
+  background: #05a85a;
   transform: translateY(-2px);
-  box-shadow: 0 6px 10px rgba(192, 57, 43, 0.5);
+  box-shadow: 0 6px 10px rgba(6, 193, 103, 0.4);
 }
 
 .btn-primary:active {
@@ -386,15 +321,15 @@ h4,
   /* Stencil Font */
   letter-spacing: 1.5px;
   transition: all 0.2s;
-  box-shadow: 0 4px 10px rgba(192, 57, 43, 0.4);
+  box-shadow: 0 4px 10px rgba(6, 193, 103, 0.3);
   margin-top: 10px;
   border-radius: 4px;
 }
 
 .btn-checkout:hover {
-  background: #b94a53;
+  background: #05a85a;
   transform: translateY(-2px);
-  box-shadow: 0 6px 15px rgba(192, 57, 43, 0.6);
+  box-shadow: 0 6px 15px rgba(6, 193, 103, 0.5);
 }
 
 .btn-checkout:active {
@@ -555,7 +490,7 @@ h4,
     top: 80px;
     /* Below mobile header */
     left: 0;
-    width: 250px;
+    width: 200px;
     height: calc(100vh - 80px);
     /* Fallback */
     height: calc(100dvh - 80px);
@@ -567,7 +502,6 @@ h4,
     overflow-x: hidden;
     white-space: normal;
     padding: 20px 10px;
-    padding-bottom: 80px;
     /* EXTRA PADDING TO FIX SCROLL ISSUE */
     border-right: 2px solid rgba(255, 255, 255, 0.1);
     transform: translateX(-100%);
@@ -628,24 +562,18 @@ h4,
   }
 
   .brand-title {
-    font-size: 1.2rem;
-    margin-bottom: 0;
-    margin-right: 15px;
-    border-bottom: none;
-    padding-bottom: 0;
-    padding-right: 15px;
-    border-right: 1px dashed rgba(255, 255, 255, 0.2);
-    min-width: max-content;
-    display: flex;
-    /* Flex layout for logo */
-    align-items: center;
+    display: block;
+    text-align: center;
+    margin-bottom: 25px;
+    padding-bottom: 15px;
+    border-bottom: 2px dashed rgba(255, 255, 255, 0.2);
+    width: 100%;
   }
 
   .brand-logo {
-    max-height: 80px;
-    /* Smaller on mobile */
-    margin: 0;
-    /* Remove auto margin */
+    max-height: 100px;
+    margin: 0 auto;
+    display: block;
     width: auto;
   }
 
@@ -749,7 +677,7 @@ h4,
     color: white;
     padding: 15px 25px;
     border-radius: 50px;
-    box-shadow: 0 4px 15px rgba(214, 90, 101, 0.6);
+    box-shadow: 0 4px 15px rgba(6, 193, 103, 0.5);
     z-index: 1000;
     align-items: center;
     justify-content: center;
@@ -895,8 +823,8 @@ h4,
 /* Mobile (Max Width 600px) */
 @media (max-width: 600px) {
   .brand-title {
-    display: none;
-    /* Hide expensive title on small screens to save space */
+    display: block;
+    margin-bottom: 20px;
   }
 
   .product-area {
@@ -1017,7 +945,7 @@ h4,
   /* Green tint like other screens */
   background-image: linear-gradient(rgba(20, 40, 24, 0.95), rgba(20, 40, 24, 0.95)), url('/images/zellige-bg.webp');
   background-repeat: repeat;
-  background-size: 500px;
+  background-size: 200px;
   background-position: center;
   display: flex;
   flex-direction: column;
@@ -1336,6 +1264,23 @@ h4,
   transform: rotate(180deg);
 }
 
+.current-flag-img {
+  width: 22px;
+  height: 15px;
+  object-fit: cover;
+  border-radius: 2px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.2);
+  display: inline-block;
+}
+
+.option-flag-img {
+  width: 20px;
+  height: 14px;
+  object-fit: cover;
+  border-radius: 2px;
+  display: inline-block;
+}
+
 .lang-dropdown-menu {
   position: absolute;
   top: calc(100% + 8px);
@@ -1354,8 +1299,8 @@ h4,
 
 /* Welcome screen specifics */
 .lang-selector-container.welcome-mode .lang-dropdown-menu {
-  right: auto;
-  left: 0;
+  right: 0;
+  left: auto;
 }
 
 .lang-option {
@@ -1418,24 +1363,22 @@ h4,
   }
 
   .lang-dropdown-menu {
-    position: fixed;
-    /* Make it more robust on mobile */
-    top: auto;
-    bottom: 0;
-    left: 0;
+    position: absolute;
+    top: calc(100% + 5px);
+    bottom: auto;
     right: 0;
-    width: 100%;
-    border-radius: 20px 20px 0 0;
-    padding: 20px;
-    padding-bottom: env(safe-area-inset-bottom, 20px);
-    transform: translateY(0);
-    animation: slideUp 0.3s cubic-bezier(0.2, 0.8, 0.2, 1);
-    border: none;
+    left: auto;
+    width: 200px;
+    border-radius: 12px;
+    padding: 8px;
+    border: 1px solid rgba(0,0,0,0.1);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+    transform: none;
+    animation: fadeIn 0.2s cubic-bezier(0.2, 0.8, 0.2, 1);
   }
 
   .lang-selector-container {
-    position: static;
-    /* Allows fixed positioning relative to viewport */
+    position: relative;
   }
 
   @keyframes slideUp {
