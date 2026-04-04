@@ -1,58 +1,61 @@
-import React, { useState } from 'react';
+
+import React, { useState, useEffect } from 'react';
 import Navbar from '../components/layout/Navbar';
-import FeaturedMenu from '../components/landing/FeaturedMenu'; // NEW IMPORT
+import FeaturedMenu from '../components/landing/FeaturedMenu';
 import ReviewsSection from '../components/landing/ReviewsSection';
 import HoursCard from '../components/landing/HoursCard';
+import DeliverySection from '../components/landing/DeliverySection';
 import { Link } from 'react-router-dom';
 import { MapPin, Phone, Instagram, ChevronLeft, ChevronRight } from 'lucide-react';
 import './LandingPage.css';
 import { useTenant } from '../context/TenantContext';
-
-const videos = [
-    "/videos/snack_tour.mp4",
-    "/videos/video_reydelacomida.mp4",
-    "/videos/video_plato_calamares_tajin_gambas.mp4"
-];
-
-const videoTitles = [
-    "TOUR DEL LOCAL 📍",
-    "EL REY DE LA COMIDA 👑",
-    "PLATOS DELICIOSOS 🍤"
-];
-
-// Updated Banner Images with Absolute Paths
-const bannerImages = [
-    "/hero/banner3.webp",
-    "/hero/banner1.webp",
-    "/hero/banner4.webp",
-    "/hero/banner.webp",
-    "/hero/banner2.webp"
-];
+import { useLanguage } from '../context/LanguageContext';
+import { useSiteConfig } from '../context/SiteConfigContext';
 
 const LandingPage = () => {
     const { theme } = useTenant();
+    const { t } = useLanguage();
+    const { siteConfig, isLoading: configLoading } = useSiteConfig();
     const [currentVideoIndex, setCurrentVideoIndex] = useState(0);
     const [currentBanner, setCurrentBanner] = useState(0);
 
-    // Auto-slide Banner Logic (3s interval)
-    React.useEffect(() => {
-        const interval = setInterval(() => {
-            setCurrentBanner((prev) => (prev + 1) % bannerImages.length);
-        }, 3000);
-        return () => clearInterval(interval);
-    }, []);
+    const heroMedia = siteConfig?.hero || [];
+    const socialVideos = siteConfig?.social_videos || [];
 
-    const handleVideoEnd = () => {
-        nextVideo();
+    // Auto-slide Hero Media Logic (4s interval for images, videos handle their own onEnded)
+    useEffect(() => {
+        if (heroMedia.length === 0) return;
+        const currentItem = heroMedia[currentBanner];
+        // If it's an image, slide after 4 seconds
+        if (!currentItem?.url.endsWith('.mp4')) {
+            const timeout = setTimeout(() => {
+                nextHeroMedia();
+            }, 4000);
+            return () => clearTimeout(timeout);
+        }
+    }, [currentBanner, heroMedia]);
+
+    const handleHeroVideoEnd = () => {
+        nextHeroMedia();
     };
 
-    const nextVideo = () => {
-        setCurrentVideoIndex((prev) => (prev + 1) % videos.length);
+    const nextHeroMedia = () => {
+        setCurrentBanner((prev) => (prev + 1) % heroMedia.length);
     };
 
-    const prevVideo = () => {
-        setCurrentVideoIndex((prev) => (prev - 1 + videos.length) % videos.length);
+    const prevHeroMedia = () => {
+        setCurrentBanner((prev) => (prev - 1 + heroMedia.length) % heroMedia.length);
     };
+
+    const nextSocialVideo = () => {
+        setCurrentVideoIndex((prev) => (prev + 1) % socialVideos.length);
+    };
+
+    const prevSocialVideo = () => {
+        setCurrentVideoIndex((prev) => (prev - 1 + socialVideos.length) % socialVideos.length);
+    };
+
+    if (configLoading) return null;
 
     return (
         <div className="landing-page">
@@ -62,169 +65,124 @@ const LandingPage = () => {
                 <div className="hero-bg"></div>
 
                 <div className="hero-content landing-grid">
-                    {/* Left: Text & Image Slider - NOW CENTERED ON PC TOO */}
+                    {/* Left: Text & Image Slider */}
                     <div className="text-center">
 
-                        <div className="hero-badge">{theme.brand.heroBadge}</div>
 
                         <h1 className="hero-title">{theme.restaurantName.toUpperCase()}<br /><span>{theme.restaurantSuffix}</span></h1>
 
-                        {/* HERO IMAGE SLIDER (Class-based Responsive Alignment) */}
                         <div className="hero-slider-container">
-                            {bannerImages.map((src, index) => (
-                                <img
-                                    key={index}
-                                    src={src}
-                                    alt="Hero Slide"
-                                    style={{
-                                        width: '100%',
-                                        height: '100%',
-                                        objectFit: 'cover',
-                                        position: 'absolute',
-                                        top: 0,
-                                        left: 0,
-                                        opacity: currentBanner === index ? 1 : 0,
-                                        transition: 'opacity 1s ease-in-out' // Clean Fade
-                                    }}
-                                />
-                            ))}
+                            {heroMedia.length > 0 ? (
+                                <>
+                                    {heroMedia.map((item, index) => (
+                                        item.url.endsWith('.mp4') ? (
+                                            <video
+                                                key={index}
+                                                src={item.url}
+                                                autoPlay
+                                                muted
+                                                playsInline
+                                                onEnded={handleHeroVideoEnd}
+                                                className={`hero-slide ${currentBanner === index ? 'active' : ''}`}
+                                            />
+                                        ) : (
+                                            <img
+                                                key={index}
+                                                src={item.url}
+                                                alt="Hero Slide"
+                                                className={`hero-slide ${currentBanner === index ? 'active' : ''}`}
+                                            />
+                                        )
+                                    ))}
+                                    
+                                    {/* Navigation Arrows */}
+                                    <button onClick={(e) => { e.stopPropagation(); prevHeroMedia(); }} className="hero-arrow-btn hero-arrow-prev" aria-label={t('hero_prev')}>
+                                        <ChevronLeft size={24} />
+                                    </button>
+                                    <button onClick={(e) => { e.stopPropagation(); nextHeroMedia(); }} className="hero-arrow-btn hero-arrow-next" aria-label={t('hero_next')}>
+                                        <ChevronRight size={24} />
+                                    </button>
+                                </>
+                            ) : (
+                                <div className="flex-center w-full h-full bg-black/20">Cargando...</div>
+                            )}
                         </div>
 
                         <p className="hero-subtitle">
-                            {theme.seo.description}
+                            {t('hero_subtitle')}
                         </p>
 
-                        <div className="hero-buttons" style={{ justifyContent: 'center', marginTop: '20px' }}>
+                        <div className="hero-buttons">
                             <Link to="/menu" style={{ textDecoration: 'none', width: '100%', maxWidth: '350px' }}>
-                                {/* NEW BUTTON STYLE: Hero Badge Style (Outline Gold + Glass) */}
-                                <button className="btn-primary" style={{
-                                    width: '100%',
-                                    padding: '20px 40px',
-                                    fontSize: '1.4rem',
-                                    borderRadius: '50px',
-                                    background: 'rgba(0, 0, 0, 0.3)', // Glass Dark
-                                    backdropFilter: 'blur(4px)',
-                                    color: '#F1C40F', // Gold Text
-                                    border: '2px solid #F1C40F', // Gold Border
-                                    cursor: 'pointer',
-                                    fontFamily: "'Black Ops One', cursive",
-                                    letterSpacing: '2px',
-                                    boxShadow: '0 10px 25px rgba(0,0,0,0.5)',
-                                    transition: 'all 0.3s ease',
-                                    fontWeight: 'bold',
-                                    textTransform: 'uppercase'
-                                }}
-                                    onMouseEnter={(e) => {
-                                        e.currentTarget.style.background = '#F1C40F'; // Fill Gold on Hover
-                                        e.currentTarget.style.color = '#142818'; // Dark Text
-                                        e.currentTarget.style.transform = 'scale(1.05)';
-                                        e.currentTarget.style.boxShadow = '0 0 20px rgba(241, 196, 15, 0.6)';
-                                    }}
-                                    onMouseLeave={(e) => {
-                                        e.currentTarget.style.background = 'rgba(0, 0, 0, 0.3)';
-                                        e.currentTarget.style.color = '#F1C40F';
-                                        e.currentTarget.style.transform = 'scale(1)';
-                                        e.currentTarget.style.boxShadow = '0 10px 25px rgba(0,0,0,0.5)';
-                                    }}
-                                >
-                                    VER CARTA
+                                <button className="hero-main-btn">
+                                    {t('view_menu_btn')}
                                 </button>
                             </Link>
                         </div>
                     </div>
 
-                    {/* Right: Video Player Slide */}
+                    {/* Right: Social Video Player */}
                     <div className="video-card-container">
-                        <div className="video-card" style={{ border: 'none', position: 'relative', borderRadius: '30px' }}>
+                        <div className="video-card">
+                            <div className="video-frame-overlay"></div>
 
-                            {/* FRAME OVERLAY (Reduces bleeding) */}
-                            <div style={{
-                                position: 'absolute', inset: -2,
-                                border: '5px solid #F1C40F',
-                                borderRadius: '30px',
-                                pointerEvents: 'none',
-                                zIndex: 60,
-                                boxShadow: 'inset 0 0 10px rgba(0,0,0,0.8)'
-                            }}></div>
-
-                            {/* Video Container */}
-                            <div style={{ position: 'absolute', top: 0, bottom: 0, left: 0, right: 0, background: '#000', overflow: 'hidden', borderRadius: '26px' }}>
-                                <video
-                                    key={videos[currentVideoIndex]}
-                                    src={videos[currentVideoIndex]}
-                                    autoPlay
-                                    muted
-                                    playsInline
-                                    onEnded={handleVideoEnd}
-                                    style={{ width: '100%', height: '100%', objectFit: 'cover' }}
-                                />
+                            <div className="video-inner-container">
+                                {socialVideos.length > 0 && (
+                                    <video
+                                        key={socialVideos[currentVideoIndex]?.url}
+                                        src={socialVideos[currentVideoIndex]?.url}
+                                        autoPlay
+                                        muted
+                                        playsInline
+                                        onEnded={nextSocialVideo}
+                                    />
+                                )}
                             </div>
 
-                            {/* Gradient Overlay */}
-                            <div style={{ position: 'absolute', bottom: 0, left: 0, right: 0, height: '30%', background: 'linear-gradient(to top, rgba(0,0,0,0.8), transparent)', pointerEvents: 'none', zIndex: 10, borderRadius: '0 0 26px 26px' }}></div>
+                            <div className="video-gradient-overlay"></div>
 
-                            {/* CONTROLS LAYER */}
-                            <div style={{ position: 'absolute', inset: 0, zIndex: 70, pointerEvents: 'none' }}>
-
-                                {/* Left Arrow */}
-                                <button onClick={(e) => { e.stopPropagation(); prevVideo(); }} className="arrow-btn arrow-prev">
+                            <div className="video-controls-layer">
+                                <button onClick={(e) => { e.stopPropagation(); prevSocialVideo(); }} className="arrow-btn arrow-prev">
                                     <ChevronLeft size={24} />
                                 </button>
 
-                                {/* Right Arrow */}
-                                <button onClick={(e) => { e.stopPropagation(); nextVideo(); }} className="arrow-btn arrow-next">
+                                <button onClick={(e) => { e.stopPropagation(); nextSocialVideo(); }} className="arrow-btn arrow-next">
                                     <ChevronRight size={24} />
                                 </button>
 
-                                {/* Title & Dots */}
-                                <div style={{ position: 'absolute', bottom: '20px', left: 0, right: 0, textAlign: 'center', pointerEvents: 'auto' }}>
-
-                                    {/* Title */}
-                                    <p style={{ fontFamily: "'Black Ops One', cursive", fontSize: '1.1rem', color: '#fff', textShadow: '0 2px 4px rgba(0,0,0,0.8)', marginBottom: '10px' }}>
-                                        {videoTitles[currentVideoIndex]}
+                                <div className="video-info-overlay">
+                                    <p className="video-title">
+                                        {socialVideos[currentVideoIndex]?.title}
                                     </p>
 
-                                    {/* Dots Indicator */}
-                                    <div style={{ display: 'flex', justifyContent: 'center', gap: '8px' }}>
-                                        {videos.map((_, idx) => (
+                                    <div className="dots-container">
+                                        {socialVideos.map((_, idx) => (
                                             <button
                                                 key={idx}
                                                 onClick={() => setCurrentVideoIndex(idx)}
-                                                style={{
-                                                    width: '8px', height: '8px', borderRadius: '50%', border: 'none', padding: 0,
-                                                    background: idx === currentVideoIndex ? '#F1C40F' : 'rgba(255,255,255,0.4)',
-                                                    cursor: 'pointer', transition: 'all 0.3s',
-                                                    transform: idx === currentVideoIndex ? 'scale(1.2)' : 'scale(1)'
-                                                }}
+                                                className={`dot ${idx === currentVideoIndex ? 'active' : ''}`}
                                             />
                                         ))}
                                     </div>
                                 </div>
                             </div>
-
                         </div>
                     </div>
                 </div>
             </section>
 
-            {/* FEATURED MENU SECTION (New) */}
             <FeaturedMenu />
 
-            {/* REVIEWS */}
-            <ReviewsSection />
+            <ReviewsSection reviews={siteConfig?.reviews} />
 
-            {/* LOCATION & MAP */}
             <section id="location" className="location-section">
-                <div style={{ maxWidth: '1200px', margin: '0 auto' }}>
-
-                    {/* Main Title H2 */}
-                    <div className="section-head">
-                        <h2>UBICACIÓN</h2>
+                <div className="max-w-[1200px] mx-auto">
+                    <div className="section-head mb-12">
+                        <h2>{t('location_title')}</h2>
+                        <div className="section-divider"></div>
                     </div>
 
-                    {/* LOCATION CONTAINER (Forces Stack Layout on PC) */}
                     <div className="location-stack-container">
-                        {/* MAP (Column 1) */}
                         <div className="map-frame">
                             <iframe
                                 title="Mapa" width="100%" height="100%" frameBorder="0"
@@ -234,51 +192,32 @@ const LandingPage = () => {
                             ></iframe>
 
                             <div className="map-overlay">
-                                <div style={{ background: '#142818', padding: '10px', borderRadius: '50%', color: 'white', display: 'flex' }}>
+                                <div className="map-pin-badge">
                                     <MapPin size={22} />
                                 </div>
                                 <div style={{ flex: 1 }}>
-                                    <p style={{ fontWeight: 'bold', margin: 0, color: 'black' }}>{theme.restaurantName} {theme.restaurantSuffix}</p>
                                     <p style={{ fontSize: '0.85rem', color: '#555', margin: 0 }}>{theme.contact.address}</p>
                                 </div>
-                                <a href={theme.contact.mapsIframe} target="_blank" rel="noreferrer"
-                                    style={{ background: 'var(--secondary)', color: 'var(--text-main)', padding: '8px 12px', borderRadius: '8px', fontWeight: 'bold', textDecoration: 'none', fontSize: '0.8rem', whiteSpace: 'nowrap' }}>
-                                    VER MAPA ➔
+                                <a href={theme.contact.mapsIframe} target="_blank" rel="noreferrer" className="map-view-btn">
+                                    {t('view_map_btn')} ➔
                                 </a>
                             </div>
                         </div>
 
-                        {/* HOURS & DELIVERY (Column 2 -> Now Stacked) */}
                         <div style={{ width: '100%', padding: '20px 0' }}>
-
                             <div className="section-head" style={{ marginBottom: '15px' }}>
-                                <h2>HORARIOS</h2>
+                                <h2>{t('hours_title')}</h2>
                             </div>
-
                             <HoursCard />
-
-                            <div id="delivery" className="section-head" style={{ marginTop: '40px', marginBottom: '15px' }}>
-                                <h2>PEDIR A DOMICILIO</h2>
-                            </div>
-
-                            <div className="delivery-grid" style={{ gridTemplateColumns: '1fr' }}>
-                                {theme.socials.uberEats && (
-                                    <a href={theme.socials.uberEats} target="_blank" rel="noreferrer" style={{ textDecoration: 'none' }}>
-                                        <button className="delivery-btn" style={{ background: '#06C167', width: '100%', height: '100%' }}>
-                                            {theme.socials.uberEatsLabel || 'PEDIR EN UBER EATS'}
-                                        </button>
-                                    </a>
-                                )}
-                            </div>
                         </div>
                     </div>
                 </div>
             </section>
 
-            {/* FOOTER */}
-            <footer id="contact" className="landing-footer">
-                <div style={{ maxWidth: '1200px', margin: '0 auto', display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
+            <DeliverySection />
 
+            <footer id="contact" className="landing-footer">
+                <div className="max-w-[1200px] mx-auto flex flex-col items-center">
                     <div className="social-links">
                         {theme.socials.instagram && <a href={theme.socials.instagram} target="_blank" rel="noreferrer" className="social-btn"><Instagram size={22} /></a>}
                         {theme.socials.tiktok && (
@@ -289,24 +228,26 @@ const LandingPage = () => {
                             </a>
                         )}
                         {theme.contact.phone && (
-                            <a href={`https://wa.me/${theme.contact.phone.replace(/\D/g, '')}`} target="_blank" rel="noreferrer" className="social-btn">
+                            <a href={`https://wa.me/${theme.contact.phone.replace(/[\s+]/g, '')}`} target="_blank" rel="noreferrer" className="social-btn" aria-label="WhatsApp">
                                 <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor">
-                                    <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z" />
+                                    <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.888-.788-1.489-1.761-1.663-2.06-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51a12.8 12.8 0 0 0-.57-.015c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413Z"/>
                                 </svg>
                             </a>
                         )}
-                        {theme.contact.phone && <a href={`tel:${theme.contact.phone.replace(/\s+/g, '')}`} className="social-btn"><Phone size={22} /></a>}
+                        {theme.contact.phone && <a href={`tel:${theme.contact.phone.replace(/\s+/g, '')}`} className="social-btn" aria-label="Llamar"><Phone size={22} /></a>}
                     </div>
 
-                    <div style={{ textAlign: 'center' }}>
-                        <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '10px', marginBottom: '20px' }}>
-                            <span style={{ fontFamily: "'Black Ops One', cursive", fontSize: '1.2rem', color: 'white' }}>{theme.restaurantName} <span style={{ color: 'var(--secondary)' }}>{theme.restaurantSuffix}</span></span>
-                            <img src={theme.brand.logoHeader || theme.brand.logoFallback} alt={theme.restaurantName} style={{ height: '40px' }} onError={(e) => e.target.src = theme.brand.logoFallback} />
+                    <div className="text-center">
+                        <div className="footer-brand-container">
+                            <span className="footer-brand-name">{theme.restaurantName} <span className="footer-brand-suffix">{theme.restaurantSuffix}</span></span>
+                            <img src={theme.brand.logoHeader || theme.brand.logoFallback} alt={theme.restaurantName} className="footer-logo" onError={(e) => e.target.src = theme.brand.logoFallback} />
                         </div>
 
-                        <p style={{ margin: 0 }}>{theme.brand.footerText}</p>
-                        <p style={{ fontSize: '0.8rem', marginTop: '10px', margin: '10px 0 0' }}>
-                            Dev by <a href="https://ayoubjerari.com" style={{ color: '#F1C40F', textDecoration: 'none' }}>AyoubDev</a>
+                        <p className="m-0">{theme.brand.footerText}</p>
+                        <p className="footer-dev-text">
+                            <a href="https://ayoubjerari.com" target="_blank" rel="noreferrer" className="dev-link">
+                                {t('footer_dev_by')} AYOUBDEV
+                            </a>
                         </p>
                     </div>
                 </div>
