@@ -140,6 +140,23 @@ const POSPage = () => {
                 isMobileVisible={isMobileMenuOpen}
             />
 
+            {/* Mobile Menu Backdrop */}
+            {isMobileMenuOpen && (
+                <div 
+                    style={{
+                        position: 'fixed',
+                        top: 0,
+                        left: 0,
+                        right: 0,
+                        bottom: 0,
+                        background: 'rgba(0,0,0,0.6)',
+                        zIndex: 40,
+                        backdropFilter: 'blur(2px)'
+                    }}
+                    onClick={() => setIsMobileMenuOpen(false)}
+                />
+            )}
+
             <main className="product-area" ref={mainContainerRef}>
                 {categories.length === 0 ? (
                     <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', minHeight: '50vh', padding: '20px', textAlign: 'center' }}>
