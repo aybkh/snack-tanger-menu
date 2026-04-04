@@ -1,6 +1,8 @@
 import React from 'react';
 import { ChefHat } from 'lucide-react';
 import { useLanguage } from '../../context/LanguageContext';
+import AllergenIcons from '../landing/AllergenIcons';
+import '../../styles/pos/PosComponents.css';
 
 const ProductCard = ({ originalProd, category, onClick }) => {
     const { getTranslatedProduct, t } = useLanguage();
@@ -8,7 +10,7 @@ const ProductCard = ({ originalProd, category, onClick }) => {
     if (!originalProd) return null;
     const prod = getTranslatedProduct(originalProd);
 
-    // Reuse the image logic from original POSPage
+    // Reuse the image logic
     const renderProductImage = () => {
         const getFallbackSrc = () => {
             let cleanProd = (originalProd.name || "").toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "").replace(/ /g, '-').replace(/[^a-z0-9-]/g, '');
@@ -46,7 +48,7 @@ const ProductCard = ({ originalProd, category, onClick }) => {
                         }
                     }}
                 />
-                <div style={{ width: '100%', height: '100%', display: 'none', alignItems: 'center', justifyContent: 'center', background: '#f0f0f0', color: '#ccc' }}>
+                <div className="product-fallback-icon" style={{ display: 'none' }}>
                     <ChefHat size={48} />
                 </div>
             </div>
@@ -55,31 +57,29 @@ const ProductCard = ({ originalProd, category, onClick }) => {
 
     return (
         <div
-            className="product-card"
-            onClick={() => { if (prod.isAvailable !== false) onClick(); }}
-            style={{
-                display: 'flex', flexDirection: 'column', height: '100%',
-                filter: prod.isAvailable === false ? 'grayscale(100%) opacity(60%)' : 'none',
-                cursor: prod.isAvailable === false ? 'not-allowed' : 'pointer',
-                pointerEvents: prod.isAvailable === false ? 'none' : 'auto',
-                position: 'relative'
-            }}>
+            className={`product-card ${prod.isAvailable === false ? 'sold-out' : ''}`}
+            onClick={() => { if (prod.isAvailable !== false) onClick(); }}>
+            
             {prod.isAvailable === false && (
-                <div style={{ position: 'absolute', top: '10px', right: '10px', background: '#e74c3c', color: 'white', padding: '5px 10px', borderRadius: '4px', fontWeight: 'bold', fontSize: '0.8rem', zIndex: 10 }}>
+                <div className="sold-out-badge">
                     {t('sold_out')}
                 </div>
             )}
 
             {renderProductImage()}
 
-            <div className="product-info" style={{ display: 'flex', flexDirection: 'column', flexGrow: 1 }}>
-                <h3 className="product-name" style={{
-                    display: '-webkit-box', WebkitLineClamp: 2, WebkitBoxOrient: 'vertical',
-                    overflow: 'hidden', textOverflow: 'ellipsis', minHeight: '2.8rem',
-                    wordBreak: 'break-word', overflowWrap: 'break-word', hyphens: 'auto',
-                    fontSize: '0.85rem', lineHeight: '1.2'
-                }}>{prod.name}</h3>
-                <div className="product-price" style={{ marginTop: 'auto' }}>
+            {/* Ocultar alérgenos en Combos y Menús (Excepto Combo Box) */}
+            {originalProd.alergenos && originalProd.alergenos.length > 0 && 
+             !( (category?.name?.toLowerCase().includes('combo') || category?.name?.toLowerCase().includes('menú') || category?.name?.toLowerCase().includes('menu')) 
+                && !category?.name?.toLowerCase().includes('box') ) && (
+                <div className="product-allergens-strip">
+                    <AllergenIcons allergenIds={originalProd.alergenos} />
+                </div>
+            )}
+
+            <div className="product-info">
+                <h3 className="product-name">{prod.name}</h3>
+                <div className="product-price">
                     {(prod.variants || []).length > 0
                         ? `${Math.min(...prod.variants.map(v => v.price))}€`
                         : `${(prod.price || prod.base_price || 0).toFixed(2)}€`}
