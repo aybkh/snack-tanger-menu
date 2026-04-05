@@ -12,41 +12,16 @@ const ProductCard = ({ originalProd, category, onClick }) => {
 
     // Reuse the image logic
     const renderProductImage = () => {
-        const getFallbackSrc = () => {
-            let cleanProd = (originalProd.name || "").toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "").replace(/ /g, '-').replace(/[^a-z0-9-]/g, '');
-            let suffix = "";
-            const catName = category.name || "";
-            if (catName.includes("Tacos")) suffix = "-taco";
-            else if (catName.includes("Pizzas")) suffix = "-pizza";
-            else if (catName.includes("Bocadillos")) suffix = "-bocata";
-            else if (catName.includes("Hamburguesas")) { suffix = "-burger"; cleanProd = cleanProd.replace("hamburguesa-", ""); }
-            else if (catName.includes("Tajins")) suffix = "-tajin";
-            else if (catName.includes("Platos")) { suffix = "-plato"; cleanProd = cleanProd.replace("plato-de-", "").replace("plato-", ""); }
-            else if (catName.includes("Batidos")) { suffix = "-batido"; cleanProd = cleanProd.replace("batido-de-", "").replace("batido-", ""); }
-            else if (catName.includes("Postres")) suffix = "-postre";
-            else if (catName.includes("Café")) { suffix = "-cafe"; cleanProd = cleanProd.replace("cafe-", ""); }
-            else if (catName.includes("Ensaladas")) {
-                if (cleanProd.includes("wrap")) { suffix = "-wrap"; cleanProd = cleanProd.replace("wrap-de-", "").replace("wrap-", ""); }
-                else { suffix = "-ensalada"; cleanProd = cleanProd.replace("ensalada-", ""); }
-            }
-            return `/products/${cleanProd}${suffix}.webp`;
-        };
-
         return (
             <div className="product-image-container">
                 <img
-                    src={originalProd.image ? `products/${originalProd.image}` : getFallbackSrc()}
+                    src={originalProd.image ? `products/${originalProd.image}` : ""}
                     alt={originalProd.name}
                     className="product-image"
                     loading="lazy"
                     onError={(e) => {
-                        const simpleSrc = `products/${(originalProd.name || "").toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "").replace(/ /g, '-').replace(/[^a-z0-9-]/g, '')}.webp`;
-                        if (!e.target.src.includes(simpleSrc) && !originalProd.image) {
-                            e.target.src = simpleSrc;
-                        } else {
-                            e.target.style.display = 'none';
-                            e.target.nextSibling.style.display = 'flex';
-                        }
+                        e.target.style.display = 'none';
+                        e.target.nextSibling.style.display = 'flex';
                     }}
                 />
                 <div className="product-fallback-icon" style={{ display: 'none' }}>

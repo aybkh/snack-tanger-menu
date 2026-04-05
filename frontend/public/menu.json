@@ -208,7 +208,7 @@
           "base_price": 9,
           "description": null,
           "is_available": true,
-          "image": "emince-de-pollo.webp",
+          "image": "emince-de-pollo-plato.webp",
           "alergenos": [
             7,
             16
@@ -221,7 +221,7 @@
           "base_price": 11,
           "description": null,
           "is_available": false,
-          "image": "emince-de-carne.webp",
+          "image": "emince-de-carne-plato.webp",
           "alergenos": [
             7,
             16
@@ -333,7 +333,7 @@
           "base_price": 9,
           "description": null,
           "is_available": true,
-          "image": "tajin-marisco.webp",
+          "image": "tajin-marisco-tajin.webp",
           "alergenos": [
             2,
             4,
@@ -347,7 +347,7 @@
           "base_price": 4.5,
           "description": null,
           "is_available": true,
-          "image": "sopa-de-pescado.webp",
+          "image": "sopa-de-pescado-tajin.webp",
           "alergenos": [
             2,
             4
@@ -801,7 +801,7 @@
           "base_price": 3,
           "description": null,
           "is_available": false,
-          "image": "naranja.webp",
+          "image": "naranja-batido.webp",
           "alergenos": []
         },
         {
@@ -811,7 +811,7 @@
           "base_price": 3.5,
           "description": null,
           "is_available": true,
-          "image": "platano.webp",
+          "image": "platano-batido.webp",
           "alergenos": [
             7
           ]
@@ -823,7 +823,7 @@
           "base_price": 3.5,
           "description": null,
           "is_available": true,
-          "image": "aguacate.webp",
+          "image": "aguacate-batido.webp",
           "alergenos": [
             7
           ]
@@ -835,7 +835,7 @@
           "base_price": 4,
           "description": null,
           "is_available": true,
-          "image": "fresa.webp",
+          "image": "fresa-batido.webp",
           "alergenos": [
             7
           ]
@@ -847,7 +847,7 @@
           "base_price": 4,
           "description": null,
           "is_available": true,
-          "image": "mango.webp",
+          "image": "mango-batido.webp",
           "alergenos": [
             7
           ]
