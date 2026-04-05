@@ -3,7 +3,7 @@
     {
       "id": 1,
       "name": "Tacos 303",
-      "image": "/categories/taco.webp",
+      "image": "categories/taco.webp",
       "products": [
         {
           "id": 1,
@@ -66,7 +66,7 @@
     {
       "id": 2,
       "name": "Pizzas",
-      "image": "/categories/pizza.webp",
+      "image": "categories/pizza.webp",
       "products": [
         {
           "id": 5,
@@ -158,7 +158,7 @@
     {
       "id": 3,
       "name": "Platos Combinados",
-      "image": "/categories/platos.webp",
+      "image": "categories/platos.webp",
       "products": [
         {
           "id": 11,
@@ -246,7 +246,7 @@
     {
       "id": 4,
       "name": "Hamburguesas",
-      "image": "/categories/burger.webp",
+      "image": "categories/burger.webp",
       "products": [
         {
           "id": 17,
@@ -285,7 +285,7 @@
     {
       "id": 5,
       "name": "Tajins",
-      "image": "/categories/tajin.webp",
+      "image": "categories/tajin.webp",
       "products": [
         {
           "id": 19,
@@ -358,7 +358,7 @@
     {
       "id": 6,
       "name": "Ensaladas",
-      "image": "/categories/ensaladas.webp",
+      "image": "categories/ensaladas.webp",
       "products": [
         {
           "id": 24,
@@ -391,7 +391,7 @@
     {
       "id": 8,
       "name": "Refrescos",
-      "image": "/categories/bebidas.webp",
+      "image": "categories/bebidas.webp",
       "products": [
         {
           "id": 34,
@@ -548,7 +548,7 @@
     {
       "id": 9,
       "name": "Suplementos",
-      "image": "/categories/suplementos.webp",
+      "image": "categories/suplementos.webp",
       "products": [
         {
           "id": 49,
@@ -603,7 +603,7 @@
     {
       "id": 10,
       "name": "Salsas",
-      "image": "/categories/salsas.webp",
+      "image": "categories/salsas.webp",
       "products": [
         {
           "id": 53,
