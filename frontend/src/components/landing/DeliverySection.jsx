@@ -7,9 +7,11 @@ const DeliverySection = () => {
     const { t } = useLanguage();
 
     if (!theme) return null;
+    const { socials = {}, contact = {}, brand = {} } = theme;
 
-    const uberEatsLink = theme.socials.uberEats || "#";
-    const phoneNumber = theme.contact.phone || "";
+    const uberEatsLink = socials.uberEats || socials.ubereats || "#";
+    const glovoLink = socials.glovo || "#";
+    const phoneNumber = contact.phone || "";
 
     return (
         <section id="delivery" className="delivery-section">

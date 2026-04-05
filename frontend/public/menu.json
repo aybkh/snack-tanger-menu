@@ -9,9 +9,10 @@
           "id": 1,
           "name": "Taco S",
           "price": 4.5,
+          "base_price": 4.5,
           "description": null,
-          "isAvailable": true,
-          "image": "/products/taco-s.webp",
+          "is_available": true,
+          "image": "taco-s.webp",
           "alergenos": [
             1,
             7,
@@ -22,9 +23,10 @@
           "id": 2,
           "name": "Taco M",
           "price": 6,
+          "base_price": 6,
           "description": null,
-          "isAvailable": true,
-          "image": "/products/taco-m.webp",
+          "is_available": true,
+          "image": "taco-m.webp",
           "alergenos": [
             1,
             7,
@@ -35,9 +37,10 @@
           "id": 3,
           "name": "Taco L",
           "price": 7,
+          "base_price": 7,
           "description": null,
-          "isAvailable": true,
-          "image": "/products/taco-l.webp",
+          "is_available": true,
+          "image": "taco-l.webp",
           "alergenos": [
             1,
             7,
@@ -48,9 +51,10 @@
           "id": 4,
           "name": "Taco XL",
           "price": 8,
+          "base_price": 8,
           "description": null,
-          "isAvailable": true,
-          "image": "/products/taco-xl.webp",
+          "is_available": true,
+          "image": "taco-xl.webp",
           "alergenos": [
             1,
             7,
@@ -68,9 +72,10 @@
           "id": 5,
           "name": "Pizza Margarita",
           "price": 7,
+          "base_price": 7,
           "description": null,
-          "isAvailable": true,
-          "image": "/products/pizza-margarita.webp",
+          "is_available": true,
+          "image": "pizza-margarita.webp",
           "alergenos": [
             1,
             7
@@ -80,9 +85,10 @@
           "id": 6,
           "name": "Pizza At\u00FAn",
           "price": 8,
+          "base_price": 8,
           "description": null,
-          "isAvailable": true,
-          "image": "/products/pizza-atun.webp",
+          "is_available": true,
+          "image": "pizza-atun.webp",
           "alergenos": [
             1,
             4,
@@ -93,9 +99,10 @@
           "id": 7,
           "name": "Pizza Pollo",
           "price": 8,
+          "base_price": 8,
           "description": null,
-          "isAvailable": true,
-          "image": "/products/pizza-pollo.webp",
+          "is_available": true,
+          "image": "pizza-pollo.webp",
           "alergenos": [
             1,
             7,
@@ -106,9 +113,10 @@
           "id": 8,
           "name": "Pizza Carne Picada",
           "price": 8,
+          "base_price": 8,
           "description": null,
-          "isAvailable": true,
-          "image": "/products/pizza-carne-picada.webp",
+          "is_available": true,
+          "image": "pizza-carne-picada.webp",
           "alergenos": [
             1,
             7,
@@ -119,9 +127,10 @@
           "id": 9,
           "name": "Pizza Marisco",
           "price": 9.5,
+          "base_price": 9.5,
           "description": null,
-          "isAvailable": true,
-          "image": "/products/pizza-marisco.webp",
+          "is_available": true,
+          "image": "pizza-marisco.webp",
           "alergenos": [
             1,
             2,
@@ -134,9 +143,10 @@
           "id": 10,
           "name": "Pizza Tanger 303",
           "price": 11,
+          "base_price": 11,
           "description": null,
-          "isAvailable": true,
-          "image": "/products/pizza-tanger-303.webp",
+          "is_available": true,
+          "image": "pizza-tanger-303.webp",
           "alergenos": [
             1,
             7,
@@ -154,9 +164,10 @@
           "id": 11,
           "name": "Plato de Pollo",
           "price": 7,
+          "base_price": 7,
           "description": null,
-          "isAvailable": true,
-          "image": "/products/plato-de-pollo.webp",
+          "is_available": true,
+          "image": "plato-de-pollo.webp",
           "alergenos": [
             1,
             16
@@ -166,9 +177,10 @@
           "id": 12,
           "name": "Plato Carne Picada",
           "price": 7,
+          "base_price": 7,
           "description": null,
-          "isAvailable": true,
-          "image": "/products/plato-carne-picada.webp",
+          "is_available": true,
+          "image": "plato-carne-picada.webp",
           "alergenos": [
             1,
             16
@@ -178,9 +190,10 @@
           "id": 13,
           "name": "Plato Maxi Tenders",
           "price": 9,
+          "base_price": 9,
           "description": null,
-          "isAvailable": true,
-          "image": "/products/plato-maxi-tenders.webp",
+          "is_available": true,
+          "image": "plato-maxi-tenders.webp",
           "alergenos": [
             1,
             3,
@@ -192,9 +205,10 @@
           "id": 14,
           "name": "Emince de Pollo",
           "price": 9,
+          "base_price": 9,
           "description": null,
-          "isAvailable": true,
-          "image": "/products/emince-de-pollo.webp",
+          "is_available": true,
+          "image": "emince-de-pollo.webp",
           "alergenos": [
             7,
             16
@@ -204,9 +218,10 @@
           "id": 15,
           "name": "Emince de Carne",
           "price": 11,
+          "base_price": 11,
           "description": null,
-          "isAvailable": false,
-          "image": "/products/emince-de-carne.webp",
+          "is_available": false,
+          "image": "emince-de-carne.webp",
           "alergenos": [
             7,
             16
@@ -216,9 +231,10 @@
           "id": 16,
           "name": "Plato de Marisco",
           "price": 10,
+          "base_price": 10,
           "description": null,
-          "isAvailable": true,
-          "image": "/products/plato-de-marisco.webp",
+          "is_available": true,
+          "image": "plato-de-marisco.webp",
           "alergenos": [
             2,
             4,
@@ -236,9 +252,10 @@
           "id": 17,
           "name": "Hamburguesa Ternera",
           "price": 6,
+          "base_price": 6,
           "description": null,
-          "isAvailable": true,
-          "image": "/products/hamburguesa-ternera.webp",
+          "is_available": true,
+          "image": "hamburguesa-ternera.webp",
           "alergenos": [
             1,
             3,
@@ -251,9 +268,10 @@
           "id": 18,
           "name": "Hamburguesa Tenders",
           "price": 7,
+          "base_price": 7,
           "description": null,
-          "isAvailable": true,
-          "image": "/products/hamburguesa-tenders.webp",
+          "is_available": true,
+          "image": "hamburguesa-tenders.webp",
           "alergenos": [
             1,
             3,
@@ -273,9 +291,10 @@
           "id": 19,
           "name": "Tajin de Kefta",
           "price": 6,
+          "base_price": 6,
           "description": null,
-          "isAvailable": true,
-          "image": "/products/tajin-de-kefta.webp",
+          "is_available": true,
+          "image": "tajin-de-kefta.webp",
           "alergenos": [
             3,
             16
@@ -285,9 +304,10 @@
           "id": 20,
           "name": "Tajin de Gambas \u0027Pil Pil\u0027",
           "price": 8,
+          "base_price": 8,
           "description": null,
-          "isAvailable": true,
-          "image": "/products/tajin-de-gambas-pil-pil.webp",
+          "is_available": true,
+          "image": "tajin-de-gambas-pil-pil.webp",
           "alergenos": [
             2
           ]
@@ -296,9 +316,10 @@
           "id": 21,
           "name": "Kapsalon",
           "price": 7,
+          "base_price": 7,
           "description": null,
-          "isAvailable": true,
-          "image": "/products/kapsalon.webp",
+          "is_available": true,
+          "image": "kapsalon.webp",
           "alergenos": [
             1,
             7,
@@ -309,9 +330,10 @@
           "id": 22,
           "name": "Tajin Marisco",
           "price": 9,
+          "base_price": 9,
           "description": null,
-          "isAvailable": true,
-          "image": "/products/tajin-marisco.webp",
+          "is_available": true,
+          "image": "tajin-marisco.webp",
           "alergenos": [
             2,
             4,
@@ -322,9 +344,10 @@
           "id": 23,
           "name": "Sopa de pescado",
           "price": 4.5,
+          "base_price": 4.5,
           "description": null,
-          "isAvailable": true,
-          "image": "/products/sopa-de-pescado.webp",
+          "is_available": true,
+          "image": "sopa-de-pescado.webp",
           "alergenos": [
             2,
             4
@@ -341,9 +364,10 @@
           "id": 24,
           "name": "Ensalada Peque\u00F1a",
           "price": 5,
+          "base_price": 5,
           "description": null,
-          "isAvailable": true,
-          "image": "/products/ensalada-pequena.webp",
+          "is_available": true,
+          "image": "ensalada-pequena.webp",
           "alergenos": [
             3,
             4
@@ -353,9 +377,10 @@
           "id": 25,
           "name": "Ensalada Familiar",
           "price": 9,
+          "base_price": 9,
           "description": null,
-          "isAvailable": true,
-          "image": "/products/ensalada-familiar.webp",
+          "is_available": true,
+          "image": "ensalada-familiar.webp",
           "alergenos": [
             3,
             4
@@ -372,135 +397,150 @@
           "id": 34,
           "name": "Coca-Cola",
           "price": 1.5,
+          "base_price": 1.5,
           "description": null,
-          "isAvailable": true,
-          "image": "/products/coca-cola.webp",
+          "is_available": true,
+          "image": "coca-cola.webp",
           "alergenos": []
         },
         {
           "id": 35,
           "name": "Fanta",
           "price": 1.5,
+          "base_price": 1.5,
           "description": null,
-          "isAvailable": true,
-          "image": "/products/fanta.webp",
+          "is_available": true,
+          "image": "fanta.webp",
           "alergenos": []
         },
         {
           "id": 36,
           "name": "Sprite",
           "price": 1.5,
+          "base_price": 1.5,
           "description": null,
-          "isAvailable": true,
-          "image": "/products/sprite.webp",
+          "is_available": true,
+          "image": "sprite.webp",
           "alergenos": []
         },
         {
           "id": 37,
           "name": "Nestea",
           "price": 1.5,
+          "base_price": 1.5,
           "description": null,
-          "isAvailable": true,
-          "image": "/products/nestea.webp",
+          "is_available": true,
+          "image": "nestea.webp",
           "alergenos": []
         },
         {
           "id": 38,
           "name": "Aquarius",
           "price": 1.5,
+          "base_price": 1.5,
           "description": null,
-          "isAvailable": true,
-          "image": "/products/aquarius.webp",
+          "is_available": true,
+          "image": "aquarius.webp",
           "alergenos": []
         },
         {
           "id": 39,
           "name": "Poms",
           "price": 1.5,
+          "base_price": 1.5,
           "description": null,
-          "isAvailable": true,
-          "image": "/products/poms.webp",
+          "is_available": true,
+          "image": "poms.webp",
           "alergenos": []
         },
         {
           "id": 40,
           "name": "Hawaii",
           "price": 1.5,
+          "base_price": 1.5,
           "description": null,
-          "isAvailable": true,
-          "image": "/products/hawaii.webp",
+          "is_available": true,
+          "image": "hawaii.webp",
           "alergenos": []
         },
         {
           "id": 41,
           "name": "Schweppes",
           "price": 1.5,
+          "base_price": 1.5,
           "description": null,
-          "isAvailable": true,
-          "image": "/products/schweppes.webp",
+          "is_available": true,
+          "image": "schweppes.webp",
           "alergenos": []
         },
         {
           "id": 42,
           "name": "Oasis Tropical",
           "price": 1.5,
+          "base_price": 1.5,
           "description": null,
-          "isAvailable": true,
-          "image": "/products/oasis-tropical.webp",
+          "is_available": true,
+          "image": "oasis-tropical.webp",
           "alergenos": []
         },
         {
           "id": 43,
           "name": "Vichy Catalan",
           "price": 1.5,
+          "base_price": 1.5,
           "description": null,
-          "isAvailable": false,
-          "image": "/products/vichy-catalan.webp",
+          "is_available": false,
+          "image": "vichy-catalan.webp",
           "alergenos": []
         },
         {
           "id": 44,
           "name": "Don Simon",
           "price": 1.5,
+          "base_price": 1.5,
           "description": null,
-          "isAvailable": true,
-          "image": "/products/don-simon.webp",
+          "is_available": true,
+          "image": "don-simon.webp",
           "alergenos": []
         },
         {
           "id": 45,
           "name": "Redbull",
           "price": 2,
+          "base_price": 2,
           "description": null,
-          "isAvailable": true,
-          "image": "/products/redbull.webp",
+          "is_available": true,
+          "image": "redbull.webp",
           "alergenos": []
         },
         {
           "id": 46,
           "name": "Bezoya",
           "price": 1.5,
+          "base_price": 1.5,
           "description": null,
-          "isAvailable": true,
-          "image": "/products/bezoya.webp",
+          "is_available": true,
+          "image": "bezoya.webp",
           "alergenos": []
         },
         {
           "id": 47,
           "name": "Font Vella",
           "price": 1.5,
+          "base_price": 1.5,
           "description": null,
-          "isAvailable": true,
-          "image": "/products/font-vella.webp",
+          "is_available": true,
+          "image": "font-vella.webp",
           "alergenos": []
         },
         {
           "id": 48,
           "name": "Aqua Deus",
           "price": 1.5,
+          "base_price": 1.5,
           "description": null,
-          "isAvailable": true,
-          "image": "/products/aqua-deus.webp",
+          "is_available": true,
+          "image": "aqua-deus.webp",
           "alergenos": []
         }
       ]
@@ -514,9 +554,10 @@
           "id": 49,
           "name": "Huevo Duro",
           "price": 0.5,
+          "base_price": 0.5,
           "description": null,
-          "isAvailable": true,
-          "image": "/products/huevo-duro.webp",
+          "is_available": true,
+          "image": "huevo-duro.webp",
           "alergenos": [
             3
           ]
@@ -525,9 +566,10 @@
           "id": 50,
           "name": "Huevo Frito",
           "price": 0.5,
+          "base_price": 0.5,
           "description": null,
-          "isAvailable": true,
-          "image": "/products/huevo-frito.webp",
+          "is_available": true,
+          "image": "huevo-frito.webp",
           "alergenos": [
             3
           ]
@@ -536,9 +578,10 @@
           "id": 51,
           "name": "Lonchas de Queso",
           "price": 0.5,
+          "base_price": 0.5,
           "description": null,
-          "isAvailable": true,
-          "image": "/products/lonchas-de-queso.webp",
+          "is_available": true,
+          "image": "lonchas-de-queso.webp",
           "alergenos": [
             7
           ]
@@ -547,9 +590,10 @@
           "id": 52,
           "name": "Mortadela",
           "price": 0.5,
+          "base_price": 0.5,
           "description": null,
-          "isAvailable": false,
-          "image": "/products/mortadela.webp",
+          "is_available": false,
+          "image": "mortadela.webp",
           "alergenos": [
             16
           ]
@@ -565,9 +609,10 @@
           "id": 53,
           "name": "Salsa Algerian",
           "price": 0.5,
+          "base_price": 0.5,
           "description": null,
-          "isAvailable": true,
-          "image": "/products/salsa-algerian.webp",
+          "is_available": true,
+          "image": "salsa-algerian.webp",
           "alergenos": [
             3,
             10,
@@ -578,9 +623,10 @@
           "id": 54,
           "name": "Salsa Andaluza",
           "price": 0.5,
+          "base_price": 0.5,
           "description": null,
-          "isAvailable": true,
-          "image": "/products/salsa-andaluza.webp",
+          "is_available": true,
+          "image": "salsa-andaluza.webp",
           "alergenos": [
             3,
             10,
@@ -591,18 +637,20 @@
           "id": 55,
           "name": "Salsa Barbacoa",
           "price": 0.5,
+          "base_price": 0.5,
           "description": null,
-          "isAvailable": true,
-          "image": "/products/salsa-barbacoa.webp",
+          "is_available": true,
+          "image": "salsa-barbacoa.webp",
           "alergenos": []
         },
         {
           "id": 56,
           "name": "Salsa Biggie",
           "price": 0.5,
+          "base_price": 0.5,
           "description": null,
-          "isAvailable": true,
-          "image": "/products/salsa-biggie.webp",
+          "is_available": true,
+          "image": "salsa-biggie.webp",
           "alergenos": [
             3,
             10
@@ -612,9 +660,10 @@
           "id": 57,
           "name": "Salsa Brazil",
           "price": 0.5,
+          "base_price": 0.5,
           "description": null,
-          "isAvailable": true,
-          "image": "/products/salsa-brazil.webp",
+          "is_available": true,
+          "image": "salsa-brazil.webp",
           "alergenos": [
             3,
             10
@@ -624,9 +673,10 @@
           "id": 58,
           "name": "Salsa Chilli Thai",
           "price": 0.5,
+          "base_price": 0.5,
           "description": null,
-          "isAvailable": true,
-          "image": "/products/salsa-chilli-thai.webp",
+          "is_available": true,
+          "image": "salsa-chilli-thai.webp",
           "alergenos": [
             15
           ]
@@ -635,9 +685,10 @@
           "id": 59,
           "name": "Salsa Curry",
           "price": 0.5,
+          "base_price": 0.5,
           "description": null,
-          "isAvailable": true,
-          "image": "/products/salsa-curry.webp",
+          "is_available": true,
+          "image": "salsa-curry.webp",
           "alergenos": [
             3,
             7,
@@ -648,18 +699,20 @@
           "id": 60,
           "name": "Salsa Ketchup",
           "price": 0.5,
+          "base_price": 0.5,
           "description": null,
-          "isAvailable": true,
-          "image": "/products/salsa-ketchup.webp",
+          "is_available": true,
+          "image": "salsa-ketchup.webp",
           "alergenos": []
         },
         {
           "id": 61,
           "name": "Salsa Marocaine",
           "price": 0.5,
+          "base_price": 0.5,
           "description": null,
-          "isAvailable": true,
-          "image": "/products/salsa-marocaine.webp",
+          "is_available": true,
+          "image": "salsa-marocaine.webp",
           "alergenos": [
             3,
             10,
@@ -670,9 +723,10 @@
           "id": 62,
           "name": "Salsa Mayonesa",
           "price": 0.5,
+          "base_price": 0.5,
           "description": null,
-          "isAvailable": true,
-          "image": "/products/salsa-mayonesa.webp",
+          "is_available": true,
+          "image": "salsa-mayonesa.webp",
           "alergenos": [
             3,
             10
@@ -682,9 +736,10 @@
           "id": 63,
           "name": "Salsa Pita Kebab",
           "price": 0.5,
+          "base_price": 0.5,
           "description": null,
-          "isAvailable": true,
-          "image": "/products/salsa-pita-kebab.webp",
+          "is_available": true,
+          "image": "salsa-pita-kebab.webp",
           "alergenos": [
             3,
             7,
@@ -695,9 +750,10 @@
           "id": 64,
           "name": "Salsa Samurai",
           "price": 0.5,
+          "base_price": 0.5,
           "description": null,
-          "isAvailable": true,
-          "image": "/products/salsa-samurai.webp",
+          "is_available": true,
+          "image": "salsa-samurai.webp",
           "alergenos": [
             3,
             10,
@@ -715,9 +771,10 @@
           "id": 26,
           "name": "Copa de Tiramis\u00FA",
           "price": 2.5,
+          "base_price": 2.5,
           "description": null,
-          "isAvailable": false,
-          "image": "/products/copa-de-tiramisu.webp",
+          "is_available": false,
+          "image": "copa-de-tiramisu.webp",
           "alergenos": [
             1,
             3,
@@ -728,9 +785,10 @@
           "id": 27,
           "name": "Flan Casero",
           "price": 3,
+          "base_price": 3,
           "description": null,
-          "isAvailable": true,
-          "image": "/products/flan-casero.webp",
+          "is_available": true,
+          "image": "flan-casero.webp",
           "alergenos": [
             3,
             7
@@ -740,18 +798,20 @@
           "id": 28,
           "name": "Naranja",
           "price": 3,
+          "base_price": 3,
           "description": null,
-          "isAvailable": false,
-          "image": "/products/naranja.webp",
+          "is_available": false,
+          "image": "naranja.webp",
           "alergenos": []
         },
         {
           "id": 29,
           "name": "Pl\u00E1tano",
           "price": 3.5,
+          "base_price": 3.5,
           "description": null,
-          "isAvailable": true,
-          "image": "/products/platano.webp",
+          "is_available": true,
+          "image": "platano.webp",
           "alergenos": [
             7
           ]
@@ -760,9 +820,10 @@
           "id": 30,
           "name": "Aguacate",
           "price": 3.5,
+          "base_price": 3.5,
           "description": null,
-          "isAvailable": true,
-          "image": "/products/aguacate.webp",
+          "is_available": true,
+          "image": "aguacate.webp",
           "alergenos": [
             7
           ]
@@ -771,9 +832,10 @@
           "id": 31,
           "name": "Fresa",
           "price": 4,
+          "base_price": 4,
           "description": null,
-          "isAvailable": true,
-          "image": "/products/fresa.webp",
+          "is_available": true,
+          "image": "fresa.webp",
           "alergenos": [
             7
           ]
@@ -782,9 +844,10 @@
           "id": 32,
           "name": "Mango",
           "price": 4,
+          "base_price": 4,
           "description": null,
-          "isAvailable": true,
-          "image": "/products/mango.webp",
+          "is_available": true,
+          "image": "mango.webp",
           "alergenos": [
             7
           ]
@@ -793,9 +856,10 @@
           "id": 33,
           "name": "Tropical",
           "price": 4.5,
+          "base_price": 4.5,
           "description": null,
-          "isAvailable": true,
-          "image": "/products/tropical.webp",
+          "is_available": true,
+          "image": "tropical.webp",
           "alergenos": [
             7
           ]
