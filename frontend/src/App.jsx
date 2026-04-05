@@ -7,6 +7,7 @@ import { useTenant } from './context/TenantContext';
 // Pages
 import LandingPage from './pages/LandingPage';
 import POSPage from './pages/POSPage';
+import SoyAdminPage from './pages/SoyAdminPage';
 
 
 function App() {
@@ -28,6 +29,7 @@ function App() {
             <Routes>
               <Route path="/" element={<LandingPage />} />
               <Route path="/menu" element={<POSPage />} />
+              <Route path="/soyadmin" element={<SoyAdminPage />} />
             </Routes>
           </div>
         </Router>
