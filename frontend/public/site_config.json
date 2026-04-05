@@ -65,50 +65,50 @@
   "schedule": [
     {
       "day": "Lunes",
-      "label": "12:30 - 02:00",
-      "open": 12.5,
+      "label": "12:00 - 02:00",
+      "open": 12,
       "close": 26,
       "closed": false
     },
     {
       "day": "Martes",
-      "label": "12:30 - 02:00",
-      "open": 12.5,
+      "label": "12:00 - 02:00",
+      "open": 12,
       "close": 26,
       "closed": false
     },
     {
       "day": "Mi\u00E9rcoles",
-      "label": "12:30 - 02:00",
-      "open": 12.5,
+      "label": "12:00 - 02:00",
+      "open": 12,
       "close": 26,
       "closed": false
     },
     {
       "day": "Jueves",
-      "label": "12:30 - 02:00",
-      "open": 12.5,
+      "label": "12:00 - 02:00",
+      "open": 12,
       "close": 26,
       "closed": false
     },
     {
       "day": "Viernes",
-      "label": "12:30 - 02:00",
-      "open": 12.5,
+      "label": "12:00 - 02:00",
+      "open": 12,
       "close": 26,
       "closed": false
     },
     {
       "day": "S\u00E1bado",
-      "label": "12:30 - 02:00",
-      "open": 12.5,
+      "label": "12:00 - 02:00",
+      "open": 12,
       "close": 26,
       "closed": false
     },
     {
       "day": "Domingo",
-      "label": "12:30 - 02:00",
-      "open": 12.5,
+      "label": "12:00 - 02:00",
+      "open": 12,
       "close": 26,
       "closed": false
     }
