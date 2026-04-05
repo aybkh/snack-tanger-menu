@@ -35,7 +35,7 @@ const ProductCard = ({ originalProd, category, onClick }) => {
         return (
             <div className="product-image-container">
                 <img
-                    src={originalProd.image ? `/products/${originalProd.image.replace('.jpg', '.webp').replace('.png', '.webp')}` : getFallbackSrc()}
+                    src={originalProd.image ? `/products/${originalProd.image}` : getFallbackSrc()}
                     alt={originalProd.name}
                     className="product-image"
                     loading="lazy"
