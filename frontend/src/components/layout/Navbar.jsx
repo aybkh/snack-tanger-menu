@@ -40,7 +40,7 @@ const Navbar = () => {
     const navItems = [
         { label: t('nav_home'), hash: '#hero' },
         { label: t('nav_location'), hash: '#location' },
-        { label: t('nav_hours'), hash: '#location' }, 
+        { label: t('nav_hours'), hash: '#hours' }, 
         { label: t('nav_delivery'), hash: '#delivery' },
         { label: t('nav_contact'), hash: '#contact' }
     ];
@@ -108,7 +108,7 @@ const Navbar = () => {
                     let Icon = null;
                     // No icon for home (#hero)
                     if (item.hash === '#location') Icon = MapPin;
-                    else if (item.hash === '#hours' || item.hash === '#location') Icon = Clock;
+                    else if (item.hash === '#hours') Icon = Clock;
                     else if (item.hash === '#delivery') Icon = Bike;
                     else if (item.hash === '#contact') Icon = Phone;
 
