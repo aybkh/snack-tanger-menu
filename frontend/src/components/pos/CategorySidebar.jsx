@@ -19,17 +19,17 @@ const CategorySidebar = ({ categories, selectedCategory, onSelectCategory, isMob
 
                     const getCategoryIcon = (name) => {
                         const lowerName = (name || "").toLowerCase();
-                        if (lowerName.includes('taco')) return '/categories/taco.webp';
-                        if (lowerName.includes('burger') || lowerName.includes('hamburguesa')) return '/categories/burger.webp';
-                        if (lowerName.includes('pizza')) return '/categories/pizza.webp';
-                        if (lowerName.includes('postre') || lowerName.includes('batido')) return '/categories/postres-y-batidos.webp';
-                        if (lowerName.includes('refresco') || lowerName.includes('agua') || lowerName.includes('bebida')) return '/categories/bebidas.webp';
-                        if (lowerName.includes('plato')) return '/categories/platos.webp';
-                        if (lowerName.includes('ensalada')) return '/categories/ensaladas.webp';
-                        if (lowerName.includes('salsa')) return '/categories/salsas.webp';
-                        if (lowerName.includes('tajin')) return '/categories/tajin.webp';
-                        if (lowerName.includes('suplemento') || lowerName.includes('extra')) return '/categories/suplementos.webp';
-                        return '/categories/platos.webp';
+                        if (lowerName.includes('taco')) return 'categories/taco.webp';
+                        if (lowerName.includes('burger') || lowerName.includes('hamburguesa')) return 'categories/burger.webp';
+                        if (lowerName.includes('pizza')) return 'categories/pizza.webp';
+                        if (lowerName.includes('postre') || lowerName.includes('batido')) return 'categories/postres-y-batidos.webp';
+                        if (lowerName.includes('refresco') || lowerName.includes('agua') || lowerName.includes('bebida')) return 'categories/bebidas.webp';
+                        if (lowerName.includes('plato')) return 'categories/platos.webp';
+                        if (lowerName.includes('ensalada')) return 'categories/ensaladas.webp';
+                        if (lowerName.includes('salsa')) return 'categories/salsas.webp';
+                        if (lowerName.includes('tajin')) return 'categories/tajin.webp';
+                        if (lowerName.includes('suplemento') || lowerName.includes('extra')) return 'categories/suplementos.webp';
+                        return 'categories/platos.webp';
                     };
 
                     return (
@@ -39,7 +39,7 @@ const CategorySidebar = ({ categories, selectedCategory, onSelectCategory, isMob
 
                             <img src={cat.image || getCategoryIcon(cat.name)} alt={getCategoryName(cat)} className="cat-img-webp"
                                 style={{ width: '100%', height: '100%', objectFit: 'contain', transform: 'scale(1.15)' }}
-                                onError={(e) => { e.target.src = '/categories/platos.webp'; }} />
+                                onError={(e) => { e.target.src = 'categories/platos.webp'; }} />
                         </div>
                     );
                 })}

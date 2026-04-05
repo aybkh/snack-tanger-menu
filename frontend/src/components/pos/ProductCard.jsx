@@ -35,12 +35,12 @@ const ProductCard = ({ originalProd, category, onClick }) => {
         return (
             <div className="product-image-container">
                 <img
-                    src={originalProd.image ? `/products/${originalProd.image}` : getFallbackSrc()}
+                    src={originalProd.image ? `products/${originalProd.image}` : getFallbackSrc()}
                     alt={originalProd.name}
                     className="product-image"
                     loading="lazy"
                     onError={(e) => {
-                        const simpleSrc = `/products/${(originalProd.name || "").toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "").replace(/ /g, '-').replace(/[^a-z0-9-]/g, '')}.webp`;
+                        const simpleSrc = `products/${(originalProd.name || "").toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "").replace(/ /g, '-').replace(/[^a-z0-9-]/g, '')}.webp`;
                         if (!e.target.src.includes(simpleSrc) && !originalProd.image) {
                             e.target.src = simpleSrc;
                         } else {
