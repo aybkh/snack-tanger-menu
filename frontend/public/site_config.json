@@ -1,101 +1,80 @@
 {
   "hero": [
     {
-      "url": "/hero/banner1.webp"
+      "type": "image",
+      "url": "/hero/banner3.webp",
+      "title": ""
     },
     {
-      "url": "/hero/banner2.webp"
+      "type": "image",
+      "url": "/hero/banner1.webp",
+      "title": ""
     },
     {
-      "url": "/hero/banner3.webp"
+      "type": "image",
+      "url": "/hero/banner4.webp",
+      "title": ""
     },
     {
-      "url": "/hero/banner4.webp"
+      "type": "image",
+      "url": "/hero/banner.webp",
+      "title": ""
     },
     {
-      "url": "/hero/banner.webp"
+      "type": "image",
+      "url": "/hero/banner2.webp",
+      "title": ""
     }
   ],
   "social_videos": [
     {
-      "url": "/videos/video_plato_calamares_tajin_gambas.mp4",
-      "title": "DELICIAS DEL MAR 🍤"
+      "url": "/videos/snack_tour.mp4",
+      "title": "TOUR DEL LOCAL \uD83D\uDCCD"
     },
     {
       "url": "/videos/video_reydelacomida.mp4",
-      "title": "EL REY DE LA COMIDA 🍔"
+      "title": "EL REY DE LA COMIDA \uD83D\uDC51"
     },
     {
-      "url": "/videos/snack_tour.mp4",
-      "title": "TOUR SNACK TANGER 🍴"
+      "url": "/videos/video_plato_calamares_tajin_gambas.mp4",
+      "title": "PLATOS DELICIOSOS \uD83C\uDF64"
     }
   ],
   "reviews": [
     {
-      "name": "Ahmed Belhaj",
-      "text": "El mejor sitio de comida marroquí de la zona. Los tajines están espectaculares y el trato es inmejorable.",
+      "author": "Sofia M.",
+      "text": "Sin duda los mejores tacos de T\u00E1nger. El mixto con salsa alg\u00E9rienne est\u00E1 espectacular.",
       "stars": 5
     },
     {
-      "name": "Lucía García",
-      "text": "Comida casera, raciones generosas y muy buen precio. Sin duda volveremos.",
+      "author": "Karim R.",
+      "text": "Local muy limpio y servicio r\u00E1pido. Las pizzas tambi\u00E9n son una buena opci\u00F3n para salir de la rutina.",
+      "stars": 4
+    },
+    {
+      "author": "Youssef T.",
+      "text": "El verdadero Kebab. Cantidad abundante y carne de mucha calidad. Mi local de confianza los viernes por la noche.",
       "stars": 5
     },
     {
-      "name": "Omar K.",
-      "text": "Sabor auténtico. Las gambas al pil-pil son mis favoritas. Muy recomendado.",
+      "author": "Nadia L.",
+      "text": "Impresionante relaci\u00F3n calidad-precio. El pan naan reci\u00E9n hecho marca totalmente la diferencia.",
       "stars": 5
     }
   ],
   "schedule": [
     {
-      "name": "Lunes",
-      "open": 12,
-      "close": 24,
-      "label": "12:00 - 00:00",
-      "closed": false
-    },
-    {
-      "name": "Martes",
-      "open": 12,
-      "close": 24,
-      "label": "12:00 - 00:00",
-      "closed": true
-    },
-    {
-      "name": "Miércoles",
-      "open": 12,
-      "close": 24,
-      "label": "12:00 - 00:00",
-      "closed": false
-    },
-    {
-      "name": "Jueves",
-      "open": 12,
-      "close": 24,
-      "label": "12:00 - 00:00",
-      "closed": false
-    },
-    {
-      "name": "Viernes",
-      "open": 12,
-      "close": 24,
-      "label": "12:00 - 00:00",
-      "closed": false
-    },
-    {
-      "name": "Sábado",
-      "open": 12,
-      "close": 24,
-      "label": "12:00 - 00:00",
-      "closed": false
-    },
-    {
-      "name": "Domingo",
-      "open": 12,
-      "close": 24,
-      "label": "12:00 - 00:00",
-      "closed": false
+      "day": "Lunes a Domingo",
+      "hours": "12:00 - 02:00"
     }
-  ]
+  ],
+  "contact": {
+    "phone": "631469288",
+    "address": "Pla\u00E7a Cardenal Vives i Tut\u00F3, 36, 08303 Matar\u00F3, Barcelona",
+    "email": "bnomarkarim@gmail.com",
+    "whatsapp": "https://wa.me/34631469288",
+    "instagram": "@snacktanger303",
+    "facebook": "",
+    "tiktok": ""
+  }
 }
