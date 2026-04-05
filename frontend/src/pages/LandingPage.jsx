@@ -84,6 +84,7 @@ const LandingPage = () => {
                                                 playsInline
                                                 onEnded={handleHeroVideoEnd}
                                                 className={`hero-slide ${currentBanner === index ? 'active' : ''}`}
+                                                {...(index === 0 ? { fetchpriority: "high" } : { loading: "lazy" })}
                                             />
                                         ) : (
                                             <img
@@ -91,6 +92,7 @@ const LandingPage = () => {
                                                 src={item.url}
                                                 alt="Hero Slide"
                                                 className={`hero-slide ${currentBanner === index ? 'active' : ''}`}
+                                                {...(index === 0 ? { fetchpriority: "high" } : { loading: "lazy" })}
                                             />
                                         )
                                     ))}
@@ -135,6 +137,7 @@ const LandingPage = () => {
                                         muted
                                         playsInline
                                         onEnded={nextSocialVideo}
+                                        loading="lazy"
                                     />
                                 )}
                             </div>
