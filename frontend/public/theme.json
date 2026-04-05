@@ -25,10 +25,10 @@
   },
   "colors": {
     "bg_base": "#265b36",
-    "primary": "#D65A65",
+    "primary": "#265b36",
     "secondary": "#F1C40F",
     "surface": "#FDFBF7",
-    "text_main": "#D65A65",
+    "text_main": "#142818",
     "text_on_bg": "#FFFFFF",
     "ticket_bg": "#FAFAFA"
   }
