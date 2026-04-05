@@ -20,21 +20,41 @@ const DeliverySection = () => {
                 </div>
 
                 <div className="delivery-container">
-                    <a 
-                        href={uberEatsLink} 
-                        target="_blank" 
-                        rel="noopener noreferrer" 
-                        className="delivery-card uber-eats"
-                    >
-                        <div className="delivery-logo-wrapper">
-                            <img src="/images/ubereats.webp" alt="Uber Eats" className="delivery-brand-logo" />
-                        </div>
-                        <div className="delivery-text-info">
-                            <span className="delivery-btn-text">{t('order_ubereats')}</span>
-                            <span className="delivery-note">{t('ubereats_note')}</span>
-                        </div>
-                        <div className="delivery-arrow">➔</div>
-                    </a>
+                    {(uberEatsLink && uberEatsLink !== "#") && (
+                        <a 
+                            href={uberEatsLink} 
+                            target="_blank" 
+                            rel="noopener noreferrer" 
+                            className="delivery-card uber-eats"
+                        >
+                            <div className="delivery-logo-wrapper">
+                                <img src="/images/ubereats.webp" alt="Uber Eats" className="delivery-brand-logo" />
+                            </div>
+                            <div className="delivery-text-info">
+                                <span className="delivery-btn-text">{t('order_ubereats')}</span>
+                                <span className="delivery-note">{t('ubereats_note')}</span>
+                            </div>
+                            <div className="delivery-arrow">➔</div>
+                        </a>
+                    )}
+
+                    {(glovoLink && glovoLink !== "#") && (
+                        <a 
+                            href={glovoLink} 
+                            target="_blank" 
+                            rel="noopener noreferrer" 
+                            className="delivery-card glovo"
+                        >
+                            <div className="delivery-logo-wrapper">
+                                <img src="/images/glovo.webp" alt="Glovo" className="delivery-brand-logo" />
+                            </div>
+                            <div className="delivery-text-info">
+                                <span className="delivery-btn-text">Pide en Glovo</span>
+                                <span className="delivery-note">Recíbelo en casa</span>
+                            </div>
+                            <div className="delivery-arrow">➔</div>
+                        </a>
+                    )}
 
                     <a 
                         href={`tel:${phoneNumber.replace(/\s+/g, '')}`} 

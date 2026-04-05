@@ -193,7 +193,7 @@ const LandingPage = () => {
                             <iframe
                                 title="Mapa" width="100%" height="100%" frameBorder="0"
                                 style={{ border: 0 }}
-                                src={theme.contact.mapsIframe}
+                                src={contact.mapsIframe || theme.contact.mapsIframe}
                                 allowFullScreen="" loading="lazy" referrerPolicy="no-referrer-when-downgrade"
                             ></iframe>
 
@@ -202,9 +202,9 @@ const LandingPage = () => {
                                     <MapPin size={22} />
                                 </div>
                                 <div style={{ flex: 1 }}>
-                                    <p style={{ fontSize: '0.85rem', color: '#555', margin: 0 }}>{contact.address}</p>
+                                    <p style={{ fontSize: '0.85rem', color: '#555', margin: 0 }}>{contact.address || theme.contact.address}</p>
                                 </div>
-                                <a href={theme.contact.mapsIframe} target="_blank" rel="noreferrer" className="map-view-btn">
+                                <a href={contact.mapsIframe || theme.contact.mapsIframe} target="_blank" rel="noreferrer" className="map-view-btn">
                                     {t('view_map_btn')} ➔
                                 </a>
                             </div>
