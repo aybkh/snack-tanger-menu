@@ -65,51 +65,51 @@
   "schedule": [
     {
       "day": "Lunes",
-      "label": "12:00 - 02:00",
-      "open": 12,
-      "close": 26,
+      "label": "16:00 - 00:00",
+      "open": 16,
+      "close": 24,
       "closed": false
     },
     {
       "day": "Martes",
-      "label": "12:00 - 02:00",
-      "open": 12,
-      "close": 26,
-      "closed": false
+      "label": "Cerrado",
+      "open": 0,
+      "close": 0,
+      "closed": true
     },
     {
       "day": "Mi\u00E9rcoles",
-      "label": "12:00 - 02:00",
-      "open": 12,
-      "close": 26,
+      "label": "16:00 - 00:00",
+      "open": 16,
+      "close": 24,
       "closed": false
     },
     {
       "day": "Jueves",
-      "label": "12:00 - 02:00",
-      "open": 12,
-      "close": 26,
+      "label": "16:00 - 00:00",
+      "open": 16,
+      "close": 24,
       "closed": false
     },
     {
       "day": "Viernes",
-      "label": "12:00 - 02:00",
-      "open": 12,
-      "close": 26,
+      "label": "18:00 - 00:00",
+      "open": 18,
+      "close": 24,
       "closed": false
     },
     {
       "day": "S\u00E1bado",
-      "label": "12:00 - 02:00",
-      "open": 12,
-      "close": 26,
+      "label": "14:00 - 00:00",
+      "open": 14,
+      "close": 24,
       "closed": false
     },
     {
       "day": "Domingo",
-      "label": "12:00 - 02:00",
-      "open": 12,
-      "close": 26,
+      "label": "14:00 - 00:00",
+      "open": 14,
+      "close": 24,
       "closed": false
     }
   ],
