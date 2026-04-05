@@ -207,7 +207,7 @@ const LandingPage = () => {
                             </div>
                         </div>
 
-                        <div style={{ width: '100%', padding: '20px 0' }}>
+                        <div id="hours" style={{ width: '100%', padding: '20px 0' }}>
                             <div className="section-head" style={{ marginBottom: '15px' }}>
                                 <h2>{t('hours_title')}</h2>
                             </div>
