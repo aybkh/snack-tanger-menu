@@ -72,7 +72,7 @@ const HoursCard = () => {
                                     <span className="day-name">{t(`day_${idx}`)}</span>
                                 </div>
                                 <span className="day-time">
-                                    {isClosed ? t('closed') : day.label}
+                                    {isClosed ? t('closed') : (day.label || `${day.open} - ${day.close}`)}
                                 </span>
                             </div>
                         );
