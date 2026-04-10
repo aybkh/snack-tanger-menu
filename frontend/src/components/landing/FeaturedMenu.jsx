@@ -17,11 +17,14 @@ const FeaturedCard = ({ item }) => {
     };
 
     useEffect(() => {
+        if (!item.images.length) return;
         const interval = setInterval(() => {
             setCurrentIndex((prev) => (prev + 1) % item.images.length);
         }, 4000 + Math.random() * 1000);
         return () => clearInterval(interval);
     }, [item.images.length]);
+
+    if (!item.images.length) return null;
 
     return (
         <div className="featured-card">
@@ -53,51 +56,70 @@ const FeaturedCard = ({ item }) => {
     );
 };
 
+// Default fallback data (used when site_config.json has no featured_menu)
+const defaultFeaturedData = (t) => [
+    {
+        title: t('feat_tacos'),
+        subtitle: t('feat_tacos_sub'),
+        images: [
+            { src: "/products/taco-s.webp", label: "S" },
+            { src: "/products/taco-m.webp", label: "M" },
+            { src: "/products/taco-l.webp", label: "L" },
+            { src: "/products/taco-xl.webp", label: "XL" }
+        ]
+    },
+    {
+        title: t('feat_pizzas'),
+        subtitle: t('feat_pizzas_sub'),
+        images: [
+            { src: "/products/pizza-margarita.webp", label: "Margarita" },
+            { src: "/products/pizza-tanger-303.webp", label: "Tanger 303" },
+            { src: "/products/pizza-atun.webp", label: "Atún" },
+            { src: "/products/pizza-marisco.webp", label: "Marisco" }
+        ]
+    },
+    {
+        title: t('feat_plats'),
+        subtitle: t('feat_plats_sub'),
+        images: [
+            { src: "/products/pollo-plato.webp", label: "Pollo" },
+            { src: "/products/maxi-tenders-plato.webp", label: "Maxi Tenders" },
+            { src: "/products/emince-de-pollo-plato.webp", label: "Emincé Pollo" },
+            { src: "/products/plato-de-marisco.webp", label: "Plato Marisco" }
+        ]
+    },
+    {
+        title: t('feat_batits'),
+        subtitle: t('feat_batits_sub'),
+        images: [
+            { src: "/products/aguacate-batido.webp", label: "Aguacate" },
+            { src: "/products/fresa-batido.webp", label: "Fresa" },
+            { src: "/products/platano-batido.webp", label: "Plátano" },
+            { src: "/products/tropical.webp", label: "Tropical" }
+        ]
+    }
+];
+
 const FeaturedMenu = () => {
     const { t } = useLanguage();
+    const [featuredData, setFeaturedData] = useState([]);
 
-    const featuredData = [
-        {
-            title: t('feat_tacos'),
-            subtitle: t('feat_tacos_sub'),
-            images: [
-                { src: "/products/taco-s.webp", label: "S" },
-                { src: "/products/taco-m.webp", label: "M" },
-                { src: "/products/taco-l.webp", label: "L" },
-                { src: "/products/taco-xl.webp", label: "XL" }
-            ]
-        },
-        {
-            title: t('feat_pizzas'),
-            subtitle: t('feat_pizzas_sub'),
-            images: [
-                { src: "/products/pizza-margarita.webp", label: "Margarita" },
-                { src: "/products/pizza-tanger-303.webp", label: "Tanger 303" },
-                { src: "/products/pizza-atun.webp", label: "Atún" },
-                { src: "/products/pizza-marisco.webp", label: "Marisco" }
-            ]
-        },
-        {
-            title: t('feat_plats'),
-            subtitle: t('feat_plats_sub'),
-            images: [
-                { src: "/products/pollo-plato.webp", label: "Pollo" },
-                { src: "/products/maxi-tenders-plato.webp", label: "Maxi Tenders" },
-                { src: "/products/emince-de-pollo-plato.webp", label: "Emincé Pollo" },
-                { src: "/products/plato-de-marisco.webp", label: "Plato Marisco" }
-            ]
-        },
-        {
-            title: t('feat_batits'),
-            subtitle: t('feat_batits_sub'),
-            images: [
-                { src: "/products/aguacate-batido.webp", label: "Aguacate" },
-                { src: "/products/fresa-batido.webp", label: "Fresa" },
-                { src: "/products/platano-batido.webp", label: "Plátano" },
-                { src: "/products/tropical.webp", label: "Tropical" }
-            ]
-        }
-    ];
+    useEffect(() => {
+        fetch('/site_config.json')
+            .then(r => r.json())
+            .then(data => {
+                if (data.featured_menu && data.featured_menu.length > 0) {
+                    setFeaturedData(data.featured_menu);
+                } else {
+                    setFeaturedData(defaultFeaturedData(t));
+                }
+            })
+            .catch(() => {
+                setFeaturedData(defaultFeaturedData(t));
+            });
+    }, [t]);
+
+    if (!featuredData.length) return null;
 
     return (
         <section className="featured-section">
