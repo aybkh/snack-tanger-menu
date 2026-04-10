@@ -113,6 +113,48 @@
       "closed": false
     }
   ],
+  "featured_menu": [
+    {
+      "title": "Nuestros Tacos",
+      "subtitle": "De la S a la XL, elige tu tamaño",
+      "images": [
+        { "src": "/products/taco-s.webp", "label": "S" },
+        { "src": "/products/taco-m.webp", "label": "M" },
+        { "src": "/products/taco-l.webp", "label": "L" },
+        { "src": "/products/taco-xl.webp", "label": "XL" }
+      ]
+    },
+    {
+      "title": "Pizzas Artesanas",
+      "subtitle": "Masa fresca, ingredientes premium",
+      "images": [
+        { "src": "/products/pizza-margarita.webp", "label": "Margarita" },
+        { "src": "/products/pizza-tanger-303.webp", "label": "Tanger 303" },
+        { "src": "/products/pizza-atun.webp", "label": "Atún" },
+        { "src": "/products/pizza-marisco.webp", "label": "Marisco" }
+      ]
+    },
+    {
+      "title": "Platos Generosos",
+      "subtitle": "Raciones abundantes para compartir o disfrutar solo",
+      "images": [
+        { "src": "/products/pollo-plato.webp", "label": "Pollo" },
+        { "src": "/products/maxi-tenders-plato.webp", "label": "Maxi Tenders" },
+        { "src": "/products/emince-de-pollo-plato.webp", "label": "Emincé Pollo" },
+        { "src": "/products/plato-de-marisco.webp", "label": "Plato Marisco" }
+      ]
+    },
+    {
+      "title": "Batidos Naturales",
+      "subtitle": "Frescos, naturales y llenos de sabor",
+      "images": [
+        { "src": "/products/aguacate-batido.webp", "label": "Aguacate" },
+        { "src": "/products/fresa-batido.webp", "label": "Fresa" },
+        { "src": "/products/platano-batido.webp", "label": "Plátano" },
+        { "src": "/products/tropical.webp", "label": "Tropical" }
+      ]
+    }
+  ],
   "contact": {
     "phone": "631469288",
     "address": "Pla\u00E7a Cardenal Vives i Tut\u00F3, 36, 08303 Matar\u00F3, Barcelona",
