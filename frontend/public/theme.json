@@ -2,18 +2,18 @@
   "restaurantName": "Snack Tanger 303",
   "seo": {
     "title": "Snack Tanger 303 | Snack Tanger 303",
-    "description": "Snack Tanger 303",
-    "keywords": "tacos, burger, pizza, snack, tanger",
-    "favicon": "/images/snack-logo.png"
+    "description": "P\u00E1gina oficial de Snack Tanger 303. Pla\u00E7a del Cardenal Vives i Tut\u00F3, 36, 08303 Matar\u00F3, Barcelona",
+    "keywords": "snack tanger 303, comida para llevar, mataro, restaurante",
+    "favicon": "/favicon.ico"
   },
   "brand": {
     "logoHeader": "/images/snack-logo.png",
     "logoFallback": "/images/snack-logo.png",
     "heroBadge": "\uD83D\uDCCD SNACK TANGER 303",
-    "footerText": "\u00A9 2026 Snack Tanger 303."
+    "footerText": "\u00A9 2026 Snack Tanger 303. Snack Tanger 303"
   },
   "contact": {
-    "address": "Pla\u00E7a Cardenal Vives i Tut\u00F3, 36, 08303 Matar\u00F3, Barcelona",
+    "address": "Pla\u00E7a del Cardenal Vives i Tut\u00F3, 36, 08303 Matar\u00F3, Barcelona",
     "mapsIframe": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2986.4049283663367!2d2.4203880755420304!3d41.5388289865887!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12a4b51a22542a71%3A0x6932e4c0ba7430bd!2sRestaurant%20Snack%20Tanger%2C%20303!5e0!3m2!1sca!2ses!4v1770400135417!5m2!1sca!2ses",
     "phone": "631469288"
   },
@@ -21,14 +21,14 @@
     "instagram": "https://www.instagram.com/snack.tanger.303",
     "tiktok": "https://www.tiktok.com/@snack.tanger.303",
     "uberEats": "https://www.ubereats.com/es/store/snack-tanger-303/_O0Bw1suXgiMdIj4m__Lhw",
-    "uberEatsLabel": "Pide en Uber Eats"
+    "uberEatsLabel": "Pedir a Domicilio"
   },
   "colors": {
     "bg_base": "#265b36",
-    "primary": "#265b36",
+    "primary": "#142818",
     "secondary": "#F1C40F",
     "surface": "#FDFBF7",
-    "text_main": "#142818",
+    "text_main": "#1a1a1a",
     "text_on_bg": "#FFFFFF",
     "ticket_bg": "#FAFAFA"
   }

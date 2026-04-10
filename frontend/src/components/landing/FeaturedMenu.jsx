@@ -2,6 +2,7 @@
 import React, { useState, useEffect } from 'react';
 import { ChevronLeft, ChevronRight } from 'lucide-react';
 import { useLanguage } from '../../context/LanguageContext';
+import { getSiteConfig } from '../../api';
 
 const FeaturedCard = ({ item }) => {
     const [currentIndex, setCurrentIndex] = useState(0);
@@ -105,18 +106,20 @@ const FeaturedMenu = () => {
     const [featuredData, setFeaturedData] = useState([]);
 
     useEffect(() => {
-        fetch('/site_config.json')
-            .then(r => r.json())
-            .then(data => {
-                if (data.featured_menu && data.featured_menu.length > 0) {
+        const loadFeatured = async () => {
+            try {
+                const data = await getSiteConfig();
+                if (data && data.featured_menu && data.featured_menu.length > 0) {
                     setFeaturedData(data.featured_menu);
                 } else {
                     setFeaturedData(defaultFeaturedData(t));
                 }
-            })
-            .catch(() => {
+            } catch (error) {
+                console.error("Error loading featured menu:", error);
                 setFeaturedData(defaultFeaturedData(t));
-            });
+            }
+        };
+        loadFeatured();
     }, [t]);
 
     if (!featuredData.length) return null;

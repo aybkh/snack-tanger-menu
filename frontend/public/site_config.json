@@ -24,6 +24,11 @@
       "type": "image",
       "url": "/hero/banner2.webp",
       "title": ""
+    },
+    {
+      "type": "video",
+      "url": "/hero/batido_aguacate.mp4",
+      "title": ""
     }
   ],
   "social_videos": [
@@ -38,6 +43,106 @@
     {
       "url": "/videos/video_plato_calamares_tajin_gambas.mp4",
       "title": "PLATOS DELICIOSOS \uD83C\uDF64"
+    }
+  ],
+  "featured_menu": [
+    {
+      "title": "Tacos Franceses",
+      "subtitle": "Salsas caseras y carne de calidad",
+      "images": [
+        {
+          "src": "/products/taco-m.webp",
+          "label": "M"
+        },
+        {
+          "src": "/products/taco-l.webp",
+          "label": "L"
+        },
+        {
+          "src": "/products/taco-xl.webp",
+          "label": "XL"
+        },
+        {
+          "src": "/products/taco-s.webp",
+          "label": "S"
+        }
+      ]
+    },
+    {
+      "title": "Pizzas Artesanas",
+      "subtitle": "Masa fresca hecha al d\u00EDa",
+      "images": [
+        {
+          "src": "/products/pizza-margarita.webp",
+          "label": "Margarita"
+        },
+        {
+          "src": "/products/pizza-tanger-303.webp",
+          "label": "Tanger 303"
+        },
+        {
+          "src": "/products/pizza-atun.webp",
+          "label": "At\u00FAn"
+        },
+        {
+          "src": "/products/pizza-marisco.webp",
+          "label": "Marisco"
+        }
+      ]
+    },
+    {
+      "title": "Platos Combinados",
+      "subtitle": "Generosos y aut\u00E9nticos",
+      "images": [
+        {
+          "src": "/products/plato-de-pollo.webp",
+          "label": "Pollo"
+        },
+        {
+          "src": "/products/plato-maxi-tenders.webp",
+          "label": "Maxi Tenders"
+        },
+        {
+          "src": "/products/emince-de-pollo.webp",
+          "label": "Eminc\u00E9 Pollo"
+        },
+        {
+          "src": "/products/plato-de-marisco.webp",
+          "label": "Plato Marisco"
+        }
+      ]
+    },
+    {
+      "title": "Batidos Naturales",
+      "subtitle": "Fruta 100% Fresca",
+      "images": [
+        {
+          "src": "/products/batido-de-aguacate.webp",
+          "label": "Aguacate"
+        },
+        {
+          "src": "/products/batido-de-fresa.webp",
+          "label": "Fresa"
+        },
+        {
+          "src": "/products/batido-de-platano.webp",
+          "label": "Pl\u00E1tano"
+        },
+        {
+          "src": "/products/batido-tropical.webp",
+          "label": "Tropical"
+        }
+      ]
+    },
+    {
+      "title": "Ensaladas",
+      "subtitle": "Enasalas Saludables",
+      "images": [
+        {
+          "src": "/products/ensalada-pequena.webp",
+          "label": "Ensalada peque\u00F1a"
+        }
+      ]
     }
   ],
   "reviews": [
@@ -60,104 +165,16 @@
       "author": "Nadia L.",
       "text": "Impresionante relaci\u00F3n calidad-precio. El pan naan reci\u00E9n hecho marca totalmente la diferencia.",
       "stars": 5
-    }
-  ],
-  "schedule": [
-    {
-      "day": "Lunes",
-      "label": "16:00 - 00:00",
-      "open": 16,
-      "close": 24,
-      "closed": false
     },
     {
-      "day": "Martes",
-      "label": "Cerrado",
-      "open": 0,
-      "close": 0,
-      "closed": true
-    },
-    {
-      "day": "Mi\u00E9rcoles",
-      "label": "16:00 - 00:00",
-      "open": 16,
-      "close": 24,
-      "closed": false
-    },
-    {
-      "day": "Jueves",
-      "label": "16:00 - 00:00",
-      "open": 16,
-      "close": 24,
-      "closed": false
-    },
-    {
-      "day": "Viernes",
-      "label": "18:00 - 00:00",
-      "open": 18,
-      "close": 24,
-      "closed": false
-    },
-    {
-      "day": "S\u00E1bado",
-      "label": "14:00 - 00:00",
-      "open": 14,
-      "close": 24,
-      "closed": false
-    },
-    {
-      "day": "Domingo",
-      "label": "14:00 - 00:00",
-      "open": 14,
-      "close": 24,
-      "closed": false
-    }
-  ],
-  "featured_menu": [
-    {
-      "title": "Nuestros Tacos",
-      "subtitle": "De la S a la XL, elige tu tamaño",
-      "images": [
-        { "src": "/products/taco-s.webp", "label": "S" },
-        { "src": "/products/taco-m.webp", "label": "M" },
-        { "src": "/products/taco-l.webp", "label": "L" },
-        { "src": "/products/taco-xl.webp", "label": "XL" }
-      ]
-    },
-    {
-      "title": "Pizzas Artesanas",
-      "subtitle": "Masa fresca, ingredientes premium",
-      "images": [
-        { "src": "/products/pizza-margarita.webp", "label": "Margarita" },
-        { "src": "/products/pizza-tanger-303.webp", "label": "Tanger 303" },
-        { "src": "/products/pizza-atun.webp", "label": "Atún" },
-        { "src": "/products/pizza-marisco.webp", "label": "Marisco" }
-      ]
-    },
-    {
-      "title": "Platos Generosos",
-      "subtitle": "Raciones abundantes para compartir o disfrutar solo",
-      "images": [
-        { "src": "/products/pollo-plato.webp", "label": "Pollo" },
-        { "src": "/products/maxi-tenders-plato.webp", "label": "Maxi Tenders" },
-        { "src": "/products/emince-de-pollo-plato.webp", "label": "Emincé Pollo" },
-        { "src": "/products/plato-de-marisco.webp", "label": "Plato Marisco" }
-      ]
-    },
-    {
-      "title": "Batidos Naturales",
-      "subtitle": "Frescos, naturales y llenos de sabor",
-      "images": [
-        { "src": "/products/aguacate-batido.webp", "label": "Aguacate" },
-        { "src": "/products/fresa-batido.webp", "label": "Fresa" },
-        { "src": "/products/platano-batido.webp", "label": "Plátano" },
-        { "src": "/products/tropical.webp", "label": "Tropical" }
-      ]
+      "author": "Moha47e",
+      "text": "El mejor tacos de Matar\u00F3 sin duda!!",
+      "stars": 5
     }
   ],
   "contact": {
     "phone": "631469288",
-    "address": "Pla\u00E7a Cardenal Vives i Tut\u00F3, 36, 08303 Matar\u00F3, Barcelona",
+    "address": "Pla\u00E7a del Cardenal Vives i Tut\u00F3, 36, 08303 Matar\u00F3, Barcelona",
     "email": "bnomarkarim@gmail.com",
     "whatsapp": "https://wa.me/34631469288",
     "instagram": "https://www.instagram.com/snack.tanger.303",
@@ -166,5 +183,56 @@
     "ubereats": "https://www.ubereats.com/es/store/snack-tanger-303/_O0Bw1suXgiMdIj4m__Lhw",
     "glovo": "",
     "mapsIframe": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2986.4049283663367!2d2.4203880755420304!3d41.5388289865887!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12a4b51a22542a71%3A0x6932e4c0ba7430bd!2sRestaurant%20Snack%20Tanger%2C%20303!5e0!3m2!1sca!2ses!4v1770400135417!5m2!1sca!2ses"
-  }
+  },
+  "schedule": [
+    {
+      "day": "Lunes",
+      "label": "16:00 - 24:00",
+      "open": 16,
+      "close": 24,
+      "closed": false
+    },
+    {
+      "day": "Martes",
+      "label": "Cerrado",
+      "open": 0,
+      "close": 24,
+      "closed": true
+    },
+    {
+      "day": "Mi\u00E9rcoles",
+      "label": "16:00 - 24:00",
+      "open": 16,
+      "close": 24,
+      "closed": false
+    },
+    {
+      "day": "Jueves",
+      "label": "16:00 - 24:00",
+      "open": 16,
+      "close": 24,
+      "closed": false
+    },
+    {
+      "day": "Viernes",
+      "label": "Cerrado",
+      "open": 18,
+      "close": 24,
+      "closed": true
+    },
+    {
+      "day": "S\u00E1bado",
+      "label": "14:00 - 24:00",
+      "open": 14,
+      "close": 24,
+      "closed": false
+    },
+    {
+      "day": "Domingo",
+      "label": "14:00 - 24:00",
+      "open": 14,
+      "close": 24,
+      "closed": false
+    }
+  ]
 }

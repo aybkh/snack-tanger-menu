@@ -17,7 +17,8 @@
             1,
             7,
             16
-          ]
+          ],
+          "modifiers": null
         },
         {
           "id": 2,
@@ -31,7 +32,8 @@
             1,
             7,
             16
-          ]
+          ],
+          "modifiers": null
         },
         {
           "id": 3,
@@ -45,7 +47,8 @@
             1,
             7,
             16
-          ]
+          ],
+          "modifiers": null
         },
         {
           "id": 4,
@@ -59,9 +62,16 @@
             1,
             7,
             16
-          ]
+          ],
+          "modifiers": null
         }
       ]
+    },
+    {
+      "id": 11,
+      "name": "",
+      "image": "categories/default_cat.jpg",
+      "products": []
     },
     {
       "id": 2,
@@ -79,6 +89,28 @@
           "alergenos": [
             1,
             7
+          ],
+          "modifiers": [
+            {
+              "name": "Sin Queso",
+              "price": 0,
+              "icon": "\uD83D\uDEAB"
+            },
+            {
+              "name": "\u002B Aceitunas",
+              "price": 0.50,
+              "icon": "\uD83E\uDED2"
+            },
+            {
+              "name": "\u002B Huevo",
+              "price": 0.50,
+              "icon": "\uD83E\uDD5A"
+            },
+            {
+              "name": "\u002B Extra Queso",
+              "price": 1.00,
+              "icon": "\uD83E\uDDC0"
+            }
           ]
         },
         {
@@ -93,6 +125,28 @@
             1,
             4,
             7
+          ],
+          "modifiers": [
+            {
+              "name": "Sin At\u00FAn",
+              "price": 0,
+              "icon": "\uD83D\uDEAB"
+            },
+            {
+              "name": "Sin Cebolla",
+              "price": 0,
+              "icon": "\uD83D\uDEAB"
+            },
+            {
+              "name": "\u002B Extra Queso",
+              "price": 1.00,
+              "icon": "\uD83E\uDDC0"
+            },
+            {
+              "name": "\u002B Huevo",
+              "price": 0.50,
+              "icon": "\uD83E\uDD5A"
+            }
           ]
         },
         {
@@ -107,6 +161,28 @@
             1,
             7,
             16
+          ],
+          "modifiers": [
+            {
+              "name": "Sin Pollo",
+              "price": 0,
+              "icon": "\uD83D\uDEAB"
+            },
+            {
+              "name": "Sin Champi\u00F1ones",
+              "price": 0,
+              "icon": "\uD83D\uDEAB"
+            },
+            {
+              "name": "\u002B Extra Pollo",
+              "price": 1.50,
+              "icon": "\uD83C\uDF57"
+            },
+            {
+              "name": "\u002B Huevo",
+              "price": 0.50,
+              "icon": "\uD83E\uDD5A"
+            }
           ]
         },
         {
@@ -121,6 +197,28 @@
             1,
             7,
             16
+          ],
+          "modifiers": [
+            {
+              "name": "Sin Carne",
+              "price": 0,
+              "icon": "\uD83D\uDEAB"
+            },
+            {
+              "name": "Sin Cebolla",
+              "price": 0,
+              "icon": "\uD83D\uDEAB"
+            },
+            {
+              "name": "\u002B Extra Carne",
+              "price": 1.50,
+              "icon": "\uD83E\uDD69"
+            },
+            {
+              "name": "\u002B Huevo",
+              "price": 0.50,
+              "icon": "\uD83E\uDD5A"
+            }
           ]
         },
         {
@@ -137,6 +235,28 @@
             4,
             7,
             13
+          ],
+          "modifiers": [
+            {
+              "name": "Sin Gambas",
+              "price": 0,
+              "icon": "\uD83D\uDEAB"
+            },
+            {
+              "name": "Sin Mejillones",
+              "price": 0,
+              "icon": "\uD83D\uDEAB"
+            },
+            {
+              "name": "\u002B Extra Marisco",
+              "price": 2.00,
+              "icon": "\uD83E\uDD90"
+            },
+            {
+              "name": "\u002B Huevo",
+              "price": 0.50,
+              "icon": "\uD83E\uDD5A"
+            }
           ]
         },
         {
@@ -151,6 +271,28 @@
             1,
             7,
             16
+          ],
+          "modifiers": [
+            {
+              "name": "Sin Pollo",
+              "price": 0,
+              "icon": "\uD83D\uDEAB"
+            },
+            {
+              "name": "Sin Carne",
+              "price": 0,
+              "icon": "\uD83D\uDEAB"
+            },
+            {
+              "name": "Sin Marisco",
+              "price": 0,
+              "icon": "\uD83D\uDEAB"
+            },
+            {
+              "name": "\u002B Huevo",
+              "price": 0.50,
+              "icon": "\uD83E\uDD5A"
+            }
           ]
         }
       ]
@@ -167,11 +309,12 @@
           "base_price": 7,
           "description": null,
           "is_available": true,
-          "image": "pollo-plato.webp",
+          "image": "plato-de-pollo.webp",
           "alergenos": [
             1,
             16
-          ]
+          ],
+          "modifiers": null
         },
         {
           "id": 12,
@@ -180,11 +323,12 @@
           "base_price": 7,
           "description": null,
           "is_available": true,
-          "image": "carne-picada-plato.webp",
+          "image": "plato-carne-picada.webp",
           "alergenos": [
             1,
             16
-          ]
+          ],
+          "modifiers": null
         },
         {
           "id": 13,
@@ -193,13 +337,14 @@
           "base_price": 9,
           "description": null,
           "is_available": true,
-          "image": "maxi-tenders-plato.webp",
+          "image": "plato-maxi-tenders.webp",
           "alergenos": [
             1,
             3,
             7,
             16
-          ]
+          ],
+          "modifiers": null
         },
         {
           "id": 14,
@@ -208,11 +353,12 @@
           "base_price": 9,
           "description": null,
           "is_available": true,
-          "image": "emince-de-pollo-plato.webp",
+          "image": "emince-de-pollo.webp",
           "alergenos": [
             7,
             16
-          ]
+          ],
+          "modifiers": null
         },
         {
           "id": 15,
@@ -221,11 +367,12 @@
           "base_price": 11,
           "description": null,
           "is_available": false,
-          "image": "emince-de-carne-plato.webp",
+          "image": "emince-de-carne.webp",
           "alergenos": [
             7,
             16
-          ]
+          ],
+          "modifiers": null
         },
         {
           "id": 16,
@@ -239,7 +386,8 @@
             2,
             4,
             13
-          ]
+          ],
+          "modifiers": null
         }
       ]
     },
@@ -255,13 +403,40 @@
           "base_price": 6,
           "description": null,
           "is_available": true,
-          "image": "ternera-burger.webp",
+          "image": "hamburguesa-ternera.webp",
           "alergenos": [
             1,
             3,
             7,
             11,
             16
+          ],
+          "modifiers": [
+            {
+              "name": "Sin cebolla",
+              "price": 0,
+              "icon": "\uD83E\uDDC5"
+            },
+            {
+              "name": "Sin Tomate",
+              "price": 0,
+              "icon": "\uD83C\uDF45"
+            },
+            {
+              "name": "Sin Lechuga",
+              "price": 0,
+              "icon": "\uD83E\uDD6C"
+            },
+            {
+              "name": "\u002B Queso",
+              "price": 0.50,
+              "icon": "\uD83E\uDDC0"
+            },
+            {
+              "name": "\u002B Huevo Frito",
+              "price": 0.50,
+              "icon": "\uD83C\uDF73"
+            }
           ]
         },
         {
@@ -271,13 +446,40 @@
           "base_price": 7,
           "description": null,
           "is_available": true,
-          "image": "tenders-burger.webp",
+          "image": "hamburguesa-tenders.webp",
           "alergenos": [
             1,
             3,
             7,
             11,
             16
+          ],
+          "modifiers": [
+            {
+              "name": "Sin cebolla",
+              "price": 0,
+              "icon": "\uD83E\uDDC5"
+            },
+            {
+              "name": "Sin Tomate",
+              "price": 0,
+              "icon": "\uD83C\uDF45"
+            },
+            {
+              "name": "Sin Lechuga",
+              "price": 0,
+              "icon": "\uD83E\uDD6C"
+            },
+            {
+              "name": "\u002B Queso",
+              "price": 0.50,
+              "icon": "\uD83E\uDDC0"
+            },
+            {
+              "name": "\u002B Huevo Frito",
+              "price": 0.50,
+              "icon": "\uD83C\uDF73"
+            }
           ]
         }
       ]
@@ -298,6 +500,28 @@
           "alergenos": [
             3,
             16
+          ],
+          "modifiers": [
+            {
+              "name": "Sin Huevo",
+              "price": 0,
+              "icon": "\uD83D\uDEAB"
+            },
+            {
+              "name": "Sin Cebolla",
+              "price": 0,
+              "icon": "\uD83D\uDEAB"
+            },
+            {
+              "name": "\u002B Extra Kefta",
+              "price": 2.00,
+              "icon": "\uD83E\uDD69"
+            },
+            {
+              "name": "\u002B Queso",
+              "price": 1.00,
+              "icon": "\uD83E\uDDC0"
+            }
           ]
         },
         {
@@ -310,6 +534,28 @@
           "image": "tajin-de-gambas-pil-pil.webp",
           "alergenos": [
             2
+          ],
+          "modifiers": [
+            {
+              "name": "Sin Picante",
+              "price": 0,
+              "icon": "\uD83D\uDEAB"
+            },
+            {
+              "name": "Sin Ajo",
+              "price": 0,
+              "icon": "\uD83D\uDEAB"
+            },
+            {
+              "name": "\u002B Extra Gambas",
+              "price": 2.50,
+              "icon": "\uD83E\uDD90"
+            },
+            {
+              "name": "\u002B Huevo",
+              "price": 0.50,
+              "icon": "\uD83E\uDD5A"
+            }
           ]
         },
         {
@@ -324,6 +570,28 @@
             1,
             7,
             16
+          ],
+          "modifiers": [
+            {
+              "name": "Sin Salsa Blanca",
+              "price": 0,
+              "icon": "\uD83D\uDEAB"
+            },
+            {
+              "name": "Sin Picante",
+              "price": 0,
+              "icon": "\uD83D\uDEAB"
+            },
+            {
+              "name": "Sin Ensalada",
+              "price": 0,
+              "icon": "\uD83D\uDEAB"
+            },
+            {
+              "name": "\u002B Extra Carne",
+              "price": 1.50,
+              "icon": "\uD83E\uDD69"
+            }
           ]
         },
         {
@@ -333,11 +601,18 @@
           "base_price": 9,
           "description": null,
           "is_available": true,
-          "image": "tajin-marisco-tajin.webp",
+          "image": "tajin-marisco.webp",
           "alergenos": [
             2,
             4,
             13
+          ],
+          "modifiers": [
+            {
+              "name": "Sin Picante",
+              "price": 0,
+              "icon": "\uD83D\uDEAB"
+            }
           ]
         },
         {
@@ -347,10 +622,17 @@
           "base_price": 4.5,
           "description": null,
           "is_available": true,
-          "image": "sopa-de-pescado-tajin.webp",
+          "image": "sopa-de-pescado.webp",
           "alergenos": [
             2,
             4
+          ],
+          "modifiers": [
+            {
+              "name": "Sin Picante",
+              "price": 0,
+              "icon": "\uD83D\uDEAB"
+            }
           ]
         }
       ]
@@ -371,7 +653,8 @@
           "alergenos": [
             3,
             4
-          ]
+          ],
+          "modifiers": null
         },
         {
           "id": 25,
@@ -384,7 +667,8 @@
           "alergenos": [
             3,
             4
-          ]
+          ],
+          "modifiers": null
         }
       ]
     },
@@ -401,7 +685,8 @@
           "description": null,
           "is_available": true,
           "image": "coca-cola.webp",
-          "alergenos": []
+          "alergenos": [],
+          "modifiers": null
         },
         {
           "id": 35,
@@ -411,7 +696,8 @@
           "description": null,
           "is_available": true,
           "image": "fanta.webp",
-          "alergenos": []
+          "alergenos": [],
+          "modifiers": null
         },
         {
           "id": 36,
@@ -421,7 +707,8 @@
           "description": null,
           "is_available": true,
           "image": "sprite.webp",
-          "alergenos": []
+          "alergenos": [],
+          "modifiers": null
         },
         {
           "id": 37,
@@ -431,7 +718,8 @@
           "description": null,
           "is_available": true,
           "image": "nestea.webp",
-          "alergenos": []
+          "alergenos": [],
+          "modifiers": null
         },
         {
           "id": 38,
@@ -441,7 +729,8 @@
           "description": null,
           "is_available": true,
           "image": "aquarius.webp",
-          "alergenos": []
+          "alergenos": [],
+          "modifiers": null
         },
         {
           "id": 39,
@@ -451,7 +740,8 @@
           "description": null,
           "is_available": true,
           "image": "poms.webp",
-          "alergenos": []
+          "alergenos": [],
+          "modifiers": null
         },
         {
           "id": 40,
@@ -461,7 +751,8 @@
           "description": null,
           "is_available": true,
           "image": "hawaii.webp",
-          "alergenos": []
+          "alergenos": [],
+          "modifiers": null
         },
         {
           "id": 41,
@@ -471,7 +762,8 @@
           "description": null,
           "is_available": true,
           "image": "schweppes.webp",
-          "alergenos": []
+          "alergenos": [],
+          "modifiers": null
         },
         {
           "id": 42,
@@ -481,7 +773,8 @@
           "description": null,
           "is_available": true,
           "image": "oasis-tropical.webp",
-          "alergenos": []
+          "alergenos": [],
+          "modifiers": null
         },
         {
           "id": 43,
@@ -489,9 +782,10 @@
           "price": 1.5,
           "base_price": 1.5,
           "description": null,
-          "is_available": false,
+          "is_available": true,
           "image": "vichy-catalan.webp",
-          "alergenos": []
+          "alergenos": [],
+          "modifiers": null
         },
         {
           "id": 44,
@@ -501,7 +795,8 @@
           "description": null,
           "is_available": true,
           "image": "don-simon.webp",
-          "alergenos": []
+          "alergenos": [],
+          "modifiers": null
         },
         {
           "id": 45,
@@ -511,7 +806,8 @@
           "description": null,
           "is_available": true,
           "image": "redbull.webp",
-          "alergenos": []
+          "alergenos": [],
+          "modifiers": null
         },
         {
           "id": 46,
@@ -521,7 +817,8 @@
           "description": null,
           "is_available": true,
           "image": "bezoya.webp",
-          "alergenos": []
+          "alergenos": [],
+          "modifiers": null
         },
         {
           "id": 47,
@@ -531,7 +828,8 @@
           "description": null,
           "is_available": true,
           "image": "font-vella.webp",
-          "alergenos": []
+          "alergenos": [],
+          "modifiers": null
         },
         {
           "id": 48,
@@ -541,7 +839,8 @@
           "description": null,
           "is_available": true,
           "image": "aqua-deus.webp",
-          "alergenos": []
+          "alergenos": [],
+          "modifiers": null
         }
       ]
     },
@@ -560,7 +859,8 @@
           "image": "huevo-duro.webp",
           "alergenos": [
             3
-          ]
+          ],
+          "modifiers": null
         },
         {
           "id": 50,
@@ -572,7 +872,8 @@
           "image": "huevo-frito.webp",
           "alergenos": [
             3
-          ]
+          ],
+          "modifiers": null
         },
         {
           "id": 51,
@@ -584,7 +885,8 @@
           "image": "lonchas-de-queso.webp",
           "alergenos": [
             7
-          ]
+          ],
+          "modifiers": null
         },
         {
           "id": 52,
@@ -596,7 +898,8 @@
           "image": "mortadela.webp",
           "alergenos": [
             16
-          ]
+          ],
+          "modifiers": null
         }
       ]
     },
@@ -617,7 +920,8 @@
             3,
             10,
             15
-          ]
+          ],
+          "modifiers": null
         },
         {
           "id": 54,
@@ -631,7 +935,8 @@
             3,
             10,
             15
-          ]
+          ],
+          "modifiers": null
         },
         {
           "id": 55,
@@ -641,7 +946,8 @@
           "description": null,
           "is_available": true,
           "image": "salsa-barbacoa.webp",
-          "alergenos": []
+          "alergenos": [],
+          "modifiers": null
         },
         {
           "id": 56,
@@ -654,7 +960,8 @@
           "alergenos": [
             3,
             10
-          ]
+          ],
+          "modifiers": null
         },
         {
           "id": 57,
@@ -667,7 +974,8 @@
           "alergenos": [
             3,
             10
-          ]
+          ],
+          "modifiers": null
         },
         {
           "id": 58,
@@ -679,7 +987,8 @@
           "image": "salsa-chilli-thai.webp",
           "alergenos": [
             15
-          ]
+          ],
+          "modifiers": null
         },
         {
           "id": 59,
@@ -693,7 +1002,8 @@
             3,
             7,
             10
-          ]
+          ],
+          "modifiers": null
         },
         {
           "id": 60,
@@ -703,7 +1013,8 @@
           "description": null,
           "is_available": true,
           "image": "salsa-ketchup.webp",
-          "alergenos": []
+          "alergenos": [],
+          "modifiers": null
         },
         {
           "id": 61,
@@ -717,7 +1028,8 @@
             3,
             10,
             15
-          ]
+          ],
+          "modifiers": null
         },
         {
           "id": 62,
@@ -730,7 +1042,8 @@
           "alergenos": [
             3,
             10
-          ]
+          ],
+          "modifiers": null
         },
         {
           "id": 63,
@@ -744,7 +1057,8 @@
             3,
             7,
             10
-          ]
+          ],
+          "modifiers": null
         },
         {
           "id": 64,
@@ -758,7 +1072,8 @@
             3,
             10,
             15
-          ]
+          ],
+          "modifiers": null
         }
       ]
     },
@@ -779,7 +1094,8 @@
             1,
             3,
             7
-          ]
+          ],
+          "modifiers": null
         },
         {
           "id": 27,
@@ -792,7 +1108,8 @@
           "alergenos": [
             3,
             7
-          ]
+          ],
+          "modifiers": null
         },
         {
           "id": 28,
@@ -801,8 +1118,25 @@
           "base_price": 3,
           "description": null,
           "is_available": false,
-          "image": "naranja-batido.webp",
-          "alergenos": []
+          "image": "batido-de-naranja.webp",
+          "alergenos": [],
+          "modifiers": [
+            {
+              "name": "Con Leche",
+              "price": 0,
+              "icon": "\uD83E\uDD5B"
+            },
+            {
+              "name": "Con Agua",
+              "price": 0,
+              "icon": "\uD83D\uDCA7"
+            },
+            {
+              "name": "Con Zumo de Naranja",
+              "price": 0.50,
+              "icon": "\uD83C\uDF4A"
+            }
+          ]
         },
         {
           "id": 29,
@@ -811,9 +1145,26 @@
           "base_price": 3.5,
           "description": null,
           "is_available": true,
-          "image": "platano-batido.webp",
+          "image": "batido-de-platano.webp",
           "alergenos": [
             7
+          ],
+          "modifiers": [
+            {
+              "name": "Con Leche",
+              "price": 0,
+              "icon": "\uD83E\uDD5B"
+            },
+            {
+              "name": "Con Agua",
+              "price": 0,
+              "icon": "\uD83D\uDCA7"
+            },
+            {
+              "name": "Con Zumo de Naranja",
+              "price": 0.50,
+              "icon": "\uD83C\uDF4A"
+            }
           ]
         },
         {
@@ -823,9 +1174,26 @@
           "base_price": 3.5,
           "description": null,
           "is_available": true,
-          "image": "aguacate-batido.webp",
+          "image": "batido-de-aguacate.webp",
           "alergenos": [
             7
+          ],
+          "modifiers": [
+            {
+              "name": "Con Leche",
+              "price": 0,
+              "icon": "\uD83E\uDD5B"
+            },
+            {
+              "name": "Con Agua",
+              "price": 0,
+              "icon": "\uD83D\uDCA7"
+            },
+            {
+              "name": "Con Zumo de Naranja",
+              "price": 0.50,
+              "icon": "\uD83C\uDF4A"
+            }
           ]
         },
         {
@@ -835,9 +1203,26 @@
           "base_price": 4,
           "description": null,
           "is_available": true,
-          "image": "fresa-batido.webp",
+          "image": "batido-de-fresa.webp",
           "alergenos": [
             7
+          ],
+          "modifiers": [
+            {
+              "name": "Con Leche",
+              "price": 0,
+              "icon": "\uD83E\uDD5B"
+            },
+            {
+              "name": "Con Agua",
+              "price": 0,
+              "icon": "\uD83D\uDCA7"
+            },
+            {
+              "name": "Con Zumo de Naranja",
+              "price": 0.50,
+              "icon": "\uD83C\uDF4A"
+            }
           ]
         },
         {
@@ -847,9 +1232,26 @@
           "base_price": 4,
           "description": null,
           "is_available": true,
-          "image": "mango-batido.webp",
+          "image": "batido-de-mango.webp",
           "alergenos": [
             7
+          ],
+          "modifiers": [
+            {
+              "name": "Con Leche",
+              "price": 0,
+              "icon": "\uD83E\uDD5B"
+            },
+            {
+              "name": "Con Agua",
+              "price": 0,
+              "icon": "\uD83D\uDCA7"
+            },
+            {
+              "name": "Con Zumo de Naranja",
+              "price": 0.50,
+              "icon": "\uD83C\uDF4A"
+            }
           ]
         },
         {
@@ -859,9 +1261,26 @@
           "base_price": 4.5,
           "description": null,
           "is_available": true,
-          "image": "tropical.webp",
+          "image": "batido-tropical.webp",
           "alergenos": [
             7
+          ],
+          "modifiers": [
+            {
+              "name": "Con Leche",
+              "price": 0,
+              "icon": "\uD83E\uDD5B"
+            },
+            {
+              "name": "Con Agua",
+              "price": 0,
+              "icon": "\uD83D\uDCA7"
+            },
+            {
+              "name": "Con Zumo de Naranja",
+              "price": 0.50,
+              "icon": "\uD83C\uDF4A"
+            }
           ]
         }
       ]
