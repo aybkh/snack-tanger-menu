@@ -360,7 +360,7 @@
           "price": 11,
           "base_price": 11,
           "description": null,
-          "is_available": false,
+          "is_available": true,
           "image": "emince-de-carne.webp",
           "alergenos": [
             7,
@@ -776,7 +776,7 @@
           "price": 1.5,
           "base_price": 1.5,
           "description": null,
-          "is_available": true,
+          "is_available": false,
           "image": "vichy-catalan.webp",
           "alergenos": [],
           "modifiers": null
