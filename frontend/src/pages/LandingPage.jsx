@@ -139,6 +139,7 @@ const LandingPage = () => {
                                         autoPlay
                                         muted
                                         playsInline
+                                        loop
                                         onEnded={nextSocialVideo}
                                         loading="lazy"
                                     />
