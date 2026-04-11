@@ -31,12 +31,14 @@ const ProductCard = ({ originalProd, category, onClick }) => {
         );
     };
 
+    const isProductAvailable = originalProd.is_available !== false && originalProd.isAvailable !== false;
+
     return (
         <div
-            className={`product-card ${prod.isAvailable === false ? 'sold-out' : ''}`}
-            onClick={() => { if (prod.isAvailable !== false) onClick(); }}>
+            className={`product-card ${!isProductAvailable ? 'sold-out' : ''}`}
+            onClick={() => { if (isProductAvailable) onClick(); }}>
             
-            {prod.isAvailable === false && (
+            {!isProductAvailable && (
                 <div className="sold-out-badge">
                     {t('sold_out')}
                 </div>
