@@ -1097,7 +1097,7 @@
           "price": 3,
           "base_price": 3,
           "description": null,
-          "is_available": false,
+          "is_available": true,
           "image": "flan-casero.webp",
           "alergenos": [
             3,
