@@ -68,12 +68,6 @@
       ]
     },
     {
-      "id": 11,
-      "name": "",
-      "image": "categories/default_cat.jpg",
-      "products": []
-    },
-    {
       "id": 2,
       "name": "Pizzas",
       "image": "categories/pizza.webp",
@@ -1113,7 +1107,7 @@
         },
         {
           "id": 28,
-          "name": "Naranja",
+          "name": "Batido de Naranja",
           "price": 3,
           "base_price": 3,
           "description": null,
@@ -1140,7 +1134,7 @@
         },
         {
           "id": 29,
-          "name": "Pl\u00E1tano",
+          "name": "Batido de Pl\u00E1tano",
           "price": 3.5,
           "base_price": 3.5,
           "description": null,
@@ -1169,7 +1163,7 @@
         },
         {
           "id": 30,
-          "name": "Aguacate",
+          "name": "Batido de Aguacate",
           "price": 3.5,
           "base_price": 3.5,
           "description": null,
@@ -1198,7 +1192,7 @@
         },
         {
           "id": 31,
-          "name": "Fresa",
+          "name": "Batido de Fresa",
           "price": 4,
           "base_price": 4,
           "description": null,
@@ -1227,7 +1221,7 @@
         },
         {
           "id": 32,
-          "name": "Mango",
+          "name": "Batido de Mango",
           "price": 4,
           "base_price": 4,
           "description": null,
@@ -1256,7 +1250,7 @@
         },
         {
           "id": 33,
-          "name": "Tropical",
+          "name": "Batido Tropical",
           "price": 4.5,
           "base_price": 4.5,
           "description": null,
