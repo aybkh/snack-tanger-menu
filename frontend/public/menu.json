@@ -13,6 +13,7 @@
           "description": null,
           "is_available": true,
           "image": "taco-s.webp",
+          "isAvailable": true,
           "alergenos": [
             1,
             7,
@@ -28,6 +29,7 @@
           "description": null,
           "is_available": true,
           "image": "taco-m.webp",
+          "isAvailable": true,
           "alergenos": [
             1,
             7,
@@ -43,6 +45,7 @@
           "description": null,
           "is_available": true,
           "image": "taco-l.webp",
+          "isAvailable": true,
           "alergenos": [
             1,
             7,
@@ -58,6 +61,7 @@
           "description": null,
           "is_available": true,
           "image": "taco-xl.webp",
+          "isAvailable": true,
           "alergenos": [
             1,
             7,
@@ -80,6 +84,7 @@
           "description": null,
           "is_available": true,
           "image": "pizza-margarita.webp",
+          "isAvailable": true,
           "alergenos": [
             1,
             7
@@ -115,6 +120,7 @@
           "description": null,
           "is_available": true,
           "image": "pizza-atun.webp",
+          "isAvailable": true,
           "alergenos": [
             1,
             4,
@@ -151,6 +157,7 @@
           "description": null,
           "is_available": true,
           "image": "pizza-pollo.webp",
+          "isAvailable": true,
           "alergenos": [
             1,
             7,
@@ -187,6 +194,7 @@
           "description": null,
           "is_available": true,
           "image": "pizza-carne-picada.webp",
+          "isAvailable": true,
           "alergenos": [
             1,
             7,
@@ -223,6 +231,7 @@
           "description": null,
           "is_available": true,
           "image": "pizza-marisco.webp",
+          "isAvailable": true,
           "alergenos": [
             1,
             2,
@@ -261,6 +270,7 @@
           "description": null,
           "is_available": true,
           "image": "pizza-tanger-303.webp",
+          "isAvailable": true,
           "alergenos": [
             1,
             7,
@@ -304,6 +314,7 @@
           "description": null,
           "is_available": true,
           "image": "plato-de-pollo.webp",
+          "isAvailable": true,
           "alergenos": [
             1,
             16
@@ -318,6 +329,7 @@
           "description": null,
           "is_available": true,
           "image": "plato-carne-picada.webp",
+          "isAvailable": true,
           "alergenos": [
             1,
             16
@@ -332,6 +344,7 @@
           "description": null,
           "is_available": true,
           "image": "plato-maxi-tenders.webp",
+          "isAvailable": true,
           "alergenos": [
             1,
             3,
@@ -348,6 +361,7 @@
           "description": null,
           "is_available": true,
           "image": "emince-de-pollo.webp",
+          "isAvailable": true,
           "alergenos": [
             7,
             16
@@ -360,8 +374,9 @@
           "price": 11,
           "base_price": 11,
           "description": null,
-          "is_available": true,
+          "is_available": false,
           "image": "emince-de-carne.webp",
+          "isAvailable": false,
           "alergenos": [
             7,
             16
@@ -376,6 +391,7 @@
           "description": null,
           "is_available": true,
           "image": "plato-de-marisco.webp",
+          "isAvailable": true,
           "alergenos": [
             2,
             4,
@@ -398,6 +414,7 @@
           "description": null,
           "is_available": true,
           "image": "hamburguesa-ternera.webp",
+          "isAvailable": true,
           "alergenos": [
             1,
             3,
@@ -441,6 +458,7 @@
           "description": null,
           "is_available": true,
           "image": "hamburguesa-tenders.webp",
+          "isAvailable": true,
           "alergenos": [
             1,
             3,
@@ -491,6 +509,7 @@
           "description": null,
           "is_available": true,
           "image": "tajin-de-kefta.webp",
+          "isAvailable": true,
           "alergenos": [
             3,
             16
@@ -526,6 +545,7 @@
           "description": null,
           "is_available": true,
           "image": "tajin-de-gambas-pil-pil.webp",
+          "isAvailable": true,
           "alergenos": [
             2
           ],
@@ -560,6 +580,7 @@
           "description": null,
           "is_available": true,
           "image": "kapsalon.webp",
+          "isAvailable": true,
           "alergenos": [
             1,
             7,
@@ -596,6 +617,7 @@
           "description": null,
           "is_available": true,
           "image": "tajin-marisco.webp",
+          "isAvailable": true,
           "alergenos": [
             2,
             4,
@@ -617,6 +639,7 @@
           "description": null,
           "is_available": true,
           "image": "sopa-de-pescado.webp",
+          "isAvailable": true,
           "alergenos": [
             2,
             4
@@ -644,6 +667,7 @@
           "description": null,
           "is_available": true,
           "image": "ensalada-pequena.webp",
+          "isAvailable": true,
           "alergenos": [
             3,
             4
@@ -658,6 +682,7 @@
           "description": null,
           "is_available": true,
           "image": "ensalada-familiar.webp",
+          "isAvailable": true,
           "alergenos": [
             3,
             4
@@ -679,6 +704,7 @@
           "description": null,
           "is_available": true,
           "image": "coca-cola.webp",
+          "isAvailable": true,
           "alergenos": [],
           "modifiers": null
         },
@@ -690,6 +716,7 @@
           "description": null,
           "is_available": true,
           "image": "fanta.webp",
+          "isAvailable": true,
           "alergenos": [],
           "modifiers": null
         },
@@ -701,6 +728,7 @@
           "description": null,
           "is_available": true,
           "image": "sprite.webp",
+          "isAvailable": true,
           "alergenos": [],
           "modifiers": null
         },
@@ -712,6 +740,7 @@
           "description": null,
           "is_available": true,
           "image": "nestea.webp",
+          "isAvailable": true,
           "alergenos": [],
           "modifiers": null
         },
@@ -723,6 +752,7 @@
           "description": null,
           "is_available": true,
           "image": "aquarius.webp",
+          "isAvailable": true,
           "alergenos": [],
           "modifiers": null
         },
@@ -734,6 +764,7 @@
           "description": null,
           "is_available": true,
           "image": "poms.webp",
+          "isAvailable": true,
           "alergenos": [],
           "modifiers": null
         },
@@ -745,6 +776,7 @@
           "description": null,
           "is_available": true,
           "image": "hawaii.webp",
+          "isAvailable": true,
           "alergenos": [],
           "modifiers": null
         },
@@ -756,6 +788,7 @@
           "description": null,
           "is_available": true,
           "image": "schweppes.webp",
+          "isAvailable": true,
           "alergenos": [],
           "modifiers": null
         },
@@ -767,6 +800,7 @@
           "description": null,
           "is_available": true,
           "image": "oasis-tropical.webp",
+          "isAvailable": true,
           "alergenos": [],
           "modifiers": null
         },
@@ -778,6 +812,7 @@
           "description": null,
           "is_available": false,
           "image": "vichy-catalan.webp",
+          "isAvailable": false,
           "alergenos": [],
           "modifiers": null
         },
@@ -789,6 +824,7 @@
           "description": null,
           "is_available": true,
           "image": "don-simon.webp",
+          "isAvailable": true,
           "alergenos": [],
           "modifiers": null
         },
@@ -800,6 +836,7 @@
           "description": null,
           "is_available": true,
           "image": "redbull.webp",
+          "isAvailable": true,
           "alergenos": [],
           "modifiers": null
         },
@@ -811,6 +848,7 @@
           "description": null,
           "is_available": true,
           "image": "bezoya.webp",
+          "isAvailable": true,
           "alergenos": [],
           "modifiers": null
         },
@@ -822,6 +860,7 @@
           "description": null,
           "is_available": true,
           "image": "font-vella.webp",
+          "isAvailable": true,
           "alergenos": [],
           "modifiers": null
         },
@@ -833,6 +872,7 @@
           "description": null,
           "is_available": true,
           "image": "aqua-deus.webp",
+          "isAvailable": true,
           "alergenos": [],
           "modifiers": null
         }
@@ -851,6 +891,7 @@
           "description": null,
           "is_available": true,
           "image": "huevo-duro.webp",
+          "isAvailable": true,
           "alergenos": [
             3
           ],
@@ -864,6 +905,7 @@
           "description": null,
           "is_available": true,
           "image": "huevo-frito.webp",
+          "isAvailable": true,
           "alergenos": [
             3
           ],
@@ -877,6 +919,7 @@
           "description": null,
           "is_available": true,
           "image": "lonchas-de-queso.webp",
+          "isAvailable": true,
           "alergenos": [
             7
           ],
@@ -890,6 +933,7 @@
           "description": null,
           "is_available": false,
           "image": "mortadela.webp",
+          "isAvailable": false,
           "alergenos": [
             16
           ],
@@ -910,6 +954,7 @@
           "description": null,
           "is_available": true,
           "image": "salsa-algerian.webp",
+          "isAvailable": true,
           "alergenos": [
             3,
             10,
@@ -925,6 +970,7 @@
           "description": null,
           "is_available": true,
           "image": "salsa-andaluza.webp",
+          "isAvailable": true,
           "alergenos": [
             3,
             10,
@@ -940,6 +986,7 @@
           "description": null,
           "is_available": true,
           "image": "salsa-barbacoa.webp",
+          "isAvailable": true,
           "alergenos": [],
           "modifiers": null
         },
@@ -951,6 +998,7 @@
           "description": null,
           "is_available": true,
           "image": "salsa-biggie.webp",
+          "isAvailable": true,
           "alergenos": [
             3,
             10
@@ -965,6 +1013,7 @@
           "description": null,
           "is_available": true,
           "image": "salsa-brazil.webp",
+          "isAvailable": true,
           "alergenos": [
             3,
             10
@@ -979,6 +1028,7 @@
           "description": null,
           "is_available": true,
           "image": "salsa-chilli-thai.webp",
+          "isAvailable": true,
           "alergenos": [
             15
           ],
@@ -992,6 +1042,7 @@
           "description": null,
           "is_available": true,
           "image": "salsa-curry.webp",
+          "isAvailable": true,
           "alergenos": [
             3,
             7,
@@ -1007,6 +1058,7 @@
           "description": null,
           "is_available": true,
           "image": "salsa-ketchup.webp",
+          "isAvailable": true,
           "alergenos": [],
           "modifiers": null
         },
@@ -1018,6 +1070,7 @@
           "description": null,
           "is_available": true,
           "image": "salsa-marocaine.webp",
+          "isAvailable": true,
           "alergenos": [
             3,
             10,
@@ -1033,6 +1086,7 @@
           "description": null,
           "is_available": true,
           "image": "salsa-mayonesa.webp",
+          "isAvailable": true,
           "alergenos": [
             3,
             10
@@ -1047,6 +1101,7 @@
           "description": null,
           "is_available": true,
           "image": "salsa-pita-kebab.webp",
+          "isAvailable": true,
           "alergenos": [
             3,
             7,
@@ -1062,6 +1117,7 @@
           "description": null,
           "is_available": true,
           "image": "salsa-samurai.webp",
+          "isAvailable": true,
           "alergenos": [
             3,
             10,
@@ -1084,6 +1140,7 @@
           "description": null,
           "is_available": false,
           "image": "copa-de-tiramisu.webp",
+          "isAvailable": false,
           "alergenos": [
             1,
             3,
@@ -1099,6 +1156,7 @@
           "description": null,
           "is_available": true,
           "image": "flan-casero.webp",
+          "isAvailable": true,
           "alergenos": [
             3,
             7
@@ -1113,6 +1171,7 @@
           "description": null,
           "is_available": false,
           "image": "batido-de-naranja.webp",
+          "isAvailable": false,
           "alergenos": [],
           "modifiers": [
             {
@@ -1140,6 +1199,7 @@
           "description": null,
           "is_available": true,
           "image": "batido-de-platano.webp",
+          "isAvailable": true,
           "alergenos": [
             7
           ],
@@ -1169,6 +1229,7 @@
           "description": null,
           "is_available": true,
           "image": "batido-de-aguacate.webp",
+          "isAvailable": true,
           "alergenos": [
             7
           ],
@@ -1198,6 +1259,7 @@
           "description": null,
           "is_available": true,
           "image": "batido-de-fresa.webp",
+          "isAvailable": true,
           "alergenos": [
             7
           ],
@@ -1227,6 +1289,7 @@
           "description": null,
           "is_available": true,
           "image": "batido-de-mango.webp",
+          "isAvailable": true,
           "alergenos": [
             7
           ],
@@ -1256,6 +1319,7 @@
           "description": null,
           "is_available": true,
           "image": "batido-tropical.webp",
+          "isAvailable": true,
           "alergenos": [
             7
           ],
