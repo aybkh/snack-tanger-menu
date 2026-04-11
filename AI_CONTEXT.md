@@ -100,7 +100,6 @@ dotnet run
 
 ### 3. Levantar el Frontend (Modo Dev)
 ```bash
-cd frontend
 npm install
 npm run dev
 ```
@@ -109,7 +108,6 @@ npm run dev
 Puedes generar todos los estáticos de React y meterlos dentro del ejecutable .NET para que sirva el frontend entero desde 1 solo fichero `.exe`:
 ```bash
 # Entrar a Frontend
-cd frontend
 npm run build
 
 # Copiar el Build al Backend
