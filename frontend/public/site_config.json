@@ -24,11 +24,6 @@
       "type": "image",
       "url": "/hero/banner2.webp",
       "title": ""
-    },
-    {
-      "type": "video",
-      "url": "/hero/batido_aguacate.mp4",
-      "title": ""
     }
   ],
   "social_videos": [
@@ -133,16 +128,6 @@
           "label": "Tropical"
         }
       ]
-    },
-    {
-      "title": "Ensaladas",
-      "subtitle": "Enasalas Saludables",
-      "images": [
-        {
-          "src": "/products/ensalada-pequena.webp",
-          "label": "Ensalada peque\u00F1a"
-        }
-      ]
     }
   ],
   "reviews": [
@@ -164,11 +149,6 @@
     {
       "author": "Nadia L.",
       "text": "Impresionante relaci\u00F3n calidad-precio. El pan naan reci\u00E9n hecho marca totalmente la diferencia.",
-      "stars": 5
-    },
-    {
-      "author": "Moha47e",
-      "text": "El mejor tacos de Matar\u00F3 sin duda!!",
       "stars": 5
     }
   ],
@@ -215,10 +195,10 @@
     },
     {
       "day": "Viernes",
-      "label": "Cerrado",
+      "label": "18:00 - 24:00",
       "open": 18,
       "close": 24,
-      "closed": true
+      "closed": false
     },
     {
       "day": "S\u00E1bado",
