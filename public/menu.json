@@ -810,9 +810,9 @@
           "price": 1.5,
           "base_price": 1.5,
           "description": null,
-          "is_available": false,
+          "is_available": true,
           "image": "vichy-catalan.webp",
-          "isAvailable": false,
+          "isAvailable": true,
           "alergenos": [],
           "modifiers": null
         },
