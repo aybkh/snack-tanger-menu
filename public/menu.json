@@ -692,6 +692,229 @@
       ]
     },
     {
+      "id": 7,
+      "name": "Postres",
+      "image": "categories/postres.webp",
+      "products": [
+        {
+          "id": 26,
+          "name": "Copa de Tiramis\u00FA",
+          "price": 2.5,
+          "base_price": 2.5,
+          "description": null,
+          "is_available": false,
+          "image": "copa-de-tiramisu.webp",
+          "isAvailable": false,
+          "alergenos": [
+            1,
+            3,
+            7
+          ],
+          "modifiers": null
+        },
+        {
+          "id": 27,
+          "name": "Flan Casero",
+          "price": 3,
+          "base_price": 3,
+          "description": null,
+          "is_available": true,
+          "image": "flan-casero.webp",
+          "isAvailable": true,
+          "alergenos": [
+            3,
+            7
+          ],
+          "modifiers": null
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "name": "Batidos",
+      "image": "categories/batidos.webp",
+      "products": [
+        {
+          "id": 28,
+          "name": "Batido de Naranja",
+          "price": 3,
+          "base_price": 3,
+          "description": null,
+          "is_available": false,
+          "image": "batido-de-naranja.webp",
+          "isAvailable": false,
+          "alergenos": [],
+          "modifiers": [
+            {
+              "name": "Con Leche",
+              "price": 0,
+              "icon": "\uD83E\uDD5B"
+            },
+            {
+              "name": "Con Agua",
+              "price": 0,
+              "icon": "\uD83D\uDCA7"
+            },
+            {
+              "name": "Con Zumo de Naranja",
+              "price": 0.50,
+              "icon": "\uD83C\uDF4A"
+            }
+          ]
+        },
+        {
+          "id": 29,
+          "name": "Batido de Pl\u00E1tano",
+          "price": 3.5,
+          "base_price": 3.5,
+          "description": null,
+          "is_available": true,
+          "image": "batido-de-platano.webp",
+          "isAvailable": true,
+          "alergenos": [
+            7
+          ],
+          "modifiers": [
+            {
+              "name": "Con Leche",
+              "price": 0,
+              "icon": "\uD83E\uDD5B"
+            },
+            {
+              "name": "Con Agua",
+              "price": 0,
+              "icon": "\uD83D\uDCA7"
+            },
+            {
+              "name": "Con Zumo de Naranja",
+              "price": 0.50,
+              "icon": "\uD83C\uDF4A"
+            }
+          ]
+        },
+        {
+          "id": 30,
+          "name": "Batido de Aguacate",
+          "price": 3.5,
+          "base_price": 3.5,
+          "description": null,
+          "is_available": true,
+          "image": "batido-de-aguacate.webp",
+          "isAvailable": true,
+          "alergenos": [
+            7
+          ],
+          "modifiers": [
+            {
+              "name": "Con Leche",
+              "price": 0,
+              "icon": "\uD83E\uDD5B"
+            },
+            {
+              "name": "Con Agua",
+              "price": 0,
+              "icon": "\uD83D\uDCA7"
+            },
+            {
+              "name": "Con Zumo de Naranja",
+              "price": 0.50,
+              "icon": "\uD83C\uDF4A"
+            }
+          ]
+        },
+        {
+          "id": 31,
+          "name": "Batido de Fresa",
+          "price": 4,
+          "base_price": 4,
+          "description": null,
+          "is_available": true,
+          "image": "batido-de-fresa.webp",
+          "isAvailable": true,
+          "alergenos": [
+            7
+          ],
+          "modifiers": [
+            {
+              "name": "Con Leche",
+              "price": 0,
+              "icon": "\uD83E\uDD5B"
+            },
+            {
+              "name": "Con Agua",
+              "price": 0,
+              "icon": "\uD83D\uDCA7"
+            },
+            {
+              "name": "Con Zumo de Naranja",
+              "price": 0.50,
+              "icon": "\uD83C\uDF4A"
+            }
+          ]
+        },
+        {
+          "id": 32,
+          "name": "Batido de Mango",
+          "price": 4,
+          "base_price": 4,
+          "description": null,
+          "is_available": true,
+          "image": "batido-de-mango.webp",
+          "isAvailable": true,
+          "alergenos": [
+            7
+          ],
+          "modifiers": [
+            {
+              "name": "Con Leche",
+              "price": 0,
+              "icon": "\uD83E\uDD5B"
+            },
+            {
+              "name": "Con Agua",
+              "price": 0,
+              "icon": "\uD83D\uDCA7"
+            },
+            {
+              "name": "Con Zumo de Naranja",
+              "price": 0.50,
+              "icon": "\uD83C\uDF4A"
+            }
+          ]
+        },
+        {
+          "id": 33,
+          "name": "Batido Tropical",
+          "price": 4.5,
+          "base_price": 4.5,
+          "description": null,
+          "is_available": true,
+          "image": "batido-tropical.webp",
+          "isAvailable": true,
+          "alergenos": [
+            7
+          ],
+          "modifiers": [
+            {
+              "name": "Con Leche",
+              "price": 0,
+              "icon": "\uD83E\uDD5B"
+            },
+            {
+              "name": "Con Agua",
+              "price": 0,
+              "icon": "\uD83D\uDCA7"
+            },
+            {
+              "name": "Con Zumo de Naranja",
+              "price": 0.50,
+              "icon": "\uD83C\uDF4A"
+            }
+          ]
+        }
+      ]
+    },
+    {
       "id": 8,
       "name": "Refrescos",
       "image": "categories/bebidas.webp",
@@ -810,9 +1033,9 @@
           "price": 1.5,
           "base_price": 1.5,
           "description": null,
-          "is_available": true,
+          "is_available": false,
           "image": "vichy-catalan.webp",
-          "isAvailable": true,
+          "isAvailable": false,
           "alergenos": [],
           "modifiers": null
         },
@@ -1124,277 +1347,6 @@
             15
           ],
           "modifiers": null
-        }
-      ]
-    },
-    {
-      "id": 11,
-      "name": "Postres",
-      "image": "categories/postres.webp",
-      "products": [
-        {
-          "id": 26,
-          "name": "Copa de Tiramis\u00FA",
-          "price": 2.5,
-          "base_price": 2.5,
-          "description": null,
-          "is_available": false,
-          "image": "copa-de-tiramisu.webp",
-          "isAvailable": false,
-          "alergenos": [
-            1,
-            3,
-            7
-          ],
-          "modifiers": null
-        },
-        {
-          "id": 27,
-          "name": "Flan Casero",
-          "price": 3,
-          "base_price": 3,
-          "description": null,
-          "is_available": true,
-          "image": "flan-casero.webp",
-          "isAvailable": true,
-          "alergenos": [
-            3,
-            7
-          ],
-          "modifiers": null
-        },
-        {
-          "id": 101,
-          "name": "Tarta de Lim\u00F3n",
-          "price": 4.5,
-          "base_price": 4.5,
-          "description": "Deliciosa tarta de limón con base crujiente y suave crema cítrica.",
-          "is_available": true,
-          "image": "tarta-de-limon.webp",
-          "isAvailable": true,
-          "alergenos": [1, 3, 7],
-          "modifiers": null
-        },
-        {
-          "id": 102,
-          "name": "Tarta Lotus",
-          "price": 4.5,
-          "base_price": 4.5,
-          "description": "Irresistible tarta con el auténtico sabor a galleta caramelizada Biscoff Lotus.",
-          "is_available": true,
-          "image": "tarta-lotus.webp",
-          "isAvailable": true,
-          "alergenos": [1, 3, 7, 8],
-          "modifiers": null
-        },
-        {
-          "id": 103,
-          "name": "Tarta Oreo",
-          "price": 4.5,
-          "base_price": 4.5,
-          "description": "Clásica tarta elaborada con crujientes trozos de galletas Oreo y crema.",
-          "is_available": true,
-          "image": "tarta-oreo.webp",
-          "isAvailable": true,
-          "alergenos": [1, 3, 6, 7],
-          "modifiers": null
-        },
-        {
-          "id": 104,
-          "name": "Tarta de Queso",
-          "price": 4.5,
-          "base_price": 4.5,
-          "description": "Nuestra tarta de queso horneada ultra cremosa, un clásico para terminar bien.",
-          "is_available": true,
-          "image": "tarta-de-queso.webp",
-          "isAvailable": true,
-          "alergenos": [1, 3, 7],
-          "modifiers": null
-        }
-      ]
-    },
-    {
-      "id": 12,
-      "name": "Batidos",
-      "image": "categories/batidos.webp",
-      "products": [
-        {
-          "id": 28,
-          "name": "Batido de Naranja",
-          "price": 3,
-          "base_price": 3,
-          "description": null,
-          "is_available": false,
-          "image": "batido-de-naranja.webp",
-          "isAvailable": false,
-          "alergenos": [],
-          "modifiers": [
-            {
-              "name": "Con Leche",
-              "price": 0,
-              "icon": "\uD83E\uDD5B"
-            },
-            {
-              "name": "Con Agua",
-              "price": 0,
-              "icon": "\uD83D\uDCA7"
-            },
-            {
-              "name": "Con Zumo de Naranja",
-              "price": 0.50,
-              "icon": "\uD83C\uDF4A"
-            }
-          ]
-        },
-        {
-          "id": 29,
-          "name": "Batido de Pl\u00E1tano",
-          "price": 3.5,
-          "base_price": 3.5,
-          "description": null,
-          "is_available": true,
-          "image": "batido-de-platano.webp",
-          "isAvailable": true,
-          "alergenos": [
-            7
-          ],
-          "modifiers": [
-            {
-              "name": "Con Leche",
-              "price": 0,
-              "icon": "\uD83E\uDD5B"
-            },
-            {
-              "name": "Con Agua",
-              "price": 0,
-              "icon": "\uD83D\uDCA7"
-            },
-            {
-              "name": "Con Zumo de Naranja",
-              "price": 0.50,
-              "icon": "\uD83C\uDF4A"
-            }
-          ]
-        },
-        {
-          "id": 30,
-          "name": "Batido de Aguacate",
-          "price": 3.5,
-          "base_price": 3.5,
-          "description": null,
-          "is_available": true,
-          "image": "batido-de-aguacate.webp",
-          "isAvailable": true,
-          "alergenos": [
-            7
-          ],
-          "modifiers": [
-            {
-              "name": "Con Leche",
-              "price": 0,
-              "icon": "\uD83E\uDD5B"
-            },
-            {
-              "name": "Con Agua",
-              "price": 0,
-              "icon": "\uD83D\uDCA7"
-            },
-            {
-              "name": "Con Zumo de Naranja",
-              "price": 0.50,
-              "icon": "\uD83C\uDF4A"
-            }
-          ]
-        },
-        {
-          "id": 31,
-          "name": "Batido de Fresa",
-          "price": 4,
-          "base_price": 4,
-          "description": null,
-          "is_available": true,
-          "image": "batido-de-fresa.webp",
-          "isAvailable": true,
-          "alergenos": [
-            7
-          ],
-          "modifiers": [
-            {
-              "name": "Con Leche",
-              "price": 0,
-              "icon": "\uD83E\uDD5B"
-            },
-            {
-              "name": "Con Agua",
-              "price": 0,
-              "icon": "\uD83D\uDCA7"
-            },
-            {
-              "name": "Con Zumo de Naranja",
-              "price": 0.50,
-              "icon": "\uD83C\uDF4A"
-            }
-          ]
-        },
-        {
-          "id": 32,
-          "name": "Batido de Mango",
-          "price": 4,
-          "base_price": 4,
-          "description": null,
-          "is_available": true,
-          "image": "batido-de-mango.webp",
-          "isAvailable": true,
-          "alergenos": [
-            7
-          ],
-          "modifiers": [
-            {
-              "name": "Con Leche",
-              "price": 0,
-              "icon": "\uD83E\uDD5B"
-            },
-            {
-              "name": "Con Agua",
-              "price": 0,
-              "icon": "\uD83D\uDCA7"
-            },
-            {
-              "name": "Con Zumo de Naranja",
-              "price": 0.50,
-              "icon": "\uD83C\uDF4A"
-            }
-          ]
-        },
-        {
-          "id": 33,
-          "name": "Batido Tropical",
-          "price": 4.5,
-          "base_price": 4.5,
-          "description": null,
-          "is_available": true,
-          "image": "batido-tropical.webp",
-          "isAvailable": true,
-          "alergenos": [
-            7
-          ],
-          "modifiers": [
-            {
-              "name": "Con Leche",
-              "price": 0,
-              "icon": "\uD83E\uDD5B"
-            },
-            {
-              "name": "Con Agua",
-              "price": 0,
-              "icon": "\uD83D\uDCA7"
-            },
-            {
-              "name": "Con Zumo de Naranja",
-              "price": 0.50,
-              "icon": "\uD83C\uDF4A"
-            }
-          ]
         }
       ]
     }
