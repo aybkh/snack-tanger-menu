@@ -91,6 +91,22 @@ export const de = {
         "Pizza Margarita": {
             "name": "Pizza Margarita",
             "description": "Die Essenz der Tradition: Basis aus natürlichen Tomaten, doppelte Schicht geschmolzener Mozzarella, Olivenöl und aromatischer Oregano."
+        },
+        "Tarta de Limón": {
+            "name": "Zitronenkuchen",
+            "description": "Köstlicher Zitronenkuchen mit knusprigem Boden und glatter Zitruscreme."
+        },
+        "Tarta Lotus": {
+            "name": "Lotus-Kuchen",
+            "description": "Unwiderstehlicher Kuchen mit dem authentischen Geschmack von karamellisierten Biscoff Lotus Keksen."
+        },
+        "Tarta Oreo": {
+            "name": "Oreo-Kuchen",
+            "description": "Klassischer Kuchen aus knusprigen Oreo-Keksstücken und Creme."
+        },
+        "Tarta de Queso": {
+            "name": "Käsekuchen",
+            "description": "Unser ultra-cremiger gebackener Käsekuchen, ein Klassiker für den perfekten Abschluss."
         }
     }
-};
+    };

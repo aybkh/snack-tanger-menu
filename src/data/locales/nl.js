@@ -91,6 +91,22 @@ export const nl = {
         "Pizza Margarita": {
             "name": "Pizza Margarita",
             "description": "De essentie van traditie: natuurlijke tomatenbasis, dubbele laag mozzarella, olijfolie en aromatische oregano."
+        },
+        "Tarta de Limón": {
+            "name": "Citroentaart",
+            "description": "Heerlijke citroentaart met een knapperige bodem en zachte citruscrème."
+        },
+        "Tarta Lotus": {
+            "name": "Lotus Taart",
+            "description": "Onweerstaanbare taart met de authentieke smaak van gekarameliseerde Biscoff Lotus koekjes."
+        },
+        "Tarta Oreo": {
+            "name": "Oreo Taart",
+            "description": "Klassieke taart gemaakt met knapperige stukjes Oreo koekjes en crème."
+        },
+        "Tarta de Queso": {
+            "name": "Cheesecake",
+            "description": "Onze ultra-romige gebakken cheesecake, een klassieker om goed af te sluiten."
         }
     }
-};
+    };

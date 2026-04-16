@@ -104,6 +104,22 @@ export const en = {
         "Pizza Carne Picada": {
             "name": "Minced Meat Pizza",
             "description": "Savory minced beef seasoned with fine herbs, slow-cooked to maintain its juiciness."
+        },
+        "Tarta de Limón": {
+            "name": "Lemon Tart",
+            "description": "Delicious lemon tart with a crunchy base and smooth citrus cream."
+        },
+        "Tarta Lotus": {
+            "name": "Lotus Cake",
+            "description": "Irresistible cake with the authentic taste of caramelized Biscoff Lotus cookies."
+        },
+        "Tarta Oreo": {
+            "name": "Oreo Cake",
+            "description": "Classic cake made with crunchy Oreo cookie pieces and cream."
+        },
+        "Tarta de Queso": {
+            "name": "Cheesecake",
+            "description": "Our ultra-creamy baked cheesecake, a classic way to finish well."
         }
     }
-};
+    };

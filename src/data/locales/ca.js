@@ -92,6 +92,22 @@ export const ca = {
         "Pizza Margarita": {
             "name": "Pizza Margarita",
             "description": "L'essència de la tradició: base de tomàquet natural, doble capa de mozzarella fosa, oli d'oliva verge i orenga aromàtica."
+        },
+        "Tarta de Limón": {
+            "name": "Pastís de Llimona",
+            "description": "Deliciós pastís de llimona amb base cruixent i suau crema cítrica."
+        },
+        "Tarta Lotus": {
+            "name": "Pastís Lotus",
+            "description": "Irresistible pastís amb l'autèntic sabor a galeta caramel·litzada Biscoff Lotus."
+        },
+        "Tarta Oreo": {
+            "name": "Pastís Oreo",
+            "description": "Clàssic pastís elaborat amb trossos cruixents de galetes Oreo i crema."
+        },
+        "Tarta de Queso": {
+            "name": "Pastís de Formatge",
+            "description": "El nostre pastís de formatge al forn ultra cremós, un clàssic per acabar bé."
         }
     }
-};
+    };

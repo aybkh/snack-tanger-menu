@@ -208,6 +208,22 @@ export const fr = {
         "Wrap Carne Picada": {
             "name": "Wrap Viande Hachée",
             "description": "Bœuf haché aux épices traditionnelles, légumes frais et sauce spéciale enveloppés dans une tortilla toastée."
+        },
+        "Tarta de Limón": {
+            "name": "Tarte au Citron",
+            "description": "Délicieuse tarte au citron avec une base croustillante et une douce crème d'agrumes."
+        },
+        "Tarta Lotus": {
+            "name": "Tarte Lotus",
+            "description": "Tarte irrésistible au goût authentique du biscuit caramélisé Biscoff Lotus."
+        },
+        "Tarta Oreo": {
+            "name": "Tarte Oreo",
+            "description": "Tarte classique préparée avec des morceaux croquants de biscuits Oreo et de la crème."
+        },
+        "Tarta de Queso": {
+            "name": "Cheesecake",
+            "description": "Notre cheesecake au four ultra crémeux, un classique pour bien finir."
         }
     }
-};
+    };

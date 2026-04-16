@@ -300,6 +300,22 @@ export const es = {
         "Mortadela": {
             "name": "Mortadela",
             "description": "Mortadela seleccionada cortada en finas láminas para un sabor delicado."
+        },
+        "Tarta de Limón": {
+            "name": "Tarta de Limón",
+            "description": "Deliciosa tarta de limón con base crujiente y suave crema cítrica."
+        },
+        "Tarta Lotus": {
+            "name": "Tarta Lotus",
+            "description": "Irresistible tarta con el auténtico sabor a galleta caramelizada Biscoff Lotus."
+        },
+        "Tarta Oreo": {
+            "name": "Tarta Oreo",
+            "description": "Clásica tarta elaborada con crujientes trozos de galletas Oreo y crema."
+        },
+        "Tarta de Queso": {
+            "name": "Tarta de Queso",
+            "description": "Nuestra tarta de queso horneada ultra cremosa, un clásico para terminar bien."
         }
     }
-};
+    };
