@@ -726,6 +726,54 @@
             7
           ],
           "modifiers": null
+        },
+        {
+          "id": 65,
+          "name": "Tarta De Queso",
+          "price": 4.5,
+          "base_price": 4.5,
+          "description": null,
+          "is_available": true,
+          "image": "tarta-de-queso.webp",
+          "isAvailable": true,
+          "alergenos": [],
+          "modifiers": null
+        },
+        {
+          "id": 66,
+          "name": "Tarta Oreo",
+          "price": 4.5,
+          "base_price": 4.5,
+          "description": null,
+          "is_available": true,
+          "image": "tarta-oreo.webp",
+          "isAvailable": true,
+          "alergenos": [],
+          "modifiers": null
+        },
+        {
+          "id": 67,
+          "name": "Tarta de Limon",
+          "price": 4.5,
+          "base_price": 4.5,
+          "description": null,
+          "is_available": true,
+          "image": "tarta-de-limon.webp",
+          "isAvailable": true,
+          "alergenos": [],
+          "modifiers": null
+        },
+        {
+          "id": 68,
+          "name": "Tarta Lotus",
+          "price": 4.5,
+          "base_price": 4.5,
+          "description": null,
+          "is_available": true,
+          "image": "tarta-lotus.webp",
+          "isAvailable": true,
+          "alergenos": [],
+          "modifiers": null
         }
       ]
     },
