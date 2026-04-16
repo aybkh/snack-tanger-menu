@@ -702,9 +702,9 @@
           "price": 2.5,
           "base_price": 2.5,
           "description": null,
-          "is_available": false,
+          "is_available": true,
           "image": "copa-de-tiramisu.webp",
-          "isAvailable": false,
+          "isAvailable": true,
           "alergenos": [
             1,
             3,
@@ -1081,9 +1081,9 @@
           "price": 1.5,
           "base_price": 1.5,
           "description": null,
-          "is_available": false,
+          "is_available": true,
           "image": "vichy-catalan.webp",
-          "isAvailable": false,
+          "isAvailable": true,
           "alergenos": [],
           "modifiers": null
         },
